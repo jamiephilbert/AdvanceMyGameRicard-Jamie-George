@@ -76,7 +76,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Jamie\Downloads\SDL2-2.24.2\include;C:\Users\Jamie\Downloads\SDL2_image-2.0.4\include;C:\Users\Jamie\Downloads\SDL2_ttf-devel-2.20.1-VC\SDL2_ttf-2.20.1\include;C:\Users\Jamie\Downloads\SDL2_mixer-devel-2.6.2-VC\SDL2_mixer-2.6.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jamie\Downloads\SDL2-2.24.2\include;C:\Users\Jamie\Downloads\SDL2_mixer-devel-2.6.2-VC\SDL2_mixer-2.6.2\include;C:\Users\Jamie\Downloads\SDL2_ttf-devel-2.20.1-VC\SDL2_ttf-2.20.1\include;C:\Users\Jamie\Downloads\SDL2_image-2.0.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -97,7 +97,7 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Jamie\Downloads\SDL2-2.24.2\include;C:\Users\Jamie\Downloads\SDL2_image-2.0.4\include;C:\Users\Jamie\Downloads\SDL2_ttf-devel-2.20.1-VC\SDL2_ttf-2.20.1\include;C:\Users\Jamie\Downloads\SDL2_mixer-devel-2.6.2-VC\SDL2_mixer-2.6.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jamie\Downloads\SDL2-2.24.2\include;C:\Users\Jamie\Downloads\SDL2_mixer-devel-2.6.2-VC\SDL2_mixer-2.6.2\include;C:\Users\Jamie\Downloads\SDL2_ttf-devel-2.20.1-VC\SDL2_ttf-2.20.1\include;C:\Users\Jamie\Downloads\SDL2_image-2.0.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -149,6 +149,7 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
     <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="StartMenu.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="Timer.cpp" />
   </ItemGroup>

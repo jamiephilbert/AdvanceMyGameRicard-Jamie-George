@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SDL_Tutorial"
   ],
-  "SelectedNode": "\\SDL_Tutorial.sln",
+  "SelectedNode": "\\SDL_Tutorial\\StartMenu.h",
   "PreviewInSolutionExplorer": false
 }
