@@ -1,22 +1,20 @@
-﻿  AssetManager.cpp
-  Texture.cpp
-  Generating Code...
-  SDL_Tutorial.vcxproj -> C:\Users\Jamie\source\repos\SDL_Tutorial\Debug\SDL_Tutorial.exe
-  C:\Users\Jamie\source\repos\SDL_Tutorial\SDL_Tutorial\..\dep\devel\x86\libjpeg-9.dll
-  C:\Users\Jamie\source\repos\SDL_Tutorial\SDL_Tutorial\..\dep\devel\x86\libmodplug-1.dll
-  C:\Users\Jamie\source\repos\SDL_Tutorial\SDL_Tutorial\..\dep\devel\x86\libogg-0.dll
-  C:\Users\Jamie\source\repos\SDL_Tutorial\SDL_Tutorial\..\dep\devel\x86\libopus-0.dll
-  C:\Users\Jamie\source\repos\SDL_Tutorial\SDL_Tutorial\..\dep\devel\x86\libopusfile-0.dll
-  C:\Users\Jamie\source\repos\SDL_Tutorial\SDL_Tutorial\..\dep\devel\x86\libpng16-16.dll
-  C:\Users\Jamie\source\repos\SDL_Tutorial\SDL_Tutorial\..\dep\devel\x86\libtiff-5.dll
-  C:\Users\Jamie\source\repos\SDL_Tutorial\SDL_Tutorial\..\dep\devel\x86\libwebp-7.dll
-  C:\Users\Jamie\source\repos\SDL_Tutorial\SDL_Tutorial\..\dep\devel\x86\SDL2.dll
-  C:\Users\Jamie\source\repos\SDL_Tutorial\SDL_Tutorial\..\dep\devel\x86\SDL2_image.dll
-  C:\Users\Jamie\source\repos\SDL_Tutorial\SDL_Tutorial\..\dep\devel\x86\SDL2_mixer.dll
-  C:\Users\Jamie\source\repos\SDL_Tutorial\SDL_Tutorial\..\dep\devel\x86\SDL2_ttf.dll
-  C:\Users\Jamie\source\repos\SDL_Tutorial\SDL_Tutorial\..\dep\devel\x86\zlib1.dll
+﻿  StartMenu.cpp
+  SDL_Tutorial.vcxproj -> C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libjpeg-9.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libmodplug-1.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libogg-0.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libopus-0.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libopusfile-0.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libpng16-16.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libtiff-5.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libwebp-7.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2_image.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2_mixer.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2_ttf.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\zlib1.dll
          13 file(s) copied.
-  C:\Users\Jamie\source\repos\SDL_Tutorial\SDL_Tutorial\..\Assets\ARCADE.TTF
-  C:\Users\Jamie\source\repos\SDL_Tutorial\SDL_Tutorial\..\Assets\GalagaSpriteSheet.png
-  C:\Users\Jamie\source\repos\SDL_Tutorial\SDL_Tutorial\..\Assets\SFX\coin_credit.wav
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\ARCADE.TTF
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\GalagaSpriteSheet.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SFX\coin_credit.wav
   3 File(s) copied
