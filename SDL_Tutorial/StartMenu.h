@@ -7,7 +7,7 @@ using namespace SDLFramework;
 class StartMenu :public GameEntity {
 private:
 	GameEntity* m_pTopBar;
-	Texture* m_pHiScore;
+	Texture* m_pHighScore;
 
 public:
 	StartMenu();
