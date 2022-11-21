@@ -3,9 +3,10 @@
 #include "Graphics.h"
 #include "Timer.h"
 #include "GameEntity.h"
-#include "AnimatedTextures.h"
+#include "AnimatedTexture.h"
 #include "InputManager.h"
 #include "AudioManager.h"
+#include "ScreenManager.h"
 
 namespace SDLFramework {
 	class GameManager
@@ -24,9 +25,9 @@ namespace SDLFramework {
 		GameEntity* mParent;
 		GameEntity* mChild;
 		InputManager* m_pInputManager;
-		Texture* mTextTwo;
-		Texture* m_pFontTex;
+		/*Texture* m_pFontTex;*/
 		AudioManager* m_pAudioManager;
+		ScreenManager* m_pScreenManager;
 
 	public:
 		static GameManager* Instance();
@@ -41,4 +42,6 @@ namespace SDLFramework {
 		~GameManager();
 	};
 }
-#endif 
+#endif
+
+

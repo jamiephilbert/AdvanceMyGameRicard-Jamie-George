@@ -1,10 +1,9 @@
 #include "AssetManager.h"
 
 namespace SDLFramework {
-
-	//----------------------------------------------------
+	//________________________Singleton_______________________________________________//
 	AssetManager* AssetManager::sInstance = nullptr;
-	//---------------Singleton--------------------------
+	//________________________Singleton_______________________________________________//
 	AssetManager* AssetManager::Instance() {
 		if (sInstance == nullptr) {
 			sInstance = new AssetManager();
@@ -12,15 +11,14 @@ namespace SDLFramework {
 
 		return sInstance;
 	}
+	//________________________________________________________________________________//
 
- //----------------------------------------------------
 	void AssetManager::Release() {
 		delete sInstance;
 		sInstance = nullptr;
 	}
 
-
-	AssetManager::AssetManager(){}
+	AssetManager::AssetManager() {}
 
 	AssetManager::~AssetManager() {
 		for (auto tex : mTextures) {
@@ -43,23 +41,21 @@ namespace SDLFramework {
 			mTextureRefCount[mTextures[fullPath]] += 1;
 		}
 
-
 		return mTextures[fullPath];
 	}
 
 	TTF_Font* AssetManager::GetFont(std::string filename, int size) {
-		std::string fullpath = SDL_GetBasePath();
-		fullpath.append("Assets/" + filename);
+		std::string fullPath = SDL_GetBasePath();
+		fullPath.append("Assets/" + filename);
 
 		std::stringstream ss;
 		ss << size;
-		std::string key = fullpath + ss.str();
+		std::string key = fullPath + ss.str();
 
 		if (mFonts[key] == nullptr) {
-			mFonts[key] = TTF_OpenFont(fullpath.c_str(), size);
+			mFonts[key] = TTF_OpenFont(fullPath.c_str(), size);
 			if (mFonts[key] == nullptr) {
 				std::cerr << "Unable to load font " << filename << "! TTF Font: " << TTF_GetError() << std::endl;
-
 			}
 		}
 		return mFonts[key];
@@ -78,6 +74,7 @@ namespace SDLFramework {
 		if (mText[key] != nullptr && managed) {
 			mTextureRefCount[mText[key]] += 1;
 		}
+
 		return mText[key];
 	}
 
@@ -88,13 +85,14 @@ namespace SDLFramework {
 		if (mMusic[fullPath] == nullptr) {
 			mMusic[fullPath] = Mix_LoadMUS(fullPath.c_str());
 		}
+
 		if (mMusic[fullPath] == nullptr) {
-			std::cerr << "Unable to load font " << filename << "! Music Font: " << Mix_GetError() << std::endl;
+			std::cerr << "Unable to load music " << filename << "! Mix error: " << Mix_GetError() << std::endl;
 		}
-		else if (managed)
-		{
+		else if (managed) {
 			mMusicRefCount[mMusic[fullPath]] += 1;
 		}
+
 		return mMusic[fullPath];
 	}
 
@@ -107,18 +105,17 @@ namespace SDLFramework {
 		}
 
 		if (mSFX[fullPath] == nullptr) {
-			std::cerr << "Unable to load SFX " << filename << "! Mix error;" << Mix_GetError() << std::endl;
+			std::cerr << "Unable to load SFX " << filename << "! Mix error: " << Mix_GetError() << std::endl;
 		}
-		else if (managed)
-		{
-			mMusicRefCount[mMusic[fullPath]] += 1;
+		else if (managed) {
+			mSFXRefCount[mSFX[fullPath]] += 1;
 		}
+
 		return mSFX[fullPath];
 	}
 
 	void AssetManager::DestroyTexture(SDL_Texture* texture) {
 		if (mTextureRefCount.find(texture) != mTextureRefCount.end()) {
-			mTextureRefCount[texture] -= 1;
 			if (mTextureRefCount[texture] == 0) {
 				for (auto elem : mTextures) {
 					if (elem.second == texture) {
@@ -167,4 +164,3 @@ namespace SDLFramework {
 		}
 	}
 }
-

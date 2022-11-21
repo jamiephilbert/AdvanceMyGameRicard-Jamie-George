@@ -10,7 +10,6 @@ namespace SDLFramework {
 		return sInstance;
 	}
 
-
 	void InputManager::Release() {
 		delete sInstance;
 		sInstance = nullptr;
@@ -35,7 +34,7 @@ namespace SDLFramework {
 		case Left:
 			mask = SDL_BUTTON_LMASK;
 			break;
-
+		
 		case Right:
 			mask = SDL_BUTTON_RMASK;
 			break;
@@ -44,14 +43,13 @@ namespace SDLFramework {
 			mask = SDL_BUTTON_MMASK;
 			break;
 
-		case Back: 
+		case Back:
 			mask = SDL_BUTTON_X1MASK;
 			break;
 
 		case Forward:
 			mask = SDL_BUTTON_X2MASK;
 			break;
-
 		}
 		return (mMouseState & mask) != 0;
 	}
@@ -79,7 +77,6 @@ namespace SDLFramework {
 		case Forward:
 			mask = SDL_BUTTON_X2MASK;
 			break;
-
 		}
 		return !(mPrevMouseState & mask) && (mMouseState & mask);
 	}
@@ -107,7 +104,6 @@ namespace SDLFramework {
 		case Forward:
 			mask = SDL_BUTTON_X2MASK;
 			break;
-
 		}
 		return (mPrevMouseState & mask) && !(mMouseState & mask);
 	}
@@ -117,7 +113,7 @@ namespace SDLFramework {
 	}
 
 	void InputManager::Update() {
-		mMouseState = SDL_GetMouseState(&mMouseXPosition, &mMouseYPosition);
+		mMouseState = SDL_GetMouseState(&mMouseYPosition, &mMouseYPosition);
 	}
 
 	void InputManager::UpdatePrevInput() {

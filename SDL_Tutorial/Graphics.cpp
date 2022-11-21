@@ -41,7 +41,7 @@ namespace SDLFramework {
 
 	bool Graphics::Init() {
 		if (SDL_InitSubSystem(SDL_INIT_VIDEO) < 0) {
-			std::cerr << "Unable to initialize SDL! SDL Error: " << SDL_GetError() << std::endl;
+			std::cerr << "Unable to initialize SDL Error: " << SDL_GetError() << std::endl;
 			return false;
 		}
 
@@ -89,8 +89,7 @@ namespace SDLFramework {
 		return tex;
 	}
 
-	void Graphics::DrawTexture(SDL_Texture* tex, SDL_Rect* srcRect, SDL_Rect* dstRect,
-		float angle, SDL_RendererFlip flip) {
+	void Graphics::DrawTexture(SDL_Texture* tex, SDL_Rect* srcRect, SDL_Rect* dstRect, float angle, SDL_RendererFlip flip) {
 
 		SDL_RenderCopyEx(m_pRenderer, tex, srcRect, dstRect, angle, nullptr, flip);
 	}

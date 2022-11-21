@@ -17,7 +17,7 @@ namespace SDLFramework {
 
 	private:
 		std::map<std::string, SDL_Texture*> mTextures;
-		std::map<SDL_Texture*, unsigned> mTextureRefCount; 
+		std::map<SDL_Texture*, unsigned> mTextureRefCount;
 
 		std::map<std::string, TTF_Font*> mFonts;
 		std::map<std::string, SDL_Texture*> mText;
@@ -35,7 +35,7 @@ namespace SDLFramework {
 
 	public:
 		SDL_Texture* GetTexture(std::string filename, bool managed = false);
-		SDL_Texture* GetText(std::string text, std::string filename, int size, SDL_Color, bool managed = false);
+		SDL_Texture* GetText(std::string text, std::string filename, int size, SDL_Color color, bool managed = false);
 		Mix_Music* GetMusic(std::string filename, bool managed = false);
 		Mix_Chunk* GetSFX(std::string filename, bool managed = false);
 
@@ -44,5 +44,6 @@ namespace SDLFramework {
 		void DestroyTexture(SDL_Texture* texture);
 
 	};
+
 }
 #endif // !_ASSETMANAGER_H

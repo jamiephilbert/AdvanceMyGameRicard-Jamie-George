@@ -18,15 +18,16 @@ namespace SDLFramework {
 		SDL_Rect mDestinationRect;
 
 	public:
-		Texture(std::string filename, bool managed = false); // full image
-		Texture(std::string filename, int x, int y, int w, int h, bool managed = false); // sliced image no animation
-		Texture(std::string text, std::string fontPath, int size, SDL_Color color, bool managed = false); //fonts
+		Texture(std::string filename, bool managed = false);	// <--------Full image
+		Texture(std::string filename, int x, int y, int w, int h, bool managed = false); // <--Sliced image(no animation)
+		Texture(std::string text, std::string fontPath, int size, SDL_Color color, bool managed = false);	// <----Fonts
 		~Texture();
 
-		Vector2 ScaledDimentions();
+		Vector2 ScaledDimenstion();
 		void SetSourceRect(SDL_Rect* sourceRect);
 		void Render();
-
 	};
+
 }
 #endif // !_TEXTURE_H
+

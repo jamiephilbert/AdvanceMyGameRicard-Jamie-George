@@ -24,7 +24,7 @@ namespace SDLFramework {
 		Mix_PlayMusic(music, loops);
 	}
 
-		void AudioManager::PauseMusic() {
+	void AudioManager::PauseMusic() {
 		if (Mix_PlayingMusic() != 0) {
 			Mix_PauseMusic();
 		}
@@ -46,6 +46,7 @@ namespace SDLFramework {
 
 	AudioManager::AudioManager() {
 		m_pAssetManager = AssetManager::Instance();
+
 		if (SDL_InitSubSystem(SDL_INIT_AUDIO) < 0) {
 			std::cerr << "Unable to initialize SDL audio! SDL Error: " << SDL_GetError() << std::endl;
 			return;

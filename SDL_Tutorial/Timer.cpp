@@ -23,6 +23,7 @@ namespace SDLFramework {
 	float Timer::DeltaTime() {
 		return mDeltaTime;
 	}
+
 	void Timer::TimeScale(float timeScale) {
 		mTimeScale = timeScale;
 	}
@@ -33,7 +34,7 @@ namespace SDLFramework {
 
 	void Timer::Update() {
 		mElapsedTicks = SDL_GetTicks() - mStartTicks;
-		mDeltaTime = mElapsedTicks * 0.001f;
+		mDeltaTime = mElapsedTicks * 0.001f;		// converts from milliseconds to seconds
 	}
 
 	Timer::Timer() {
@@ -43,5 +44,5 @@ namespace SDLFramework {
 		mTimeScale = 0;
 	}
 
-	Timer::~Timer(){}
+	Timer::~Timer() {}
 }

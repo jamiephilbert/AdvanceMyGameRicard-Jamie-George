@@ -9,7 +9,7 @@ namespace SDLFramework {
 	struct Vector2 {
 		float x;
 		float y;
-		
+
 		Vector2(float _x = 0.0f, float _y = 0.0f) : x{ _x }, y{ _y } {}
 
 		float MagnitudeSqr() {
@@ -47,20 +47,20 @@ namespace SDLFramework {
 	const Vector2 Vec2_Up = { 0.0f, 1.0f };
 	const Vector2 Vec2_Right = { 1.0f, 0.0f };
 	
-	inline Vector2 operator+(const Vector2& lhs, const Vector2& rhs) {
-		return Vector2(lhs.x + rhs.x, lhs.y + rhs.y);
+	inline Vector2 operator+(const Vector2& leftHandSide, const Vector2& rightHandSide) {
+		return Vector2(leftHandSide.x + rightHandSide.x, leftHandSide.y + rightHandSide.y);
 	}
 
-	inline Vector2 operator-(const Vector2& lhs, const Vector2& rhs) {
-		return Vector2(lhs.x - rhs.x, lhs.y - rhs.y);
+	inline Vector2 operator-(const Vector2& leftHandSide, const Vector2& rightHandSide) {
+		return Vector2(leftHandSide.x + rightHandSide.x, leftHandSide.y + rightHandSide.y);
 	}
 
-	inline Vector2 operator*(const Vector2& lhs, float rhs) {
-		return Vector2(lhs.x * rhs, lhs.y * rhs);
+	inline Vector2 operator*(const Vector2& leftHandSide, float rightHandSide) {
+		return Vector2(leftHandSide.x * rightHandSide, leftHandSide.y * rightHandSide);
 	}
 
-	inline Vector2 operator*(float lhs, const Vector2& rhs) {
-		return Vector2(lhs * rhs.x, lhs * rhs.y);
+	inline Vector2 operator*(float leftHandSide, const Vector2& rightHandSide) {
+		return Vector2(leftHandSide * rightHandSide.x, leftHandSide * rightHandSide.y);
 	}
 
 	inline Vector2 Lerp(const Vector2& start, const Vector2& end, float time) {
@@ -91,7 +91,7 @@ namespace SDLFramework {
 		return vec1.x * vec2.x + vec1.y * vec2.y;
 	}
 
-	inline float clame(const float& value, const float& min, const float& max) {
+	inline float Clamp(const float& value, const float& min, const float& max) {
 		if (value > max) {
 			return max;
 		}
@@ -101,8 +101,7 @@ namespace SDLFramework {
 		}
 		return value;
 	}
+
+
 }
-
-
-
-#endif // !_MATHHELPER_H
+#endif // !_MATHFINDER_H

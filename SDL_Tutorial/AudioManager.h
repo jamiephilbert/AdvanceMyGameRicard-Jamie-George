@@ -26,4 +26,5 @@ namespace SDLFramework {
 		void PlaySFX(Mix_Chunk* sfx, int loops = 0, int channel = -1);
 	};
 }
-#endif
+
+#endif // !_AUDIOMANAGER_H

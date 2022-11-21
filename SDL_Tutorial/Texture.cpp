@@ -2,7 +2,7 @@
 
 namespace SDLFramework {
 	Texture::Texture(std::string filename, bool managed) {
-		m_pGraphics = Graphics::Instance(); // <- using the graphics singleton to grab the Graphics object 
+		m_pGraphics = Graphics::Instance(); // <- using the Graphics singleton to grab the Graphics object
 
 		m_pTex = AssetManager::Instance()->GetTexture(filename, managed);
 		SDL_QueryTexture(m_pTex, nullptr, nullptr, &mWidth, &mHeight);
@@ -46,14 +46,14 @@ namespace SDLFramework {
 		m_pGraphics = nullptr;
 	}
 
-	Vector2 Texture::ScaledDimentions() {
+	Vector2 Texture::ScaledDimenstion() {
 		Vector2 scaledDimensions = Scale();
-		scaledDimensions.x *= mWidth;
+		scaledDimensions.x* mWidth;
 		scaledDimensions.y *= mHeight;
 
 		return scaledDimensions;
 	}
-	
+
 	void Texture::SetSourceRect(SDL_Rect* sourceRect) {
 		mSourceRect = *sourceRect;
 	}
@@ -66,10 +66,6 @@ namespace SDLFramework {
 		mDestinationRect.w = (int)(mWidth * scale.x);
 		mDestinationRect.h = (int)(mHeight * scale.y);
 
-		m_pGraphics->DrawTexture(m_pTex, mClipped ? &mSourceRect : nullptr, &mDestinationRect,
-								Rotation(World));		// ? needs a if statement. if true the first statement will go
-														//	if false, the second statement will go . exp...
-														// if statement  ? Statement 1 : statement 2
+		m_pGraphics->DrawTexture(m_pTex, mClipped ? &mSourceRect : nullptr, &mDestinationRect, Rotation(World));
 	}
 }
-

@@ -6,13 +6,12 @@
 #include <SDL_image.h>
 #include <SDL_ttf.h>
 
-namespace SDLFramework 
-{
+namespace SDLFramework {
 	class Graphics
 	{
 	public:
-		static const short SCREEN_WIDTH = 800;
-		static const short SCREEN_HEIGHT = 600;
+		static const short SCREEN_WIDTH = 1920;
+		static const short SCREEN_HEIGHT = 1020;
 
 	private:
 		static Graphics* sInstance;
@@ -27,18 +26,17 @@ namespace SDLFramework
 
 		void ClearBackBuffer();
 		void Render();
-		SDL_Texture* LoadTexture(std::string path); //Loading in texture
-		void DrawTexture(SDL_Texture* tex, SDL_Rect* srcRect = nullptr, SDL_Rect* dsRect = nullptr,
-			float angle = 0.0f, SDL_RendererFlip flip = SDL_FLIP_NONE);
+		SDL_Texture* LoadTexture(std::string path);
+		void DrawTexture(SDL_Texture* tex, SDL_Rect* srcRect = nullptr, SDL_Rect* dstRect = nullptr, float angle = 0.0f, SDL_RendererFlip flip = SDL_FLIP_NONE);
 
 		SDL_Texture* CreateTextTexture(TTF_Font* font, std::string text, SDL_Color color);
 
+	private:
 		Graphics();
 		~Graphics();
 
 		bool Init();
 	};
-
 }
-
 #endif
+

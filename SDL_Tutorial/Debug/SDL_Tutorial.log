@@ -1,4 +1,42 @@
-﻿  SDL_Tutorial.vcxproj -> C:\Users\Jamie\Source\Repos\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
+﻿  AnimatedTexture.cpp
+  AssetManager.cpp
+  AsteroidRock.cpp
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(31,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(31,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(32,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(33,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(38,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(38,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(39,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(40,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(45,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(45,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(46,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(47,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(52,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(52,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(53,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(54,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(75,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(75,20): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  AudioManager.cpp
+  GameEntity.cpp
+  GameManager.cpp
+  Graphics.cpp
+  HighScoreScreen.cpp
+  InputManager.cpp
+  Main.cpp
+  PlayMenuBar.cpp
+  PlayScreen.cpp
+  Random.cpp
+  Scoreboard.cpp
+  ScreenManager.cpp
+  StartMenu.cpp
+  Texture.cpp
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Texture.cpp(51,21): warning C4552: '*': result of expression not used
+  Timer.cpp
+  Generating Code...
+  SDL_Tutorial.vcxproj -> C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libjpeg-9.dll
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libmodplug-1.dll
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libogg-0.dll
@@ -14,6 +52,36 @@
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\zlib1.dll
          13 file(s) copied.
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\ARCADE.TTF
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Asteroids.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\AsteroidsLogo.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\AsteroidsSpriteSheet.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Cursor.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\emulogic.ttf
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\GalagaSpriteSheet.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\GreatVibes-Regular.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\HighScore1.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\High_Score_logo.jpg
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\namco__.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\no.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\ostrich-regular.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Pacifico.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Black.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-BlackItalic.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Bold.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-BoldItalic.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraBold.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraBoldItalic.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraLight.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraLightItalic.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Italic.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Light.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-LightItalic.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Medium.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-MediumItalic.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Regular.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-SemiBold.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-SemiBoldItalic.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Thin.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ThinItalic.ttf
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SFX\coin_credit.wav
-  3 File(s) copied
+  33 File(s) copied

@@ -2,7 +2,6 @@
 #define _TIMER_H
 #include <SDL.h>
 
-
 namespace SDLFramework {
 	class Timer
 	{
@@ -19,15 +18,14 @@ namespace SDLFramework {
 
 		void Reset();
 		float DeltaTime();
-		void TimeScale(float timescale);
+		void TimeScale(float timeScale);
 		float TimeScale();
+
 		void Update();
 
 	private:
 		Timer();
 		~Timer();
-
 	};
-
 }
 #endif
