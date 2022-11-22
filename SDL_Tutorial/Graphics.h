@@ -11,7 +11,7 @@ namespace SDLFramework {
 	{
 	public:
 		static const short SCREEN_WIDTH = 1920;
-		static const short SCREEN_HEIGHT = 1070;
+		static const short SCREEN_HEIGHT = 1020;
 
 	private:
 		static Graphics* sInstance;

@@ -17,11 +17,7 @@ public:
 private:
 	Timer* m_pTimer;
 	InputManager* m_pInputManager;
-
-	/*GameEntity* m_pTopBar;
-	Texture* m_pPlayer;
-	Texture* m_pHighScore;*/
-	//Scoreboard* m_pPlayerScore;
+;
 	//Scoreboard* m_pTopScore;
 
 	// Play Mode Entities

@@ -18,6 +18,8 @@ void AsteroidRock::CheckScreenBounds()
 
 AsteroidRock::AsteroidRock() :Texture("Asteroid.png",0,0,80,70)
 {
+	randVelocityX = 0;
+	randVelocityY = 0;
 	m_pRandom = Random::Instance();
 	int randomStartPosition = m_pRandom->RandomRange(0, 3);
 	//int randomStartPosition = 3;
@@ -56,13 +58,6 @@ AsteroidRock::AsteroidRock() :Texture("Asteroid.png",0,0,80,70)
 	default:
 		break;
 	}
-
-	/*int rx = m_pRandom->RandomRange(Graphics::SCREEN_HEIGHT+200, Graphics::SCREEN_WIDTH+200);
-	int ry = m_pRandom->RandomRange(Graphics::SCREEN_HEIGHT-200, Graphics::SCREEN_WIDTH-200);*/
-	/*Position(Vector2((float)(rx, ry)));*/
-
-	/*randVelocityX = m_pRandom->RandomRange(1, 5);
-	randVelocityY = m_pRandom->RandomRange(1, 5);*/
 }
 
 AsteroidRock::~AsteroidRock()

@@ -11,6 +11,7 @@ private:
 	Texture* m_pScoreLabel;
 	Texture* m_pYourLabel;
 	Texture* m_pLivesLabel;
+
 	Texture* m_pShipLives;
 	Texture* m_pShipLives2;
 	Texture* m_pShipLives3;

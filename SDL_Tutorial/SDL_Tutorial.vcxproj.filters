@@ -19,6 +19,18 @@
     <Filter Include="Header Files\Entities">
       <UniqueIdentifier>{3161a007-89fc-42ae-9f1c-3d720faaf5bc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Managers">
+      <UniqueIdentifier>{4d13d2d7-7f26-424e-940f-4f91c8603da1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers">
+      <UniqueIdentifier>{b0f123d3-4851-4ec1-a9a5-e85c65d32f06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Screens">
+      <UniqueIdentifier>{43442ec3-fc88-4c90-ab2d-4e04a06802b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Screens">
+      <UniqueIdentifier>{c13c71e6-27ed-4b4f-bdbc-ac33fd0feeac}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -27,43 +39,22 @@
     <ClCompile Include="Graphics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GameManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Timer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GameEntity.cpp">
       <Filter>Source Files\Entities</Filter>
     </ClCompile>
-    <ClCompile Include="AssetManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Texture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="InputManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="AnimatedTexture.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AudioManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="StartMenu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="AsteroidRock.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Random.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ScreenManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayScreen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="PlayGameBar.cpp">
@@ -75,15 +66,33 @@
     <ClCompile Include="SmallAsteroidRock.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AssetManager.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioManager.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenManager.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayScreen.cpp">
+      <Filter>Source Files\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="StartMenu.cpp">
+      <Filter>Source Files\Screens</Filter>
+    </ClCompile>
     <ClCompile Include="HighScoreScreen.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Screens</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graphics.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GameManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Timer.h">
@@ -95,34 +104,16 @@
     <ClInclude Include="GameEntity.h">
       <Filter>Header Files\Entities</Filter>
     </ClInclude>
-    <ClInclude Include="AssetManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Texture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="InputManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="AnimatedTexture.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AudioManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="StartMenu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AsteroidRock.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Random.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ScreenManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PlayScreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PlayGameBar.h">
@@ -134,8 +125,29 @@
     <ClInclude Include="SmallAsteroidRock.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayScreen.h">
+      <Filter>Header Files\Screens</Filter>
+    </ClInclude>
     <ClInclude Include="HighScoreScreen.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="StartMenu.h">
+      <Filter>Header Files\Screens</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

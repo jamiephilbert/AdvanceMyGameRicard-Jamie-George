@@ -119,12 +119,15 @@ void HighScoreScreen::Render()
 	m_pTopScore->Render();
 	m_pSecondScore->Render();
 	m_pThirdScore->Render();
+
 	m_pTopScoreName->Render();
 	m_pSecondScoreName->Render();
 	m_pThirdScoreName->Render();
+
 	m_pTopScorePos->Render();
 	m_pSecondScorePos->Render();
 	m_pThirdScorePos->Render();
+
 	m_pNameTitle->Render();
 	m_pPosTitle->Render();
 	m_pScoreTitle->Render();
