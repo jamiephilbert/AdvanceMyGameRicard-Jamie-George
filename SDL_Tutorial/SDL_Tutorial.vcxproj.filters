@@ -66,13 +66,25 @@
     <ClCompile Include="PlayScreen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PlayMenuBar.cpp">
+    <ClCompile Include="PlayGameBar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Scoreboard.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SmallAsteroidRock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="HighScoreScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SmallAsteroidRockB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SmallAsteroidRockC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SmallAsteroidRockD.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -122,13 +134,25 @@
     <ClInclude Include="PlayScreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PlayMenuBar.h">
+    <ClInclude Include="PlayGameBar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Scoreboard.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SmallAsteroidRock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="HighScoreScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SmallAsteroidRockB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SmallAsteroidRockC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SmallAsteroidRockD.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

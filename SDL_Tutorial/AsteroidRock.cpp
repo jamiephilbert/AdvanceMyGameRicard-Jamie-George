@@ -16,7 +16,7 @@ void AsteroidRock::CheckScreenBounds()
 	}
 }
 
-AsteroidRock::AsteroidRock() :Texture("Asteroids.png",0,0,80,70)
+AsteroidRock::AsteroidRock() :Texture("Asteroid.png",0,0,80,70)
 {
 	m_pRandom = Random::Instance();
 	int randomStartPosition = m_pRandom->RandomRange(0, 3);

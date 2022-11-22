@@ -89,8 +89,9 @@ namespace SDLFramework {
 		return tex;
 	}
 
-	void Graphics::DrawTexture(SDL_Texture* tex, SDL_Rect* srcRect, SDL_Rect* dstRect, float angle, SDL_RendererFlip flip) {
+	void Graphics::DrawTexture(SDL_Texture* tex, SDL_Rect* rend, SDL_Rect* srcRect, SDL_Rect* dstRect, float angle, SDL_RendererFlip flip) {
 
+		SDL_RenderCopy(m_pRenderer, tex, nullptr, rend);
 		SDL_RenderCopyEx(m_pRenderer, tex, srcRect, dstRect, angle, nullptr, flip);
 	}
 

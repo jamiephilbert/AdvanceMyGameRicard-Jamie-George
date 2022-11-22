@@ -11,7 +11,7 @@ namespace SDLFramework {
 	{
 	public:
 		static const short SCREEN_WIDTH = 1920;
-		static const short SCREEN_HEIGHT = 1020;
+		static const short SCREEN_HEIGHT = 1070;
 
 	private:
 		static Graphics* sInstance;
@@ -27,7 +27,8 @@ namespace SDLFramework {
 		void ClearBackBuffer();
 		void Render();
 		SDL_Texture* LoadTexture(std::string path);
-		void DrawTexture(SDL_Texture* tex, SDL_Rect* srcRect = nullptr, SDL_Rect* dstRect = nullptr, float angle = 0.0f, SDL_RendererFlip flip = SDL_FLIP_NONE);
+		//void DrawTexture(SDL_Texture tet, SDL_Rect* rend = nullptr);
+		void DrawTexture(SDL_Texture* tex, SDL_Rect* rend = nullptr , SDL_Rect* srcRect = nullptr, SDL_Rect* dstRect = nullptr, float angle = 0.0f, SDL_RendererFlip flip = SDL_FLIP_NONE);
 
 		SDL_Texture* CreateTextTexture(TTF_Font* font, std::string text, SDL_Color color);
 

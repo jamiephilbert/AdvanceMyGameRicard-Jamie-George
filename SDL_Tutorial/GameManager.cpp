@@ -108,6 +108,8 @@ namespace SDLFramework {
 		m_pAudioManager = AudioManager::Instance();
 		m_pScreenManager = ScreenManager::Instance();
 
+		//m_pTex = new Texture("AsteroidsSpriteSheet.png");
+		//m_pTex->Position(Vector2(Graphics::SCREEN_WIDTH * 0.5, Graphics::SCREEN_HEIGHT * 0.5));
 	}
 
 	GameManager::~GameManager() {

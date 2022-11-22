@@ -44,7 +44,6 @@ ScreenManager::~ScreenManager()
 
 void ScreenManager::Update()
 {
-   
 
     switch (mCurrentScreen) {
     case Start:
@@ -64,10 +63,10 @@ void ScreenManager::Update()
         }
 
         if (m_pInput->KeyPressed(SDL_SCANCODE_RETURN) && ScreenChoice == 0) {
-        
-                mCurrentScreen = Play; 
+
+            mCurrentScreen = Play;
         }
-        
+
         if (m_pInput->KeyPressed(SDL_SCANCODE_RETURN) && ScreenChoice == 1) {
 
             mCurrentScreen = High;

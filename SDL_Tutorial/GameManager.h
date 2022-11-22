@@ -20,6 +20,7 @@ namespace SDLFramework {
 		Graphics* m_pGraphics;
 		AssetManager* m_pAssetManager;
 		Texture* m_pTexture;
+		//Texture* m_pTex;
 		SDL_Event mEvent;
 		Timer* m_pTimer;
 		GameEntity* mParent;

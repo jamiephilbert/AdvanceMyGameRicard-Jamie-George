@@ -14,6 +14,7 @@ private:
 	int randVelocityY;
 
 	void CheckScreenBounds();
+
 public:
 	AsteroidRock();
 	~AsteroidRock();

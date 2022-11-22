@@ -6,7 +6,12 @@
 namespace SDLFramework {
 	class Texture : public GameEntity
 	{
+	private:
+
+		
+
 	protected:
+		SDL_Rect m_pRenderRect;
 		SDL_Texture* m_pTex;
 		Graphics* m_pGraphics;
 
@@ -18,6 +23,7 @@ namespace SDLFramework {
 		SDL_Rect mDestinationRect;
 
 	public:
+		Texture(std::string filename);
 		Texture(std::string filename, bool managed = false);	// <--------Full image
 		Texture(std::string filename, int x, int y, int w, int h, bool managed = false); // <--Sliced image(no animation)
 		Texture(std::string text, std::string fontPath, int size, SDL_Color color, bool managed = false);	// <----Fonts
@@ -30,4 +36,3 @@ namespace SDLFramework {
 
 }
 #endif // !_TEXTURE_H
-

@@ -76,12 +76,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Jamie\Downloads\SDL2-2.24.2\include;C:\Users\Jamie\Downloads\SDL2_image-2.0.4\include;C:\Users\Jamie\Downloads\SDL2_mixer-devel-2.6.2-VC\SDL2_mixer-2.6.2\include;C:\Users\Jamie\Downloads\SDL2_ttf-devel-2.20.1-VC\SDL2_ttf-2.20.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\georg\Downloads\SDL2_image-devel-2.0.4-VC\SDL2_image-2.0.4\include;C:\Users\georg\Downloads\SDL2-devel-2.24.2-VC\SDL2-2.24.2\include;D:\School\SDL2_ttf-2.20.1\include;D:\School\SDL2_mixer-2.6.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\Jamie\Downloads\SDL2-2.24.2\lib\x86;C:\Users\Jamie\Downloads\SDL2_mixer-devel-2.6.2-VC\SDL2_mixer-2.6.2\lib\x86;C:\Users\Jamie\Downloads\SDL2_image-2.0.4\lib\x86;C:\Users\Jamie\Downloads\SDL2_ttf-devel-2.20.1-VC\SDL2_ttf-2.20.1\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\georg\Downloads\SDL2_image-devel-2.0.4-VC\SDL2_image-2.0.4\lib\x86;C:\Users\georg\Downloads\SDL2-devel-2.24.2-VC\SDL2-2.24.2\lib\x86;D:\School\SDL2_ttf-2.20.1\lib\x86;D:\School\SDL2_mixer-2.6.2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
@@ -97,14 +97,14 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Jamie\Downloads\SDL2-2.24.2\include;C:\Users\Jamie\Downloads\SDL2_image-2.0.4\include;C:\Users\Jamie\Downloads\SDL2_mixer-devel-2.6.2-VC\SDL2_mixer-2.6.2\include;C:\Users\Jamie\Downloads\SDL2_ttf-devel-2.20.1-VC\SDL2_ttf-2.20.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\georg\Downloads\SDL2_image-devel-2.0.4-VC\SDL2_image-2.0.4\include;C:\Users\georg\Downloads\SDL2-devel-2.24.2-VC\SDL2-2.24.2\include;D:\School\SDL2_ttf-2.20.1\include;D:\School\SDL2_mixer-2.6.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\Jamie\Downloads\SDL2-2.24.2\lib\x86;C:\Users\Jamie\Downloads\SDL2_mixer-devel-2.6.2-VC\SDL2_mixer-2.6.2\lib\x86;C:\Users\Jamie\Downloads\SDL2_image-2.0.4\lib\x86;C:\Users\Jamie\Downloads\SDL2_ttf-devel-2.20.1-VC\SDL2_ttf-2.20.1\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\georg\Downloads\SDL2_image-devel-2.0.4-VC\SDL2_image-2.0.4\lib\x86;C:\Users\georg\Downloads\SDL2-devel-2.24.2-VC\SDL2-2.24.2\lib\x86;D:\School\SDL2_ttf-2.20.1\lib\x86;D:\School\SDL2_mixer-2.6.2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
@@ -151,11 +151,15 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
     <ClCompile Include="HighScoreScreen.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="PlayMenuBar.cpp" />
+    <ClCompile Include="PlayGameBar.cpp" />
     <ClCompile Include="PlayScreen.cpp" />
     <ClCompile Include="Random.cpp" />
     <ClCompile Include="Scoreboard.cpp" />
     <ClCompile Include="ScreenManager.cpp" />
+    <ClCompile Include="SmallAsteroidRock.cpp" />
+    <ClCompile Include="SmallAsteroidRockB.cpp" />
+    <ClCompile Include="SmallAsteroidRockC.cpp" />
+    <ClCompile Include="SmallAsteroidRockD.cpp" />
     <ClCompile Include="StartMenu.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="Timer.cpp" />
@@ -171,11 +175,15 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
     <ClInclude Include="HighScoreScreen.h" />
     <ClInclude Include="InputManager.h" />
     <ClInclude Include="MathHelper.h" />
-    <ClInclude Include="PlayMenuBar.h" />
+    <ClInclude Include="PlayGameBar.h" />
     <ClInclude Include="PlayScreen.h" />
     <ClInclude Include="Random.h" />
     <ClInclude Include="Scoreboard.h" />
     <ClInclude Include="ScreenManager.h" />
+    <ClInclude Include="SmallAsteroidRock.h" />
+    <ClInclude Include="SmallAsteroidRockB.h" />
+    <ClInclude Include="SmallAsteroidRockC.h" />
+    <ClInclude Include="SmallAsteroidRockD.h" />
     <ClInclude Include="StartMenu.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="Timer.h" />

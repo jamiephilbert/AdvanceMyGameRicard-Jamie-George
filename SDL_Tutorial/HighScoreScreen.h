@@ -34,4 +34,4 @@ public:
 	void Render() override;
 };
 
-#endif
+#endif // !_HIGHSCORESCREEN_H
