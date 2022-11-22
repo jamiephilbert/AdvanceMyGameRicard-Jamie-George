@@ -8,16 +8,15 @@ class PlayGameBar : public GameEntity
 {
 private:
 	Texture* m_pHighLabel;
-	Texture* m_pScoreLabel;
 	Texture* m_pYourLabel;
 	Texture* m_pLivesLabel;
+
 	Texture* m_pShipLives;
 	Texture* m_pShipLives2;
 	Texture* m_pShipLives3;
 
 	Scoreboard* m_pHighScoreBoard;
 	Scoreboard* m_pPlayerBoard;
-	Scoreboard* m_pLivesBoard;
 
 	
 

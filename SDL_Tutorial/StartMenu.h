@@ -5,9 +5,6 @@
 #include "AnimatedTexture.h"
 #include "AsteroidRock.h"
 #include "SmallAsteroidRock.h"
-#include "SmallAsteroidRockB.h"
-#include "SmallAsteroidRockC.h"
-#include "SmallAsteroidRockD.h"
 #include "MiniAsteroidRockA.h"
 
 using namespace SDLFramework;
@@ -15,14 +12,7 @@ using namespace SDLFramework;
 class StartMenu : public GameEntity {
 public:
 	const static int MAX_ASTEROIDS = 10;
-	const static int MAX_SMALLASTEROIDS1 = 10;
-	const static int MAX_SMALLASTEROIDS2 = 10;
-	const static int MAX_SMALLASTEROIDS3 = 10;
-	const static int MAX_SMALLASTEROIDS4 = 10;
-	const static int MAX_MINIASTEROIDS1 = 10;
-	const static int MAX_MINIASTEROIDS2 = 10;
-	const static int MAX_MINIASTEROIDS3 = 10;
-	const static int MAX_MINIASTEROIDS4 = 10;
+	const static int MAX_SMALLASTEROIDS = 10;
 
 private:
 	Timer* m_pTimer;
@@ -52,19 +42,9 @@ private:
 	// Logo Entities
 	Texture* m_pLogo;
 
-	// screen animation variables
-	Vector2 mAnimationStartPos;
-	Vector2 mAnimationEndPos;
-	float mAnimationTotalTime;
-	float mAnimationTimer;
-	bool mAnimationDone;
-
+	//Background images
 	AsteroidRock* m_pRocks[MAX_ASTEROIDS];
-	SmallAsteroidRock* m_pSmallRocks1[MAX_SMALLASTEROIDS1];
-	SmallAsteroidRockB* m_pSmallRocks2[MAX_SMALLASTEROIDS2];
-	SmallAsteroidRockC* m_pSmallRocks3[MAX_SMALLASTEROIDS3];
-	SmallAsteroidRockD* m_pSmallRocks4[MAX_SMALLASTEROIDS4];
-	MiniAsteroidRockA* m_pMiniRocks1[MAX_MINIASTEROIDS1];
+	SmallAsteroidRock* m_pSmallRocks1[MAX_SMALLASTEROIDS];
 
 public:
 	StartMenu();

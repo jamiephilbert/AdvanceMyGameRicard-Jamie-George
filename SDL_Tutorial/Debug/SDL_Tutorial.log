@@ -1,92 +1,77 @@
-﻿  SmallAsteroidRock.cpp
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(33,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(33,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(34,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(35,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(40,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(40,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(41,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(42,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(47,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(47,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(48,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(49,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(54,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(54,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(55,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(56,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(70,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(70,20): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+﻿  GameManager.cpp
+  Main.cpp
+  PlayGameBar.cpp
+  ScreenManager.cpp
   StartMenu.cpp
   Generating Code...
-  SDL_Tutorial.vcxproj -> D:\School\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libjpeg-9.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libmodplug-1.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libogg-0.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libopus-0.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libopusfile-0.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libpng16-16.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libtiff-5.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libwebp-7.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2_image.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2_mixer.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2_ttf.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\zlib1.dll
+  SDL_Tutorial.vcxproj -> C:\Users\Jamie\Source\Repos\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libjpeg-9.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libmodplug-1.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libogg-0.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libopus-0.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libopusfile-0.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libpng16-16.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libtiff-5.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libwebp-7.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2_image.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2_mixer.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2_ttf.dll
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\zlib1.dll
          13 file(s) copied.
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\ARCADE.TTF
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Arcadia.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Asteroid.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Asteroids.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\AsteroidsLogo.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\AsteroidsSpriteSheet.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\AtariClassic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Cursor.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\emulogic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\GalagaSpriteSheet.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\GreatVibes-Regular.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\HighScore1.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\High_Score_logo.jpg
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MiniAsteroidRock1.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MiniAsteroidRock2.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MiniAsteroidRock3.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MiniAsteroidRock4.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\namco__.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\no.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\ostrich-regular.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Pacifico.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Black.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-BlackItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Bold.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-BoldItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraBold.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraBoldItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraLight.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraLightItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Italic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Light.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-LightItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Medium.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-MediumItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Regular.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-SemiBold.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-SemiBoldItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Thin.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ThinItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\RedShip.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SmallAsteroidRock1.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SmallAsteroidRock2.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SmallAsteroidRock3.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SmallAsteroidRock4.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\yellowcursor.jpg
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SFX\coin_credit.wav
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-PS\Starzone-SVG.otf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-PS\Starzone.otf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-TT\Starzone-SVG.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-TT\Starzone.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-PS\Starzone-SVG.otf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-PS\Starzone.otf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-TT\Starzone-SVG.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-TT\Starzone.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\ARCADE.TTF
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Arcadia.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Asteroid.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Asteroids.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\AsteroidsLogo.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\AsteroidsSpriteSheet.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\AtariClassic.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Cursor.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\emulogic.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\GalagaSpriteSheet.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\GreatVibes-Regular.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\HighScore1.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\High_Score_logo.jpg
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MiniAsteroidRock1.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MiniAsteroidRock2.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MiniAsteroidRock3.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MiniAsteroidRock4.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\namco__.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\no.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\ostrich-regular.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Pacifico.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Black.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-BlackItalic.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Bold.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-BoldItalic.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraBold.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraBoldItalic.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraLight.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraLightItalic.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Italic.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Light.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-LightItalic.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Medium.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-MediumItalic.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Regular.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-SemiBold.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-SemiBoldItalic.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Thin.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ThinItalic.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\RedShip.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SmallAsteroidRock1.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SmallAsteroidRock2.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SmallAsteroidRock3.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SmallAsteroidRock4.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\yellowcursor.jpg
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SFX\coin_credit.wav
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-PS\Starzone-SVG.otf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-PS\Starzone.otf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-TT\Starzone-SVG.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-TT\Starzone.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-PS\Starzone-SVG.otf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-PS\Starzone.otf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-TT\Starzone-SVG.ttf
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-TT\Starzone.ttf
   55 File(s) copied

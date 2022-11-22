@@ -75,10 +75,9 @@ namespace SDLFramework {
 		m_pRenderRect.x = (int)(position.x - mWidth * 0.5);
 		m_pRenderRect.y = (int)(position.y - mHeight * 0.5);
 
-		//m_pGraphics->DrawTexture(m_pTex, &m_pRenderRect);
-
 		Vector2 pos = Position(World);
 		Vector2 scale = Scale(World);
+
 		mDestinationRect.x = (int)(pos.x - mWidth * 0.5f);
 		mDestinationRect.y = (int)(pos.y - mHeight * 0.5f);
 		mDestinationRect.w = (int)(mWidth * scale.x);
