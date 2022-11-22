@@ -30,30 +30,15 @@ StartMenu::StartMenu()
 	m_pLogo->Position(Graphics::SCREEN_WIDTH * 0.5f, Graphics::SCREEN_HEIGHT * 0.31f);
 
 	for (int i = 0; i < MAX_ASTEROIDS; i++) {
-		m_pRocks[i] = new AsteroidRock(); {
-			for (int a = 0; a < MAX_SMALLASTEROIDS1; a++)
-				m_pSmallRocks1[a] = new SmallAsteroidRock(); {
-				for (int b = 0; b < MAX_SMALLASTEROIDS2; b++)
-					m_pSmallRocks2[b] = new SmallAsteroidRockB(); {
-					for (int c = 0; c < MAX_SMALLASTEROIDS3; c++)
-						m_pSmallRocks3[c] = new SmallAsteroidRockC(); {
-						for (int d = 0; d < MAX_SMALLASTEROIDS4; d++)
-							m_pSmallRocks4[d] = new SmallAsteroidRockD(); {
-							for (int a = 0; a < MAX_MINIASTEROIDSA; a++)
-								m_pMiniRocks1[a] = new MiniAsteroidRockA(); {
-								for (int b = 0; b < MAX_MINIASTEROIDSB; b++)
-									m_pMiniRocks2[b] = new MiniAsteroidRockB(); {
-									for (int c = 0; c < MAX_MINIASTEROIDSC; c++)
-										m_pMiniRocks3[c] = new MiniAsteroidRockC(); {
-										for (int d = 0; d < MAX_MINIASTEROIDSD; d++)
-											m_pMiniRocks4[d] = new MiniAsteroidRockD();
-									}
-								}
-							}
-						}
-					}
-				}
-			}
+		m_pRocks[i] = new AsteroidRock();
+		if (i > 4) {
+			m_pSmallRocks1[i] = new SmallAsteroidRock("SmallAsteroidRock1.png");
+		}
+		else if (i < 4) {
+
+		}
+		else {
+			m_pSmallRocks1[i] = new SmallAsteroidRock("SmallAsteroidRock2.png");
 		}
 	}
 
@@ -153,46 +138,6 @@ StartMenu::~StartMenu()
 		delete m_pRocks[i];
 		m_pRocks[i] = nullptr;
 	}
-	
-	for (int a = 0; a < MAX_SMALLASTEROIDS1; a++) {
-		delete m_pSmallRocks1[a];
-		m_pSmallRocks1[a] = nullptr;
-	}
-
-	for (int b = 0; b < MAX_SMALLASTEROIDS2; b++) {
-		delete m_pSmallRocks2[b];
-		m_pSmallRocks2[b] = nullptr;
-	}
-
-	for (int c = 0; c < MAX_SMALLASTEROIDS3; c++) {
-		delete m_pSmallRocks3[c];
-		m_pSmallRocks3[c] = nullptr;
-	}
-
-	for (int d = 0; d < MAX_SMALLASTEROIDS4; d++) {
-		delete m_pSmallRocks4[d];
-		m_pSmallRocks4[d] = nullptr;
-	}
-
-	for (int a = 0; a < MAX_MINIASTEROIDS1; a++) {
-		delete m_pMiniRocks1[a];
-		m_pMiniRocks1[a] = nullptr;
-	}
-
-	for (int b = 0; b < MAX_MINIASTEROIDS2; b++) {
-		delete m_pMiniRocks2[b];
-		m_pMiniRocks2[b] = nullptr;
-	}
-
-	for (int c = 0; c < MAX_MINIASTEROIDS3; c++) {
-		delete m_pMiniRocks3[c];
-		m_pMiniRocks3[c] = nullptr;
-	}
-
-	for (int d = 0; d < MAX_MINIASTEROIDS4; d++) {
-		delete m_pMiniRocks4[d];
-		m_pMiniRocks4[d] = nullptr;
-	}
 
 	delete m_pHighScoreMenu;
 	m_pHighScoreMenu = nullptr;
@@ -235,22 +180,7 @@ void StartMenu::Update()
 
 	for (int i = 0; i < MAX_ASTEROIDS; i++) {
 		m_pRocks[i]->Update();
-	}
-
-	for (int a = 0; a < MAX_SMALLASTEROIDS1; a++) {
-		m_pSmallRocks1[a]->Update();
-	}
-
-	for (int b = 0; b < MAX_SMALLASTEROIDS2; b++) {
-		m_pSmallRocks2[b]->Update();
-	}
-
-	for (int c = 0; c < MAX_SMALLASTEROIDS3; c++) {
-		m_pSmallRocks3[c]->Update();
-	}
-
-	for (int d = 0; d < MAX_SMALLASTEROIDS4; d++) {
-		m_pSmallRocks4[d]->Update();
+		m_pSmallRocks1[i]->Update();
 	}
 }
 
@@ -258,22 +188,7 @@ void StartMenu::Render()
 {
 	for (int i = 0; i < MAX_ASTEROIDS; i++) {
 		m_pRocks[i]->Render();
-	}
-
-	for (int a = 0; a < MAX_SMALLASTEROIDS1; a++) {
-		m_pSmallRocks1[a]->Render();
-	}
-
-	for (int b = 0; b < MAX_SMALLASTEROIDS2; b++) {
-		m_pSmallRocks2[b]->Render();
-	}
-	
-	for (int c = 0; c < MAX_SMALLASTEROIDS3; c++) {
-		m_pSmallRocks3[c]->Render();
-	}
-
-	for (int d = 0; d < MAX_SMALLASTEROIDS4; d++) {
-		m_pSmallRocks4[d]->Render();
+		m_pSmallRocks1[i]->Render();
 	}
 
 	/*m_pPlayer->Render();

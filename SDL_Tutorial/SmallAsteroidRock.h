@@ -1,8 +1,7 @@
 #ifndef _SMALLASTEROIDROCK_H
 #define _SMALLASTEROIDROCK_H
-//#include "Texture.h"
-//#include "Random.h"
 #include "AsteroidRock.h"
+#include <string>
 
 using namespace SDLFramework;
 
@@ -16,8 +15,10 @@ private:
 
 	void CheckScreenBounds();
 
+	std::string filename;
+
 public:
-	SmallAsteroidRock();
+	SmallAsteroidRock(std::string filename);
 	~SmallAsteroidRock();
 
 	void Update() override;

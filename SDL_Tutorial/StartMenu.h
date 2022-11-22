@@ -9,9 +9,6 @@
 #include "SmallAsteroidRockC.h"
 #include "SmallAsteroidRockD.h"
 #include "MiniAsteroidRockA.h"
-#include "MiniAsteroidRockB.h"
-#include "MiniAsteroidRockC.h"
-#include "MiniAsteroidRockD.h"
 
 using namespace SDLFramework;
 
@@ -68,9 +65,6 @@ private:
 	SmallAsteroidRockC* m_pSmallRocks3[MAX_SMALLASTEROIDS3];
 	SmallAsteroidRockD* m_pSmallRocks4[MAX_SMALLASTEROIDS4];
 	MiniAsteroidRockA* m_pMiniRocks1[MAX_MINIASTEROIDS1];
-	MiniAsteroidRockB* m_pMiniRocks2[MAX_MINIASTEROIDS2];
-	MiniAsteroidRockC* m_pMiniRocks3[MAX_MINIASTEROIDS3];
-	MiniAsteroidRockD* m_pMiniRocks4[MAX_MINIASTEROIDS4];
 
 public:
 	StartMenu();

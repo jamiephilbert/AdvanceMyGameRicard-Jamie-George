@@ -6,10 +6,6 @@
 namespace SDLFramework {
 	class Texture : public GameEntity
 	{
-	private:
-
-		
-
 	protected:
 		SDL_Rect m_pRenderRect;
 		SDL_Texture* m_pTex;

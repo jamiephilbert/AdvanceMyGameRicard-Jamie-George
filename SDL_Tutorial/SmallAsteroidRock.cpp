@@ -16,8 +16,10 @@ void SmallAsteroidRock::CheckScreenBounds()
 	}
 }
 
-SmallAsteroidRock::SmallAsteroidRock() :Texture("SmallAsteroidRock1.png", 0, 0, 26, 28)
+SmallAsteroidRock::SmallAsteroidRock(std::string filename) :Texture("SmallAsteroidRock1.png", 0, 0, 26, 28)
 {
+	m_pTex = AssetManager::Instance()->GetTexture(filename);
+
 	m_pRandom = Random::Instance();
 	int randomStartPosition = m_pRandom->RandomRange(0, 3);
 	//int randomStartPosition = 3;
