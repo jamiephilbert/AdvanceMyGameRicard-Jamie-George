@@ -97,6 +97,7 @@ StartMenu::~StartMenu()
 
 	for (int i = 0; i < MAX_ASTEROIDS; i++) {
 		delete m_pRocks[i];
+		delete m_pSmallRocks1[i];
 		m_pRocks[i] = nullptr;
 		m_pSmallRocks1[i] = nullptr;
 	}

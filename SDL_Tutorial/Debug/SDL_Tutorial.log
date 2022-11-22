@@ -1,10 +1,5 @@
-﻿  GameManager.cpp
-  Main.cpp
-  PlayGameBar.cpp
-  ScreenManager.cpp
-  StartMenu.cpp
-  Generating Code...
-  SDL_Tutorial.vcxproj -> C:\Users\Jamie\Source\Repos\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
+﻿  StartMenu.cpp
+  SDL_Tutorial.vcxproj -> C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libjpeg-9.dll
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libmodplug-1.dll
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libogg-0.dll
