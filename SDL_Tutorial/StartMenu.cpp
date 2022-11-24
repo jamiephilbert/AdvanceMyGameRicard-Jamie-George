@@ -31,16 +31,6 @@ StartMenu::StartMenu()
 
 	for (int i = 0; i < MAX_ASTEROIDS; i++) {
 		m_pRocks[i] = new AsteroidRock();
-<<<<<<< Updated upstream
-		if (i > 4) {
-			m_pSmallRocks1[i] = new SmallAsteroidRock("SmallAsteroidRock1.png");
-		}
-		else if (i < 4) {
-
-		}
-		else {
-			m_pSmallRocks1[i] = new SmallAsteroidRock("SmallAsteroidRock2.png");
-=======
 		if (i > 7) {
 			m_pSmallRocks[i] = new SmallAsteroidRock("SmallAsteroidRock1.png");
 		}
@@ -51,7 +41,6 @@ StartMenu::StartMenu()
 		else if (i > 3) 
 		{
 			m_pSmallRocks[i] = new SmallAsteroidRock("SmallAsteroidRock2.png");
->>>>>>> Stashed changes
 		}
 		else {
 			m_pSmallRocks[i] = new SmallAsteroidRock("SmallAsteroidRock4.png");

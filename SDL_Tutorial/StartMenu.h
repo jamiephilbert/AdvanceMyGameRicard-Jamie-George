@@ -19,10 +19,6 @@ public:
 	const static int MAX_SMALLASTEROIDS2 = 10;
 	const static int MAX_SMALLASTEROIDS3 = 10;
 	const static int MAX_SMALLASTEROIDS4 = 10;
-	const static int MAX_MINIASTEROIDS1 = 10;
-	const static int MAX_MINIASTEROIDS2 = 10;
-	const static int MAX_MINIASTEROIDS3 = 10;
-	const static int MAX_MINIASTEROIDS4 = 10;
 
 private:
 	Timer* m_pTimer;
@@ -64,7 +60,6 @@ private:
 	SmallAsteroidRockB* m_pSmallRocks2[MAX_SMALLASTEROIDS2];
 	SmallAsteroidRockC* m_pSmallRocks3[MAX_SMALLASTEROIDS3];
 	SmallAsteroidRockD* m_pSmallRocks4[MAX_SMALLASTEROIDS4];
-	MiniAsteroidRockA* m_pMiniRocks1[MAX_MINIASTEROIDS1];
 
 public:
 	StartMenu();
