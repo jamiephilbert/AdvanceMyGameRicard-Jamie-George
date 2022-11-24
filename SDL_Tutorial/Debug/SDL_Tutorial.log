@@ -1,4 +1,38 @@
-﻿  SmallAsteroidRock.cpp
+﻿  AnimatedTexture.cpp
+  AssetManager.cpp
+  AsteroidRock.cpp
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(31,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(31,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(32,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(33,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(38,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(38,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(39,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(40,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(45,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(45,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(46,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(47,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(52,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(52,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(53,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(54,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(75,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(75,20): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  AudioManager.cpp
+  Bullet.cpp
+  GameEntity.cpp
+  GameManager.cpp
+  Graphics.cpp
+  HighScoreScreen.cpp
+  InputManager.cpp
+  Main.cpp
+  Player.cpp
+  PlayGameBar.cpp
+  PlayScreen.cpp
+  Scoreboard.cpp
+  ScreenManager.cpp
+  SmallAsteroidRock.cpp
 D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(33,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(33,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(34,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
@@ -17,76 +51,77 @@ D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(55
 D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(56,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
 D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(70,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(70,20): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  StartMenu.cpp
+  SmallAsteroidRockB.cpp
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockB.cpp(31,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockB.cpp(31,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockB.cpp(32,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockB.cpp(33,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockB.cpp(38,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockB.cpp(38,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockB.cpp(39,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockB.cpp(40,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockB.cpp(45,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockB.cpp(45,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockB.cpp(46,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockB.cpp(47,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockB.cpp(52,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockB.cpp(52,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockB.cpp(53,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockB.cpp(54,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockB.cpp(68,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockB.cpp(68,20): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  SmallAsteroidRockC.cpp
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockC.cpp(31,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockC.cpp(31,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockC.cpp(32,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockC.cpp(33,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockC.cpp(38,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockC.cpp(38,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockC.cpp(39,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockC.cpp(40,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockC.cpp(45,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockC.cpp(45,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockC.cpp(46,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockC.cpp(47,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockC.cpp(52,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockC.cpp(52,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockC.cpp(53,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockC.cpp(54,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockC.cpp(68,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockC.cpp(68,20): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  SmallAsteroidRockD.cpp
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockD.cpp(31,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockD.cpp(31,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockD.cpp(32,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockD.cpp(33,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockD.cpp(38,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockD.cpp(38,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockD.cpp(39,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockD.cpp(40,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockD.cpp(45,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockD.cpp(45,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockD.cpp(46,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockD.cpp(47,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockD.cpp(52,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockD.cpp(52,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockD.cpp(53,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockD.cpp(54,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockD.cpp(68,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRockD.cpp(68,20): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   Generating Code...
-  SDL_Tutorial.vcxproj -> D:\School\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libjpeg-9.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libmodplug-1.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libogg-0.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libopus-0.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libopusfile-0.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libpng16-16.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libtiff-5.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libwebp-7.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2_image.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2_mixer.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2_ttf.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\zlib1.dll
-         13 file(s) copied.
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\ARCADE.TTF
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Arcadia.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Asteroid.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Asteroids.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\AsteroidsLogo.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\AsteroidsSpriteSheet.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\AtariClassic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Cursor.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\emulogic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\GalagaSpriteSheet.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\GreatVibes-Regular.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\HighScore1.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\High_Score_logo.jpg
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MiniAsteroidRock1.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MiniAsteroidRock2.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MiniAsteroidRock3.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MiniAsteroidRock4.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\namco__.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\no.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\ostrich-regular.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Pacifico.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Black.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-BlackItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Bold.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-BoldItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraBold.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraBoldItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraLight.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraLightItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Italic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Light.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-LightItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Medium.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-MediumItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Regular.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-SemiBold.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-SemiBoldItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Thin.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ThinItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\RedShip.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SmallAsteroidRock1.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SmallAsteroidRock2.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SmallAsteroidRock3.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SmallAsteroidRock4.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\yellowcursor.jpg
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SFX\coin_credit.wav
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-PS\Starzone-SVG.otf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-PS\Starzone.otf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-TT\Starzone-SVG.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-TT\Starzone.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-PS\Starzone-SVG.otf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-PS\Starzone.otf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-TT\Starzone-SVG.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-TT\Starzone.ttf
-  55 File(s) copied
+  Compiling...
+  StartMenu.cpp
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\StartMenu.cpp(34,1): error C2059: syntax error: '<<'
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\StartMenu.cpp(35,14): error C2143: syntax error: missing ';' before '{'
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\StartMenu.cpp(38,3): error C2181: illegal else without matching if
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\StartMenu.cpp(43,1): error C2059: syntax error: '=='
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\StartMenu.cpp(44,14): error C2143: syntax error: missing ';' before '{'
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\StartMenu.cpp(45,4): error C2065: 'm_pSmallRocks': undeclared identifier
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\StartMenu.cpp(47,3): error C2181: illegal else without matching if
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\StartMenu.cpp(49,4): error C2065: 'm_pSmallRocks': undeclared identifier
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\StartMenu.cpp(53,4): error C2065: 'm_pSmallRocks': undeclared identifier
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\StartMenu.cpp(54,1): error C2059: syntax error: '>>'
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\StartMenu.cpp(57,4): error C2065: 'm_pSmallRocks': undeclared identifier
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\StartMenu.cpp(126,20): error C2059: syntax error: ';'
+  Texture.cpp
+  Generating Code...

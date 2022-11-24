@@ -58,12 +58,12 @@ namespace SDLFramework {
 		m_pGraphics = nullptr;
 	}
 
-	Vector2 Texture::ScaledDimenstion() {
-		Vector2 scaledDimensions = Scale();
-		scaledDimensions.x* mWidth;
-		scaledDimensions.y *= mHeight;
+	Vector2 Texture::ScaledDimensions() {
+		Vector2 ScaledDimensions = Scale();
+		ScaledDimensions.x *= mWidth;
+		ScaledDimensions.y *= mHeight;
 
-		return scaledDimensions;
+		return ScaledDimensions;
 	}
 
 	void Texture::SetSourceRect(SDL_Rect* sourceRect) {
