@@ -30,7 +30,7 @@ namespace SDLFramework {
 
 		void SetWrapMode(WrapMode mode);
 		void ResetAnimation();
-		bool IsAnimation();
+		bool IsAnimating();
 
 		void Update();
 	};

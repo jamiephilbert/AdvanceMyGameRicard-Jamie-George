@@ -25,16 +25,19 @@ StartMenu::StartMenu()
 	//Background Entities
 	for (int i = 0; i < MAX_ASTEROIDS; i++) {
 		m_pRocks[i] = new AsteroidRock();
-		if (i > 6) {
+		if (i > 7) {
 			m_pSmallRocks[i] = new SmallAsteroidRock("SmallAsteroidRock1.png");
+		}
+		else if (i > 5)
+		{
+			m_pSmallRocks[i] = new SmallAsteroidRock("SmallAsteroidRock2.png");
 		}
 		else if (i > 3)
 		{
-
 			m_pSmallRocks[i] = new SmallAsteroidRock("SmallAsteroidRock3.png");
 		}
 		else {
-			m_pSmallRocks[i] = new SmallAsteroidRock("SmallAsteroidRock2.png");
+			m_pSmallRocks[i] = new SmallAsteroidRock("SmallAsteroidRock4.png");
 		}
 	}
 	//// Play Mode Entities
