@@ -1,5 +1,4 @@
 ﻿  AnimatedTexture.cpp
-  AssetManager.cpp
   AsteroidRock.cpp
 D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(33,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(33,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
@@ -19,9 +18,8 @@ D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(55,41):
 D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(56,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
 D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(70,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidRock.cpp(70,20): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  AudioManager.cpp
+  GameEntity.cpp
   GameManager.cpp
-  Graphics.cpp
   HighScoreScreen.cpp
   Main.cpp
   PlayGameBar.cpp
@@ -51,6 +49,7 @@ D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidRock.cpp(70
   Texture.cpp
 D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Texture.cpp(63,21): warning C4552: '*': result of expression not used
   Generating Code...
+  LINK : D:\School\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe not found or not built by the last incremental link; performing full link
   SDL_Tutorial.vcxproj -> D:\School\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libjpeg-9.dll
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libmodplug-1.dll
