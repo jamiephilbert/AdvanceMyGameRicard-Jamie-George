@@ -28,11 +28,11 @@ StartMenu::StartMenu()
 		if (i > 7) {
 			m_pSmallRocks[i] = new SmallAsteroidRock("SmallAsteroidRock1.png");
 		}
-		if (i > 5)
+		else if (i > 5)
 		{
 			m_pSmallRocks[i] = new SmallAsteroidRock("SmallAsteroidRock2.png");
 		}
-		if (i > 3)
+		else if (i > 3)
 		{
 			m_pSmallRocks[i] = new SmallAsteroidRock("SmallAsteroidRock3.png");
 		}
