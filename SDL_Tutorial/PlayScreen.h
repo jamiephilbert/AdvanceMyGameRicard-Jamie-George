@@ -13,6 +13,8 @@ private:
 	AudioManager* m_pAudio;
 	PlayGameBar* m_pPlayGameBar;
 
+	Player* m_pPlayer;
+
 	Texture* m_pStartLabel;
 
 	float mGameStartTimer;

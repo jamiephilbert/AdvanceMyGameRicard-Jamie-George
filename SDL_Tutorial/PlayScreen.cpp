@@ -13,10 +13,12 @@ PlayScreen::PlayScreen()
 	m_pStartLabel->Parent(this);
 	m_pStartLabel->Position(Graphics::SCREEN_WIDTH * 0.4f, Graphics::SCREEN_HEIGHT * 0.5f);
 
+	m_pPlayer = new Player();
+	m_pPlayer->Parent(this);
+	m_pPlayer->Position(Graphics::SCREEN_WIDTH * 0.5f, Graphics::SCREEN_HEIGHT * 0.5f);
+
 	m_pGame = nullptr;
 	mGameStarted = false;
-
-	//m_pPlayer = nullptr;
 }
 
 PlayScreen::~PlayScreen()
@@ -33,8 +35,8 @@ PlayScreen::~PlayScreen()
 	delete m_pGame;
 	m_pGame = nullptr;
 
-	//delete m_pPlayer;
-	//m_pPlayer = nullptr;
+	delete m_pPlayer;
+	m_pPlayer = nullptr;
 }
 
 void PlayScreen::StartNewGame()
@@ -63,9 +65,11 @@ bool PlayScreen::GameOver()
 void PlayScreen::Update()
 {
 	m_pPlayGameBar->Update();
+	m_pPlayer->Update();
 }
 
 void PlayScreen::Render()
 {
 	m_pPlayGameBar->Render();
+	m_pPlayer->Render();
 }

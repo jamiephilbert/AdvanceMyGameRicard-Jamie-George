@@ -12,11 +12,11 @@ Player::Player()
 	mScore = 0;
 	mLives = 3;
 
-	m_pShip = new Texture("PlayerShips.png", 0, 0, 22, 30);
+	m_pShip = new Texture("RedShip.png", 0, 0, 22, 30);
 	m_pShip->Parent(this);
-	m_pShip->Position(Vec2_Zero);
+	m_pShip->Position(0.0f, 0.0f);
 
-	mMoveSpeed = 100.0f;
+	mMoveSpeed = 300.0f;
 	mMoveBounds = Vector2(0.0f, 800.0f);
 
 	m_pDeathAnimation = new AnimatedTexture("PlayerExplosion.png", 0, 0, 150, 34, 3, 1.0f, AnimatedTexture::Horizontal);
@@ -82,6 +82,9 @@ void Player::WasHit()
 
 void Player::Update()
 {
+	m_pShip->Update();
+	HandleMovement();
+
 	if (mAnimating) {
 		m_pDeathAnimation->Update();
 		mAnimating = m_pDeathAnimation->IsAnimating();
@@ -100,6 +103,9 @@ void Player::Update()
 
 void Player::Render()
 {
+	m_pShip->Render();
+	HandleMovement();
+
 	if (mVisible) {
 		if (mAnimating) {
 			m_pDeathAnimation->Render();
@@ -117,10 +123,10 @@ void Player::Render()
 void Player::HandleMovement()
 {
 	if (m_pInput->KeyDown(SDL_SCANCODE_D)) {
-		Translate(Vec2_Right * mMoveSpeed * m_pTimer->DeltaTime(), World);
+		Rotate(5.0f);
 	}
 	if (m_pInput->KeyDown(SDL_SCANCODE_A)) {
-		Translate(-Vec2_Right * mMoveSpeed * m_pTimer->DeltaTime(), World);
+		Rotate(-5.0f);
 	}
 	if (m_pInput->KeyDown(SDL_SCANCODE_W)) {
 		Translate(-Vec2_Up * mMoveSpeed * m_pTimer->DeltaTime(), World);
@@ -128,16 +134,6 @@ void Player::HandleMovement()
 	if (m_pInput->KeyDown(SDL_SCANCODE_S)) {
 		Translate(Vec2_Up * mMoveSpeed * m_pTimer->DeltaTime(), World);
 	}
-
-	Vector2 pos = Position(Local);
-	if (pos.x < mMoveBounds.x + m_pShip->ScaledDimensions().x * 0.5f) {
-		pos.x = mMoveBounds.x + m_pShip->ScaledDimensions().x * 0.5f;
-	}
-	else if (pos.x > mMoveBounds.y - m_pShip->ScaledDimensions().x * 0.5f) {
-		pos.x = mMoveBounds.y - m_pShip->ScaledDimensions().x * 0.5f;
-	}
-
-	Position(pos);
 }
 
 void Player::HandleFire()
