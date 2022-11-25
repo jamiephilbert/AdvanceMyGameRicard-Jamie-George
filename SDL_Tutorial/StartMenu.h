@@ -39,11 +39,11 @@ private:
 	Texture* m_pLogo;
 
 	// screen animation variables
-	Vector2 mAnimationStartPos;
-	Vector2 mAnimationEndPos;
-	float mAnimationTotalTime;
-	float mAnimationTimer;
-	bool mAnimationDone;
+	//Vector2 mAnimationStartPos;
+	//Vector2 mAnimationEndPos;
+	//float mAnimationTotalTime;
+	//float mAnimationTimer;
+	//bool mAnimationDone;
 
 	AsteroidRock* m_pRocks[MAX_ASTEROIDS];
 	SmallAsteroidRock* m_pSmallRocks[MAX_SMALLASTEROIDS];
