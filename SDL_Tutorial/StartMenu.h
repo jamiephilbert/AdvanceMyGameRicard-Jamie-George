@@ -60,5 +60,4 @@ public:
 	void Render() override;
 };
 
-
 #endif // !_STARTMENU_H

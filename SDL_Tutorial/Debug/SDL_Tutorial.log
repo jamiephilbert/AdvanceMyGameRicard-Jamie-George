@@ -1,8 +1,6 @@
-﻿  GameManager.cpp
-  HighScoreScreen.cpp
-  Main.cpp
-  PlayScreen.cpp
+﻿  PlayScreen.cpp
   ScreenManager.cpp
+  StartMenu.cpp
   Generating Code...
   SDL_Tutorial.vcxproj -> D:\School\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libjpeg-9.dll

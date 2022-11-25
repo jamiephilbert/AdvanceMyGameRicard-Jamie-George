@@ -7,7 +7,7 @@ void Game::StartGame() {
 Game::Game(int stage, PlayGameBar* gamebar, Player* player) {
 	m_pTimer = Timer::Instance();
 	m_pGameBar = gamebar;
-	m_pGameBar->SetGame(stage);
+	//m_pGameBar->SetGame(stage);
 
 	mGame = stage;
 	mGameStarted = false;
@@ -98,7 +98,7 @@ void Game::HandleCollisions() {
 	if (!Game::mPlayerHit) {
 		if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_X)) {
 			m_pPlayer->WasHit();
-			m_pGameBar->SetShips(m_pPlayer->Lives());
+			//m_pGameBar->SetShips(m_pPlayer->Lives());
 
 			mPlayerHit = true;
 			mRespawnTimer = 0.0f;

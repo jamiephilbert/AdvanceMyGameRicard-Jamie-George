@@ -2,6 +2,7 @@
 #define _SCREENMANAGER_H
 #include "StartMenu.h"
 #include "HighScoreScreen.h"
+
 class ScreenManager
 {
 private:
@@ -28,6 +29,5 @@ public:
 	void Update();
 	void Render();
 };
-
 
 #endif // !_SCREENMANAGER_H

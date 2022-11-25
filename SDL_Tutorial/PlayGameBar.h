@@ -2,16 +2,24 @@
 #define _PLAYGAMEBAR_H
 #include "ScoreBoard.h"
 #include "AsteroidRock.h"
+#include "Timer.h"
+#include "AudioManager.h"
 
 
 class PlayGameBar : public GameEntity
 {
 private:
+	static const int MAX_SHIP_TEXTURES = 5;
+
+	Timer* m_pTimer;
+	AudioManager* m_pAudio;
+
 	Texture* m_pHighLabel;
 	Texture* m_pScoreLabel;
 	Texture* m_pYourLabel;
 	Texture* m_pLivesLabel;
 
+	//Texture* m_pShipLives[MAX_SHIP_TEXTURES];
 	Texture* m_pShipLives;
 	Texture* m_pShipLives2;
 	Texture* m_pShipLives3;

@@ -44,6 +44,10 @@ namespace SDLFramework {
 		while (mRotation > 360.0f) {
 			mRotation -= 360.0f;
 		}
+
+		while (mRotation < 0.0f) {
+			mRotation += 360.0f;
+		}
 	}
 
 	float GameEntity::Rotation(Space space) {

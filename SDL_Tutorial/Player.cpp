@@ -116,11 +116,17 @@ void Player::Render()
 
 void Player::HandleMovement()
 {
-	if (m_pInput->KeyDown(SDL_SCANCODE_RIGHT)) {
+	if (m_pInput->KeyDown(SDL_SCANCODE_D)) {
 		Translate(Vec2_Right * mMoveSpeed * m_pTimer->DeltaTime(), World);
 	}
-	else if (m_pInput->KeyDown(SDL_SCANCODE_LEFT)) {
+	if (m_pInput->KeyDown(SDL_SCANCODE_A)) {
 		Translate(-Vec2_Right * mMoveSpeed * m_pTimer->DeltaTime(), World);
+	}
+	if (m_pInput->KeyDown(SDL_SCANCODE_W)) {
+		Translate(-Vec2_Up * mMoveSpeed * m_pTimer->DeltaTime(), World);
+	}
+	if (m_pInput->KeyDown(SDL_SCANCODE_S)) {
+		Translate(Vec2_Up * mMoveSpeed * m_pTimer->DeltaTime(), World);
 	}
 
 	Vector2 pos = Position(Local);
