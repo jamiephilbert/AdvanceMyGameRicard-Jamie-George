@@ -74,6 +74,7 @@ void ScreenManager::Update()
         break;
 
     case Play:
+        m_pPlayScreen->Update();
         if (m_pInput->KeyPressed(SDL_SCANCODE_ESCAPE)) {
             mCurrentScreen = Start;
         }

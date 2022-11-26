@@ -4,6 +4,7 @@
 #include "InputManager.h"
 #include "AudioManager.h"
 #include "Bullet.h"
+#include "Timer.h"
 
 using namespace SDLFramework;
 
@@ -12,8 +13,6 @@ class Player : public GameEntity
 private:
 	static const int MAX_BULLETS = 4;
 	Bullet* m_pBullets[MAX_BULLETS];
-
-
 
 	Timer* m_pTimer;
 	InputManager* m_pInput;
@@ -30,7 +29,6 @@ private:
 
 	float mMoveSpeed;
 	Vector2 mMoveBounds;
-
 
 public:
 	Player();
@@ -52,11 +50,8 @@ public:
 private:
 	void HandleMovement();
 	void HandleFire();
+	void PlayerPosition();
 
 };
 
-
 #endif // !_PLAYER_H
-
-
-

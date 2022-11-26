@@ -16,7 +16,7 @@ Player::Player()
 	m_pShip->Parent(this);
 	m_pShip->Position(0.0f, 0.0f);
 
-	mMoveSpeed = 300.0f;
+	mMoveSpeed = 450.0f;
 	mMoveBounds = Vector2(0.0f, 800.0f);
 
 	m_pDeathAnimation = new AnimatedTexture("PlayerExplosion.png", 0, 0, 150, 34, 3, 1.0f, AnimatedTexture::Horizontal);
@@ -123,26 +123,27 @@ void Player::Render()
 void Player::HandleMovement()
 {
 	if (m_pInput->KeyDown(SDL_SCANCODE_D)) {
-		Rotate(5.0f);
+		Rotate(2.0f);
 	}
 	if (m_pInput->KeyDown(SDL_SCANCODE_A)) {
-		Rotate(-5.0f);
+		Rotate(-2.0f);
 	}
 	if (m_pInput->KeyDown(SDL_SCANCODE_W)) {
-		Translate(-Vec2_Up * mMoveSpeed * m_pTimer->DeltaTime(), World);
+		Translate(-Vec2_Up * ((std::cos(Rotation()), std::sin(Rotation()),(-Vec2_Up * mMoveSpeed * m_pTimer->DeltaTime(), World))));
 	}
-	if (m_pInput->KeyDown(SDL_SCANCODE_S)) {
-		Translate(Vec2_Up * mMoveSpeed * m_pTimer->DeltaTime(), World);
-	}
+
+	//Vector2 direction(std::cos(Rotation()), std::sin(Rotation()));
 }
 
 void Player::HandleFire()
 {
 	if (m_pInput->KeyPressed(SDL_SCANCODE_SPACE)) {
+		if (m_pInput->KeyDown(SDL_SCANCODE_D))
+
 		//-------------OBJECT POOL-----------------//
 		for (int i = 0; i < MAX_BULLETS; i++) {
 			if (!m_pBullets[i]->Active()) {
-				m_pBullets[i]->Fire(Position());
+				m_pBullets[i]->Fire(Position()),Translate(-Vec2_Up * ((std::cos(Rotation()), std::sin(Rotation()), (-Vec2_Up * mMoveSpeed * m_pTimer->DeltaTime(), World))));
 				m_pAudio->PlaySFX("SFX/Fire.wav", 0, -1);
 				break;
 			}
