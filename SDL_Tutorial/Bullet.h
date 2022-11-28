@@ -13,7 +13,7 @@ private:
 	Timer* m_pTimer;
 	Texture* m_pTexture;
 
-	float mSpeed;
+	float mBulletSpeed;
 
 public:
 	Bullet();

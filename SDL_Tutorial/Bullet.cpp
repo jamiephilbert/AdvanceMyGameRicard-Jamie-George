@@ -8,7 +8,7 @@ Bullet::Bullet()
 	m_pTexture->Parent(this);
 	m_pTexture->Position(Vec2_Zero);
 
-	mSpeed = 500;
+	mBulletSpeed = 500;
 
 	Reload();
 }
@@ -35,8 +35,8 @@ void Bullet::Reload()
 void Bullet::Update()
 {
 	if (Active()) {
-		Translate(-Vec2_Up * mSpeed * m_pTimer->DeltaTime());
-
+		Translate(-Vec2_Up * mBulletSpeed * m_pTimer->DeltaTime());
+		
 		Vector2 pos = Position();
 
 		if (pos.y < -OFFSCREEN_BUFFER) {

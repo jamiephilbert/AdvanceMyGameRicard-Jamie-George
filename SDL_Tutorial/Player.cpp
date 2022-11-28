@@ -138,15 +138,22 @@ void Player::HandleMovement()
 void Player::HandleFire()
 {
 	if (m_pInput->KeyPressed(SDL_SCANCODE_SPACE)) {
-		if (m_pInput->KeyDown(SDL_SCANCODE_D))
+		//if (m_pInput->KeyDown(SDL_SCANCODE_D) || m_pInput->KeyDown(SDL_SCANCODE_A)) {
+		//	Translate(-Vec2_Up * ((std::cos(Active()), std::sin(Active()), (-Vec2_Up * mMoveSpeed * m_pTimer->DeltaTime(), World))));
+		//}
 
 		//-------------OBJECT POOL-----------------//
 		for (int i = 0; i < MAX_BULLETS; i++) {
 			if (!m_pBullets[i]->Active()) {
-				m_pBullets[i]->Fire(Position()),Translate(-Vec2_Up * ((std::cos(Rotation()), std::sin(Rotation()), (-Vec2_Up * mMoveSpeed * m_pTimer->DeltaTime(), World))));
+				m_pBullets[i]->Fire(Position());
 				m_pAudio->PlaySFX("SFX/Fire.wav", 0, -1);
 				break;
 			}
 		}
 	}
+}
+
+void Player::PlayerPosition()
+{
+	//m_pShip->Position() = m_pBullets->Position()
 }

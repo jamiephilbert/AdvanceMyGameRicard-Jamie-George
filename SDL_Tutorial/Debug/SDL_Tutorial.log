@@ -1,8 +1,4 @@
-﻿  Player.cpp
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(132,34): warning C4834: discarding return value of function with 'nodiscard' attribute
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(132,68): warning C4244: 'argument': conversion from 'SDLFramework::GameEntity::Space' to 'float', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(146,68): warning C4834: discarding return value of function with 'nodiscard' attribute
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(146,102): warning C4244: 'argument': conversion from 'SDLFramework::GameEntity::Space' to 'float', possible loss of data
+﻿  Bullet.cpp
   SDL_Tutorial.vcxproj -> D:\School\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libjpeg-9.dll
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libmodplug-1.dll
