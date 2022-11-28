@@ -30,7 +30,6 @@ StartMenu::StartMenu()
 		}
 		else if (i > 5) 
 		{
-
 			m_pSmallRocks1[i] = new SmallAsteroidRock("SmallAsteroidRock3.png");
 		}
 		else if(i > 3) {

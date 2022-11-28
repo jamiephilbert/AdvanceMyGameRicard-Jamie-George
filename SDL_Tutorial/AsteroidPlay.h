@@ -8,18 +8,16 @@ using namespace SDLFramework;
 class AsteroidPlay : public Texture
 {
 private:
-	Random* m_pRandom;
+	Random* m_pRandom2;
 
-	int randVelocityX;
-	int randVelocityY;
+	int XPos;
+	int YPos;
 
 	void CheckScreenBounds();
 
 public:
-	AsteroidPlay();
+	AsteroidPlay(int asteroid, int count);
 	~AsteroidPlay();
-
-	void MoveAsteroid();
 
 	void Update() override;
 	void Render() override;

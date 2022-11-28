@@ -16,62 +16,59 @@ void AsteroidPlay::CheckScreenBounds()
 	}
 }
 
-AsteroidPlay::AsteroidPlay() :Texture("Asteroid.png", 0, 0, 80, 70)
+AsteroidPlay::AsteroidPlay(int asteroid, int count) :Texture("Asteroid.png", 0, 0, 80, 70)
 {
-	m_pRandom = Random::Instance();
-	int randomStartPosition = m_pRandom->RandomRange(0, 3);
+	XPos = 0;
+	YPos = 0;
+	m_pRandom2 = Random::Instance();
+	int randomStartPosition = m_pRandom2->RandomRange(0, 3);
 	int rx = 0;
 	int ry = 0;
 	switch (randomStartPosition)
 	{
 	case 0:// Asteroids spawns from left of screen
 		rx = -10;
-		ry = m_pRandom->RandomRange(0, Graphics::SCREEN_HEIGHT);
+		ry = m_pRandom2->RandomRange(0, Graphics::SCREEN_HEIGHT);
 		Position(rx, ry);
-		randVelocityX = m_pRandom->RandomRange(1.0f, 5.0f);
-		randVelocityY = m_pRandom->RandomRange(-5.0f, 5.0f);
+		XPos = m_pRandom2->RandomRange(1.0f, 5.0f);
+		YPos = m_pRandom2->RandomRange(-5.0f, 5.0f);
 		break;
 	case 1:// Asteroids spawns from right of screen
 		rx = Graphics::SCREEN_WIDTH + 10;
-		ry = m_pRandom->RandomRange(0, Graphics::SCREEN_HEIGHT);
+		ry = m_pRandom2->RandomRange(0, Graphics::SCREEN_HEIGHT);
 		Position(rx, ry);
-		randVelocityX = m_pRandom->RandomRange(-5.0f, -1.0f);
-		randVelocityY = m_pRandom->RandomRange(-5.0f, 5.0f);
+		XPos = m_pRandom2->RandomRange(-5.0f, -1.0f);
+		YPos = m_pRandom2->RandomRange(-5.0f, 5.0f);
 		break;
 	case 2:// Asteroids spawns from top of screen
-		rx = m_pRandom->RandomRange(0, Graphics::SCREEN_WIDTH);
+		rx = m_pRandom2->RandomRange(0, Graphics::SCREEN_WIDTH);
 		ry = -10;
 		Position(rx, ry);
-		randVelocityX = m_pRandom->RandomRange(-5.0f, 5.0f);
-		randVelocityY = m_pRandom->RandomRange(1.0f, 5.0f);
+		XPos = m_pRandom2->RandomRange(-5.0f, 5.0f);
+		YPos = m_pRandom2->RandomRange(1.0f, 5.0f);
 		break;
 	case 3:// Asteroids spawns from the bottom screen
-		rx = m_pRandom->RandomRange(0, Graphics::SCREEN_WIDTH);
+		rx = m_pRandom2->RandomRange(0, Graphics::SCREEN_WIDTH);
 		ry = Graphics::SCREEN_HEIGHT + 10;
 		Position(rx, ry);
-		randVelocityX = m_pRandom->RandomRange(-5.0f, 5.0f);
-		randVelocityY = m_pRandom->RandomRange(-5.0f, -1.0f);
+		XPos = m_pRandom2->RandomRange(-5.0f, 5.0f);
+		YPos = m_pRandom2->RandomRange(-5.0f, -1.0f);
 		break;
 	default:
 		break;
 	}
 }
 
-void AsteroidPlay::MoveAsteroid()
-{
-
-}
-
 AsteroidPlay::~AsteroidPlay()
 {
-	m_pRandom = nullptr;
+	m_pRandom2 = nullptr;
 }
 
 
 
 void AsteroidPlay::Update()
 {
-	Translate(Vector2(randVelocityX, randVelocityY), GameEntity::World);
+	Translate(Vector2(XPos, YPos), GameEntity::World);
 	CheckScreenBounds();
 }
 

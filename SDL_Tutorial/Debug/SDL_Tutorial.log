@@ -1,24 +1,4 @@
-﻿  AsteroidPlay.cpp
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(30,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(30,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(31,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(32,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(37,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(37,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(38,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(39,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(44,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(44,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(45,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(46,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(51,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(51,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(52,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(53,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(67,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(67,20): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  PlayScreen.cpp
-  Generating Code...
+﻿  PlayScreen.cpp
   SDL_Tutorial.vcxproj -> C:\Users\Jamie\Source\Repos\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libjpeg-9.dll
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libmodplug-1.dll

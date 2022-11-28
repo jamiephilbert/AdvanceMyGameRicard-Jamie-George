@@ -49,6 +49,7 @@ void ScreenManager::Update()
     case Start:
         m_pStartScreen->Update();
 
+
         if (m_pInput->KeyPressed(SDL_SCANCODE_DOWN)) {
             ScreenChoice -= 1;
         }
@@ -74,9 +75,7 @@ void ScreenManager::Update()
         break;
 
     case Play:
-        if (m_pInput->KeyPressed(SDL_SCANCODE_ESCAPE)) {
-            mCurrentScreen = Start;
-        }
+        m_pPlayScreen->Update();
         break;
 
     case High:

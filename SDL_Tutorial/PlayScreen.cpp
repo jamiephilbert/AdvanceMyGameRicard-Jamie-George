@@ -2,66 +2,131 @@
 
 PlayScreen::PlayScreen()
 {
+
 	m_pTimer = Timer::Instance();
 	m_pInputManager = InputManager::Instance();
+
 	m_pPlayGameBar = new PlayGameBar();
 	m_pPlayGameBar->Parent(this);
 	m_pPlayGameBar->Position(Graphics::SCREEN_WIDTH * 0.05f, Graphics::SCREEN_HEIGHT * 0.05f);
+
+
+	mAsteroidCount = 0;
+	mSmallAsteroidCount = 0;
+	mUFOCount = 0;
+
+	//BigAsteroid.insert(BigAsteroid.begin() + 5, new AsteroidPlay);
+	//m_pBigAsteroid.erase(m_pBigAsteroid.begin() + 5);
+	//m_pBigAsteroid.pop_back();
+
+}
+
+void PlayScreen::StartnewGame()
+{
+	mGameStarted = true;
+	mAsteroidDelay = 1.0f;
+	mAsteroidTimer = 0.0f;
+}
+
+void PlayScreen::GenNewAsteroid()
+{
+	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_P) && mAsteroidCount < MAX_ASTEROIDS) {
+		m_pBigAsteroid.push_back(new AsteroidPlay(0, mAsteroidCount++));
+	}
 	
+}
 
-	for (int i = 0; i < MAX_ASTEROIDZ; i++) {
-		m_pBigAsteroid[i] = new AsteroidPlay();
-		if (i > 7) {
-			m_pSmallAsteroid[i] = new SmallAsteroidRock("SmallAsteroidRock1.png");
-		}
-		else if (i > 5)
-		{
+void PlayScreen::GenNewUFO()
+{
+	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_O)/* && mUFOCount <= MAX_UFO*/) {
+		/*m_pEnemy.push_back(new Enemy);*/
+		/*mUFOCount += 1;*/
+	}
+}
 
-			m_pSmallAsteroid[i] = new SmallAsteroidRock("SmallAsteroidRock3.png");
-		}
-		else if (i > 3) {
-			m_pSmallAsteroid[i] = new SmallAsteroidRock("SmallAsteroidRock2.png");
-		}
-		else {
-			m_pSmallAsteroid[i] = new SmallAsteroidRock("SmallAsteroidRock4.png");
+void PlayScreen::WasDestroyed()
+{/*
+	mAsteroidTimer += m_pTimer->DeltaTime();*/
+	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_L) && mAsteroidCount > 0) {
+		for (auto e : m_pBigAsteroid) {
+			m_pBigAsteroid.pop_back();
+			mAsteroidCount = 0;
+			if (mSmallAsteroidCount < MAX_SMALLASTEROIDS) {
+				m_pSmallAsteroid.push_back(new SmallAsteroidRock("SmallAsteroidRock3.png"));
+				m_pSmallAsteroid.push_back(new SmallAsteroidRock("SmallAsteroidRock1.png"));
+				mSmallAsteroidCount += 2;
+			}
 		}
 	}
+	if(InputManager::Instance()->KeyPressed(SDL_SCANCODE_K) && mSmallAsteroidCount > 0) {
+			for (auto f : m_pSmallAsteroid) {
+				mSmallAsteroidCount -= 1;
+				m_pSmallAsteroid.pop_back();
 
+			}
+	}
 }
 
 PlayScreen::~PlayScreen()
-{
-	delete m_pPlayGameBar;
-	m_pPlayGameBar = nullptr;
+		{
+			m_pTimer = nullptr;
+
+			delete m_pPlayGameBar;
+			m_pPlayGameBar = nullptr;
 
 
-		m_pTimer = nullptr;
+			for (auto e : m_pBigAsteroid) {
+				delete e;
+			}
+			
+			m_pBigAsteroid.clear();
 
-		for (int i = 0; i < MAX_ASTEROIDZ; i++) {
-			delete m_pBigAsteroid[i];
-			delete m_pSmallAsteroid[i];
-			m_pBigAsteroid[i] = nullptr;
-			m_pSmallAsteroid[i] = nullptr;
+			for (auto f : m_pSmallAsteroid) {
+				delete f;
+			}
+			m_pSmallAsteroid.clear();
+
+			for (auto g : m_pEnemy) {
+				delete g;
+			}
+			m_pEnemy.clear();
+
 		}
-}
 
-void PlayScreen::Update()
-{
-	m_pPlayGameBar->Update();
+		void PlayScreen::Update()
+		{
+			m_pPlayGameBar->Update();
+			for (auto e : m_pBigAsteroid) {
+				e->Update();
+			}
+			for (auto f : m_pSmallAsteroid) {
+				f->Update();
+			}
+			for (auto g : m_pEnemy) {
+				g->Update();
+			}
 
-	for (int i = 0; i < MAX_ASTEROIDZ; i++) {
-		m_pBigAsteroid[i]->Update();
-		m_pSmallAsteroid[i]->Update();
-	}
+			GenNewAsteroid();
+			GenNewUFO();
+			WasDestroyed();
 
-}
+		}
 
-void PlayScreen::Render()
-{
-	for (int i = 0; i < MAX_ASTEROIDZ; i++) {
-		m_pBigAsteroid[i]->Render();
-		m_pSmallAsteroid[i]->Render();
-	}
-	
-	m_pPlayGameBar->Render();
-}
+		void PlayScreen::Render()
+		{
+
+			for (auto e : m_pBigAsteroid) {
+				e->Render();
+				/*	for (int i = 0; i < MAX_SMALLASTEROIDS; i++) {
+					m_pSmallAsteroid[i]->Render();
+				}*/
+			}
+			for (auto f : m_pSmallAsteroid) {
+				f->Render();
+			}
+			for (auto g : m_pEnemy) {
+				g->Render();
+			}
+			m_pPlayGameBar->Render();
+		}
+
