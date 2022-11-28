@@ -143,6 +143,7 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
   <ItemGroup>
     <ClCompile Include="AnimatedTexture.cpp" />
     <ClCompile Include="AssetManager.cpp" />
+    <ClCompile Include="AsteroidPlay.cpp" />
     <ClCompile Include="AsteroidRock.cpp" />
     <ClCompile Include="AudioManager.cpp" />
     <ClCompile Include="GameEntity.cpp" />
@@ -151,6 +152,7 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
     <ClCompile Include="HighScoreScreen.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="PlayGameBar.cpp" />
     <ClCompile Include="PlayScreen.cpp" />
     <ClCompile Include="Random.cpp" />
@@ -164,6 +166,7 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
   <ItemGroup>
     <ClInclude Include="AnimatedTexture.h" />
     <ClInclude Include="AssetManager.h" />
+    <ClInclude Include="AsteroidPlay.h" />
     <ClInclude Include="AsteroidRock.h" />
     <ClInclude Include="AudioManager.h" />
     <ClInclude Include="GameEntity.h" />
@@ -172,6 +175,7 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
     <ClInclude Include="HighScoreScreen.h" />
     <ClInclude Include="InputManager.h" />
     <ClInclude Include="MathHelper.h" />
+    <ClInclude Include="Enemy.h" />
     <ClInclude Include="PlayGameBar.h" />
     <ClInclude Include="PlayScreen.h" />
     <ClInclude Include="Random.h" />

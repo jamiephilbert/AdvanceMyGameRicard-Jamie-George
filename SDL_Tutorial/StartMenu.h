@@ -1,6 +1,5 @@
 #ifndef _STARTMENU_H
 #define _STARTMENU_H
-//#include "Scoreboard.h"
 #include "InputManager.h"
 #include "AnimatedTexture.h"
 #include "AsteroidRock.h"
@@ -17,8 +16,6 @@ public:
 private:
 	Timer* m_pTimer;
 	InputManager* m_pInputManager;
-;
-	//Scoreboard* m_pTopScore;
 
 	// Play Mode Entities
 	GameEntity* m_pPlayModes;
