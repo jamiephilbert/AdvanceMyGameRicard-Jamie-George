@@ -1,8 +1,9 @@
 #include "Enemy.h"
 
 
-Enemy::Enemy() : Texture("UFOSprite1.png", 0, 0, 30, 22)
+Enemy::Enemy() : Texture("UFOSprite1.png", 0, 0, 42, 32)
 {
+	m_pRandom = Random::Instance();
 	m_pTimer = Timer::Instance();
 	UFOX = 0;
 	UFOY = 0;
@@ -77,7 +78,6 @@ void Enemy::CheckScreenBounds()
 		Position(Graphics::SCREEN_WIDTH + 10, Position().y);
 	}
 	if (Position().x > Graphics::SCREEN_WIDTH + 11) {
-		
 		Position(-10, Position().y);
 	}
 	if (Position().y < -11) {

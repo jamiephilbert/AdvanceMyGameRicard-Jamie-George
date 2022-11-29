@@ -18,6 +18,10 @@ PlayScreen::PlayScreen()
 	m_pPlayer->Parent(this);
 	m_pPlayer->Position(Graphics::SCREEN_WIDTH * 0.5f, Graphics::SCREEN_HEIGHT * 0.5f);
 
+	mAsteroidCount = 0;
+	mSmallAsteroidCount = 0;
+	mUFOCount = 0;
+
 	m_pGame = nullptr;
 	mGameStarted = false;
 }
@@ -75,6 +79,8 @@ void PlayScreen::StartNewGame()
 
 	mGameStartTimer = 0.0f;
 	m_pAudio->PlayMusic("MUS/GameStart.wav", 0);
+	
+
 }
 
 bool PlayScreen::GameOver()
@@ -108,10 +114,7 @@ void PlayScreen::Render()
 	m_pPlayGameBar->Render();
 	m_pPlayer->Render();
 
-	mAsteroidCount = 0;
-	mSmallAsteroidCount = 0;
-	mUFOCount = 0;
-
+	
 	for (auto e : m_pBigAsteroid) {
 		e->Render();
 		/*	for (int i = 0; i < MAX_SMALLASTEROIDS; i++) {
@@ -142,16 +145,16 @@ void PlayScreen::GenNewAsteroid()
 
 void PlayScreen::GenNewUFO()
 {
-	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_O)/* && mUFOCount <= MAX_UFO*/) {
-		/*m_pEnemy.push_back(new Enemy);*/
-		/*mUFOCount += 1;*/
+	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_I)/* && mUFOCount <= MAX_UFO*/) {
+		m_pEnemy.push_back(new Enemy);
+		mUFOCount += 1;
 	}
 }
 
 void PlayScreen::WasDestroyed()
 {/*
 	mAsteroidTimer += m_pTimer->DeltaTime();*/
-	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_L) && mAsteroidCount > 0) {
+	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_O) && mAsteroidCount > 0) {
 		for (auto e : m_pBigAsteroid) {
 			m_pBigAsteroid.pop_back();
 			mAsteroidCount = 0;
