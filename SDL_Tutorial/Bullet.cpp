@@ -8,7 +8,7 @@ Bullet::Bullet()
 	m_pTexture->Parent(this);
 	m_pTexture->Position(Vec2_Zero);
 
-	mBulletSpeed = 500;
+	mBulletSpeed = 1500;
 
 	Reload();
 }
@@ -21,9 +21,10 @@ Bullet::~Bullet()
 	m_pTexture = nullptr;
 }
 
-void Bullet::Fire(Vector2 pos)
+void Bullet::Fire(Vector2 pos, float rotation)
 {
 	Position(pos);
+	Rotation(rotation);
 	Active(true);
 }
 
@@ -35,11 +36,20 @@ void Bullet::Reload()
 void Bullet::Update()
 {
 	if (Active()) {
-		Translate(-Vec2_Up * mBulletSpeed * m_pTimer->DeltaTime());
+		Translate(-Vec2_Up /** ((std::cos(Rotation()), std::sin(Rotation()) */* mBulletSpeed * m_pTimer->DeltaTime());
 		
 		Vector2 pos = Position();
 
 		if (pos.y < -OFFSCREEN_BUFFER) {
+			Reload();
+		}
+		if (pos.y > Graphics::SCREEN_HEIGHT + OFFSCREEN_BUFFER) {
+			Reload();
+		}
+		if (pos.x < -OFFSCREEN_BUFFER) {
+			Reload();
+		}
+		if (pos.x > Graphics::SCREEN_WIDTH + OFFSCREEN_BUFFER) {
 			Reload();
 		}
 	}

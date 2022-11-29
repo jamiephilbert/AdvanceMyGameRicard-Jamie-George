@@ -4,6 +4,7 @@
 #include "AsteroidRock.h"
 #include "Timer.h"
 #include "AudioManager.h"
+#include "Player.h"
 
 
 class PlayGameBar : public GameEntity
@@ -23,6 +24,7 @@ private:
 	Texture* m_pShipLives;
 	Texture* m_pShipLives2;
 	Texture* m_pShipLives3;
+	Player* m_pLives;
 
 	Scoreboard* m_pHighScoreBoard;
 	Scoreboard* m_pPlayerBoard;

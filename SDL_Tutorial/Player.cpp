@@ -59,6 +59,9 @@ bool Player::IsAnimating()
 
 int Player::Lives()
 {
+	if (m_pInput->KeyPressed(SDL_SCANCODE_Q)) {
+		mLives -= 1;
+	}
 	return mLives;
 }
 
@@ -132,6 +135,8 @@ void Player::HandleMovement()
 		Translate(-Vec2_Up * ((std::cos(Rotation()), std::sin(Rotation()),(-Vec2_Up * mMoveSpeed * m_pTimer->DeltaTime(), World))));
 	}
 
+	PlayerCheckBounds();
+
 	//Vector2 direction(std::cos(Rotation()), std::sin(Rotation()));
 }
 
@@ -145,7 +150,7 @@ void Player::HandleFire()
 		//-------------OBJECT POOL-----------------//
 		for (int i = 0; i < MAX_BULLETS; i++) {
 			if (!m_pBullets[i]->Active()) {
-				m_pBullets[i]->Fire(Position());
+				m_pBullets[i]->Fire(Position(), Rotation());
 				m_pAudio->PlaySFX("SFX/Fire.wav", 0, -1);
 				break;
 			}
@@ -153,7 +158,18 @@ void Player::HandleFire()
 	}
 }
 
-void Player::PlayerPosition()
+void Player::PlayerCheckBounds()
 {
-	//m_pShip->Position() = m_pBullets->Position()
+	if (Position().x < -11) {
+		Position(Graphics::SCREEN_WIDTH + 10, Position().y);
+	}
+	if (Position().x > Graphics::SCREEN_WIDTH + 11) {
+		Position(-10, Position().y);
+	}
+	if (Position().y < -11) {
+		Position(Position().x, Graphics::SCREEN_HEIGHT + 10);
+	}
+	if (Position().y > Graphics::SCREEN_HEIGHT + 11) {
+		Position(Position().x, -10);
+	}
 }

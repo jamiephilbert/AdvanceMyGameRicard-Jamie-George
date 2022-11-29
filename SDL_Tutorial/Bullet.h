@@ -19,7 +19,7 @@ public:
 	Bullet();
 	~Bullet();
 
-	void Fire(Vector2 pos);
+	void Fire(Vector2 pos, float rotation);
 	void Reload();
 
 	void Update() override;

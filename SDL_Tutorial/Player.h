@@ -50,7 +50,7 @@ public:
 private:
 	void HandleMovement();
 	void HandleFire();
-	void PlayerPosition();
+	void PlayerCheckBounds();
 
 };
 
