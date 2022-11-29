@@ -49,6 +49,7 @@ void ScreenManager::Update()
     case Start:
         m_pStartScreen->Update();
 
+
         if (m_pInput->KeyPressed(SDL_SCANCODE_DOWN)) {
             ScreenChoice -= 1;
         }
