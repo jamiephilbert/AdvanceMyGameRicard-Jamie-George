@@ -12,7 +12,7 @@ namespace SDLFramework {
 	class GameManager
 	{
 	private:
-		const int FRAME_RATE = 120;
+		const int FRAME_RATE = 60;
 
 	private:
 		static GameManager* sInstance;

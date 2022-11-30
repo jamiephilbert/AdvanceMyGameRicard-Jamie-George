@@ -20,6 +20,7 @@ private:
 
 	bool mVisible;
 	bool mAnimating;
+	bool misMoving;
 
 	int mScore;
 	int mLives;
@@ -28,6 +29,7 @@ private:
 	AnimatedTexture* m_pDeathAnimation;
 
 	float mMoveSpeed;
+	float mMaxSpeed;
 	Vector2 mMoveBounds;
 
 public:

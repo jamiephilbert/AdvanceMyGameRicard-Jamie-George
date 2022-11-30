@@ -16,7 +16,8 @@ Player::Player()
 	m_pShip->Parent(this);
 	m_pShip->Position(0.0f, 0.0f);
 
-	mMoveSpeed = 450.0f;
+	mMoveSpeed = 0.0f;
+	mMaxSpeed = 500.0f;
 	mMoveBounds = Vector2(0.0f, 800.0f);
 
 	m_pDeathAnimation = new AnimatedTexture("PlayerExplosion.png", 0, 0, 150, 34, 3, 1.0f, AnimatedTexture::Horizontal);
@@ -132,6 +133,18 @@ void Player::HandleMovement()
 		Rotate(-2.0f);
 	}
 	if (m_pInput->KeyDown(SDL_SCANCODE_W)) {
+		misMoving = true;
+		mMoveSpeed += 10.0f * m_pTimer->DeltaTime();
+		if (mMoveSpeed > mMaxSpeed) {
+			mMoveSpeed == mMaxSpeed;
+			if (m_pInput->KeyReleased(SDL_SCANCODE_W)) {
+				misMoving = false;
+				mMoveSpeed -= 10.0f; m_pTimer->DeltaTime();
+				if (mMoveSpeed < 0) {
+					mMoveSpeed == 0;
+				}
+			}
+		}
 		Translate(-Vec2_Up * ((std::cos(Rotation()), std::sin(Rotation()),(-Vec2_Up * mMoveSpeed * m_pTimer->DeltaTime(), World))));
 	}
 
@@ -151,7 +164,7 @@ void Player::HandleFire()
 		for (int i = 0; i < MAX_BULLETS; i++) {
 			if (!m_pBullets[i]->Active()) {
 				m_pBullets[i]->Fire(Position(), Rotation());
-				m_pAudio->PlaySFX("SFX/Fire.wav", 0, -1);
+				m_pAudio->PlaySFX("SFX/fire.wav", 0, -1);
 				break;
 			}
 		}

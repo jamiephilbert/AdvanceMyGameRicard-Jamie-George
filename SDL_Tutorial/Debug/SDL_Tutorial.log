@@ -1,6 +1,8 @@
 ﻿  Player.cpp
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(135,34): warning C4834: discarding return value of function with 'nodiscard' attribute
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(135,68): warning C4244: 'argument': conversion from 'SDLFramework::GameEntity::Space' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(139,15): warning C4553: '==': result of expression not used; did you intend '='?
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(144,17): warning C4553: '==': result of expression not used; did you intend '='?
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(148,34): warning C4834: discarding return value of function with 'nodiscard' attribute
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(148,68): warning C4244: 'argument': conversion from 'SDLFramework::GameEntity::Space' to 'float', possible loss of data
   SDL_Tutorial.vcxproj -> D:\School\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libjpeg-9.dll
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libmodplug-1.dll
@@ -65,7 +67,12 @@ D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(135,68): warn
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone.ttf
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\UFOSprite1.png
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\yellowcursor.jpg
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MUS\beat1.wav
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MUS\fire.wav
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MUS\GameStart.wav
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SFX\beat1.wav
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SFX\coin_credit.wav
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SFX\fire.wav
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-PS\Starzone-SVG.otf
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-PS\Starzone.otf
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-TT\Starzone-SVG.ttf
@@ -74,4 +81,4 @@ D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(135,68): warn
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-PS\Starzone.otf
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-TT\Starzone-SVG.ttf
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-TT\Starzone.ttf
-  58 File(s) copied
+  63 File(s) copied
