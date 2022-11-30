@@ -78,6 +78,9 @@ void Player::AddScore(int change)
 
 void Player::WasHit()
 {
+	if (m_pInput->KeyDown(SDL_SCANCODE_K)) {
+		mLives -= 1;
+	}
 	mLives -= 1;
 	mAnimating = true;
 	m_pDeathAnimation->ResetAnimation();
