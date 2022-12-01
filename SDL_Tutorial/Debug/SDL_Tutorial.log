@@ -1,13 +1,7 @@
-﻿  Enemy.cpp
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(15,30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(17,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(18,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(23,30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(25,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(26,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(142,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(142,20): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  SDL_Tutorial.vcxproj -> C:\Users\Jamie\Source\Repos\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
+﻿  Player.cpp
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(132,34): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(132,68): warning C4244: 'argument': conversion from 'SDLFramework::GameEntity::Space' to 'float', possible loss of data
+  SDL_Tutorial.vcxproj -> C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libjpeg-9.dll
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libmodplug-1.dll
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libogg-0.dll

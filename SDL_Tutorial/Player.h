@@ -5,6 +5,7 @@
 #include "AudioManager.h"
 #include "Bullet.h"
 #include "Timer.h"
+#include "PlayGameBar.h"
 
 using namespace SDLFramework;
 
@@ -17,6 +18,7 @@ private:
 	Timer* m_pTimer;
 	InputManager* m_pInput;
 	AudioManager* m_pAudio;
+	PlayGameBar* m_pPlayerScore;
 
 	bool mVisible;
 	bool mAnimating;

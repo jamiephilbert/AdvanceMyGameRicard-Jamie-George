@@ -62,17 +62,6 @@ PlayScreen::~PlayScreen()
 
 void PlayScreen::StartNewGame()
 {
-	//delete m_pPlayer;
-	//m_pPlayer = new Player();
-	//m_pPlayer->Parent(this);
-	//m_pPlayer->Position(Graphics::SCREEN_WIDTH * 0.4f, Graphics::SCREEN_HEIGHT * 0.8f);
-	//m_pPlayer->Active(false);
-
-	//m_pPlayGameBar->HighestScore(30000);
-	//m_pPlayGameBar->SetShips(m_pPlayer->Lives());
-	//m_pPlayGameBar->PlayerScore(m_pPlayer->Score());
-	//m_pPlayGameBar->SetLevel(0);
-
 	mGameStarted = true;
 	mAsteroidDelay = 1.0f;
 	mAsteroidTimer = 0.0f;
@@ -117,9 +106,6 @@ void PlayScreen::Render()
 	
 	for (auto e : m_pBigAsteroid) {
 		e->Render();
-		/*	for (int i = 0; i < MAX_SMALLASTEROIDS; i++) {
-			m_pSmallAsteroid[i]->Render();
-		}*/
 	}
 	for (auto f : m_pSmallAsteroid) {
 		f->Render();
