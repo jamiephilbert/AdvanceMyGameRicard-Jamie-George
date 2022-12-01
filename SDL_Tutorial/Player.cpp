@@ -8,6 +8,7 @@ Player::Player()
 
 	mVisible = false;
 	mAnimating = false;
+	misMoving = false;
 
 	mScore = 0;
 	mLives = 3;
@@ -16,8 +17,9 @@ Player::Player()
 	m_pShip->Parent(this);
 	m_pShip->Position(0.0f, 0.0f);
 
+	mCurrentSpeed = 0.0f;
 	mMoveSpeed = 0.0f;
-	mMaxSpeed = 500.0f;
+	mMaxSpeed = 200.0f;
 	mMoveBounds = Vector2(0.0f, 800.0f);
 
 	m_pDeathAnimation = new AnimatedTexture("PlayerExplosion.png", 0, 0, 150, 34, 3, 1.0f, AnimatedTexture::Horizontal);
@@ -78,9 +80,6 @@ void Player::AddScore(int change)
 
 void Player::WasHit()
 {
-	if (m_pInput->KeyDown(SDL_SCANCODE_K)) {
-		mLives -= 1;
-	}
 	mLives -= 1;
 	mAnimating = true;
 	m_pDeathAnimation->ResetAnimation();
@@ -91,6 +90,15 @@ void Player::Update()
 {
 	m_pShip->Update();
 	HandleMovement();
+	ShipPhysics();
+
+	//if (misMoving == false) {
+	//	mCurrentSpeed -= 20.0f * m_pTimer->DeltaTime();
+	//	if (mCurrentSpeed < 0.0f) {
+	//		mCurrentSpeed = 0.0f;
+	//		mMoveSpeed = 0.0f;
+	//	}
+	//}
 
 	if (mAnimating) {
 		m_pDeathAnimation->Update();
@@ -99,6 +107,7 @@ void Player::Update()
 	else {
 		if (Active()) {
 			HandleMovement();
+			ShipPhysics();
 			HandleFire();
 		}
 	}
@@ -137,18 +146,13 @@ void Player::HandleMovement()
 	}
 	if (m_pInput->KeyDown(SDL_SCANCODE_W)) {
 		misMoving = true;
-		mMoveSpeed += 10.0f * m_pTimer->DeltaTime();
-		if (mMoveSpeed > mMaxSpeed) {
-			mMoveSpeed == mMaxSpeed;
-			if (m_pInput->KeyReleased(SDL_SCANCODE_W)) {
-				misMoving = false;
-				mMoveSpeed -= 10.0f; m_pTimer->DeltaTime();
-				if (mMoveSpeed < 0) {
-					mMoveSpeed == 0;
-				}
-			}
-		}
-		Translate(-Vec2_Up * ((std::cos(Rotation()), std::sin(Rotation()),(-Vec2_Up * mMoveSpeed * m_pTimer->DeltaTime(), World))));
+		Translate(-Vec2_Up * (mCurrentSpeed + mMoveSpeed) * m_pTimer->DeltaTime() * (std::cos(Rotation()), std::sin(Rotation()),  World));
+		ShipPhysics();
+	}
+	if (m_pInput->KeyReleased(SDL_SCANCODE_W)) {
+		misMoving = false;
+		Translate(-Vec2_Up * (mCurrentSpeed + mMoveSpeed) * (std::cos(Rotation()), std::sin(Rotation()), World));
+		ShipPhysics();
 	}
 
 	PlayerCheckBounds();
@@ -187,5 +191,23 @@ void Player::PlayerCheckBounds()
 	}
 	if (Position().y > Graphics::SCREEN_HEIGHT + 11) {
 		Position(Position().x, -10);
+	}
+}
+
+void Player::ShipPhysics()
+{
+	if (misMoving == true) {
+		mCurrentSpeed += 20.0f * m_pTimer->DeltaTime();
+		if (mCurrentSpeed > mMaxSpeed) {
+			mCurrentSpeed = mMaxSpeed;
+		}
+	}
+
+	if (misMoving == false) {
+		mCurrentSpeed -= 20.0f * m_pTimer->DeltaTime();
+		if (mCurrentSpeed < 0.0f) {
+			mCurrentSpeed = 0.0f;
+			mMoveSpeed = 0.0f;
+		}
 	}
 }

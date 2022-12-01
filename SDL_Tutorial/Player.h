@@ -28,6 +28,7 @@ private:
 	Texture* m_pShip;
 	AnimatedTexture* m_pDeathAnimation;
 
+	float mCurrentSpeed;
 	float mMoveSpeed;
 	float mMaxSpeed;
 	Vector2 mMoveBounds;
@@ -53,6 +54,7 @@ private:
 	void HandleMovement();
 	void HandleFire();
 	void PlayerCheckBounds();
+	void ShipPhysics();
 
 };
 
