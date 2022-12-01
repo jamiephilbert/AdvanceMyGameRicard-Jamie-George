@@ -26,6 +26,7 @@ private:
 	int mLives;
 
 	Texture* m_pShip;
+	Texture* m_pShipThrusters;
 	AnimatedTexture* m_pDeathAnimation;
 
 	float mCurrentSpeed;

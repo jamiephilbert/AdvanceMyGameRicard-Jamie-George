@@ -17,6 +17,10 @@ Player::Player()
 	m_pShip->Parent(this);
 	m_pShip->Position(0.0f, 0.0f);
 
+	m_pShipThrusters = new Texture("ShipThrusters.png", 0, 0, 18, 17);
+	m_pShipThrusters->Parent(this);
+	m_pShipThrusters->Position(10.0f, 10.0f);
+
 	mCurrentSpeed = 0.0f;
 	mMoveSpeed = 0.0f;
 	mMaxSpeed = 200.0f;
