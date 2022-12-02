@@ -9,6 +9,7 @@ Player::Player()
 	mVisible = false;
 	mAnimating = false;
 	misMoving = false;
+	mShipThrusters = false;
 
 	mScore = 0;
 	mLives = 3;
@@ -17,9 +18,9 @@ Player::Player()
 	m_pShip->Parent(this);
 	m_pShip->Position(0.0f, 0.0f);
 
-	m_pShipThrusters = new Texture("ShipThrusters.png", 0, 0, 18, 17);
-	m_pShipThrusters->Parent(this);
-	m_pShipThrusters->Position(0.0f, 21.0f);
+	//m_pShipThrusters = new Texture("ShipThrusters.png", 0, 0, 18, 17);
+	//m_pShipThrusters->Parent(this);
+	//m_pShipThrusters->Position(0.0f, 21.0f);
 
 	mCurrentSpeed = 0.0f;
 	mMoveSpeed = 0.0f;
@@ -93,6 +94,7 @@ void Player::WasHit()
 void Player::Update()
 {
 	m_pShip->Update();
+	//ShipThrusters();
 	HandleMovement();
 	ShipPhysics();
 
@@ -124,7 +126,7 @@ void Player::Update()
 void Player::Render()
 {
 	m_pShip->Render();
-	m_pShipThrusters->Render();
+	//ShipThrusters();
 	HandleMovement();
 
 	if (mVisible) {
@@ -151,9 +153,11 @@ void Player::HandleMovement()
 	}
 	if (m_pInput->KeyDown(SDL_SCANCODE_W)) {
 		misMoving = true;
+		mShipThrusters = true;
 	}
 	if (m_pInput->KeyReleased(SDL_SCANCODE_W)) {
 		misMoving = false;
+		mShipThrusters = false;
 	}
 
 	PlayerCheckBounds();
@@ -214,12 +218,15 @@ void Player::ShipPhysics()
 	}
 }
 
-bool Player::ShipThrusters()
+void Player::ShipThrusters()
 {
-	if (m_pInput->KeyDown(SDL_SCANCODE_W)) {
-
+	if (mShipThrusters == true) {
+		m_pShipThrusters = new Texture("ShipThrusters.png", 0, 0, 18, 17);
+		m_pShipThrusters->Parent(this);
+		m_pShipThrusters->Position(0.0f, 21.0f);
 	}
-		
-		
-		return false;
+	if (mShipThrusters == false) {
+		delete m_pShipThrusters;
+		m_pShipThrusters = nullptr;
+	}
 }
