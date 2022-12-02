@@ -19,7 +19,7 @@ Player::Player()
 
 	m_pShipThrusters = new Texture("ShipThrusters.png", 0, 0, 18, 17);
 	m_pShipThrusters->Parent(this);
-	m_pShipThrusters->Position(10.0f, 10.0f);
+	m_pShipThrusters->Position(0.0f, 21.0f);
 
 	mCurrentSpeed = 0.0f;
 	mMoveSpeed = 0.0f;
@@ -124,6 +124,7 @@ void Player::Update()
 void Player::Render()
 {
 	m_pShip->Render();
+	m_pShipThrusters->Render();
 	HandleMovement();
 
 	if (mVisible) {
@@ -150,13 +151,9 @@ void Player::HandleMovement()
 	}
 	if (m_pInput->KeyDown(SDL_SCANCODE_W)) {
 		misMoving = true;
-		Translate(-Vec2_Up * (mCurrentSpeed + mMoveSpeed) * m_pTimer->DeltaTime() * (std::cos(Rotation()), std::sin(Rotation()),  World));
-		ShipPhysics();
 	}
 	if (m_pInput->KeyReleased(SDL_SCANCODE_W)) {
 		misMoving = false;
-		Translate(-Vec2_Up * (mCurrentSpeed + mMoveSpeed) * (std::cos(Rotation()), std::sin(Rotation()), World));
-		ShipPhysics();
 	}
 
 	PlayerCheckBounds();
@@ -200,6 +197,7 @@ void Player::PlayerCheckBounds()
 
 void Player::ShipPhysics()
 {
+	Translate(-Vec2_Up * (mCurrentSpeed + mMoveSpeed) * m_pTimer->DeltaTime() * (std::cos(Rotation()), std::sin(Rotation()), World));
 	if (misMoving == true) {
 		mCurrentSpeed += 20.0f * m_pTimer->DeltaTime();
 		if (mCurrentSpeed > mMaxSpeed) {
@@ -214,4 +212,14 @@ void Player::ShipPhysics()
 			mMoveSpeed = 0.0f;
 		}
 	}
+}
+
+bool Player::ShipThrusters()
+{
+	if (m_pInput->KeyDown(SDL_SCANCODE_W)) {
+
+	}
+		
+		
+		return false;
 }

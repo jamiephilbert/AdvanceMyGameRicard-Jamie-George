@@ -57,6 +57,8 @@ private:
 	void PlayerCheckBounds();
 	void ShipPhysics();
 
+	bool ShipThrusters();
+
 };
 
 #endif // !_PLAYER_H
