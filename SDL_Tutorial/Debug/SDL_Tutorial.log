@@ -2,11 +2,11 @@
   GameManager.cpp
   HighScoreScreen.cpp
   Main.cpp
+  Player.cpp
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(219,87): warning C4834: discarding return value of function with 'nodiscard' attribute
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(219,121): warning C4244: 'argument': conversion from 'SDLFramework::GameEntity::Space' to 'float', possible loss of data
   PlayGameBar.cpp
   PlayScreen.cpp
-  Player.cpp
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(204,87): warning C4834: discarding return value of function with 'nodiscard' attribute
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(204,121): warning C4244: 'argument': conversion from 'SDLFramework::GameEntity::Space' to 'float', possible loss of data
   ScreenManager.cpp
   Generating Code...
   SDL_Tutorial.vcxproj -> D:\School\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe

@@ -24,7 +24,7 @@ Player::Player()
 
 	mCurrentSpeed = 0.0f;
 	mMoveSpeed = 0.0f;
-	mMaxSpeed = 200.0f;
+	mMaxSpeed = 300.0f;
 	mMoveBounds = Vector2(0.0f, 800.0f);
 
 	m_pDeathAnimation = new AnimatedTexture("PlayerExplosion.png", 0, 0, 150, 34, 3, 1.0f, AnimatedTexture::Horizontal);
@@ -113,8 +113,10 @@ void Player::Update()
 	else {
 		if (Active()) {
 			HandleMovement();
+			//ShipThrusters();
 			ShipPhysics();
 			HandleFire();
+			HandleThrusters();
 		}
 	}
 
@@ -128,6 +130,8 @@ void Player::Render()
 	m_pShip->Render();
 	//ShipThrusters();
 	HandleMovement();
+	HandleThrusters();
+	//m_pShipThrusters->Render();
 
 	if (mVisible) {
 		if (mAnimating) {
@@ -146,10 +150,10 @@ void Player::Render()
 void Player::HandleMovement()
 {
 	if (m_pInput->KeyDown(SDL_SCANCODE_D)) {
-		Rotate(2.0f);
+		Rotate(1.5f);
 	}
 	if (m_pInput->KeyDown(SDL_SCANCODE_A)) {
-		Rotate(-2.0f);
+		Rotate(-1.5f);
 	}
 	if (m_pInput->KeyDown(SDL_SCANCODE_W)) {
 		misMoving = true;
@@ -162,7 +166,6 @@ void Player::HandleMovement()
 
 	PlayerCheckBounds();
 
-	//Vector2 direction(std::cos(Rotation()), std::sin(Rotation()));
 }
 
 void Player::HandleFire()
@@ -180,6 +183,18 @@ void Player::HandleFire()
 				break;
 			}
 		}
+	}
+}
+
+void Player::HandleThrusters()
+{
+	if (m_pInput->KeyDown(SDL_SCANCODE_T)) {
+		for (int t = 0; t < MAX_THRUSTERS; t++) {
+			if (m_pShipThrusters[t]->Active()) {
+				m_pShipThrusters[t]->Thrusters(Position(), Rotation());
+			}
+		}
+		
 	}
 }
 
@@ -203,14 +218,14 @@ void Player::ShipPhysics()
 {
 	Translate(-Vec2_Up * (mCurrentSpeed + mMoveSpeed) * m_pTimer->DeltaTime() * (std::cos(Rotation()), std::sin(Rotation()), World));
 	if (misMoving == true) {
-		mCurrentSpeed += 20.0f * m_pTimer->DeltaTime();
+		mCurrentSpeed += 100.0f * m_pTimer->DeltaTime();
 		if (mCurrentSpeed > mMaxSpeed) {
 			mCurrentSpeed = mMaxSpeed;
 		}
 	}
 
 	if (misMoving == false) {
-		mCurrentSpeed -= 20.0f * m_pTimer->DeltaTime();
+		mCurrentSpeed -= 100.0f * m_pTimer->DeltaTime();
 		if (mCurrentSpeed < 0.0f) {
 			mCurrentSpeed = 0.0f;
 			mMoveSpeed = 0.0f;
@@ -218,15 +233,15 @@ void Player::ShipPhysics()
 	}
 }
 
-void Player::ShipThrusters()
-{
-	if (mShipThrusters == true) {
-		m_pShipThrusters = new Texture("ShipThrusters.png", 0, 0, 18, 17);
-		m_pShipThrusters->Parent(this);
-		m_pShipThrusters->Position(0.0f, 21.0f);
-	}
-	if (mShipThrusters == false) {
-		delete m_pShipThrusters;
-		m_pShipThrusters = nullptr;
-	}
-}
+//void Player::ShipThrusters()
+//{
+//	if (mShipThrusters == true) {
+//		m_pShipThrusters = new Texture("ShipThrusters.png", 0, 0, 18, 17);
+//		m_pShipThrusters->Parent(this);
+//		m_pShipThrusters->Position(0.0f, 21.0f);
+//	}
+//	if (mShipThrusters == false) {
+//		delete m_pShipThrusters;
+//		m_pShipThrusters = nullptr;
+//	}
+//}

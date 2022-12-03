@@ -36,7 +36,7 @@ void Bullet::Reload()
 void Bullet::Update()
 {
 	if (Active()) {
-		Translate(-Vec2_Up /** ((std::cos(Rotation()), std::sin(Rotation()) */* mBulletSpeed * m_pTimer->DeltaTime());
+		Translate(-Vec2_Up * mBulletSpeed * m_pTimer->DeltaTime());
 		
 		Vector2 pos = Position();
 
