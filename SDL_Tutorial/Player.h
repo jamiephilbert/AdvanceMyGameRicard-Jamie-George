@@ -5,7 +5,7 @@
 #include "AudioManager.h"
 #include "Bullet.h"
 #include "Timer.h"
-#include "ShipThrusters.h"
+//#include "ShipThrusters.h"
 
 using namespace SDLFramework;
 
@@ -13,7 +13,7 @@ class Player : public GameEntity
 {
 private:
 	static const int MAX_BULLETS = 4;
-	static const int MAX_THRUSTERS = 9999999;
+	//static const int MAX_THRUSTERS = 9999999;
 	Bullet* m_pBullets[MAX_BULLETS];
 
 	Timer* m_pTimer;
@@ -29,7 +29,8 @@ private:
 	int mLives;
 
 	Texture* m_pShip;
-	ShipThrusters* m_pShipThrusters[MAX_THRUSTERS];
+	Texture* m_pShipThrusters;
+	//ShipThrusters* m_pShipThrusters[MAX_THRUSTERS];
 	AnimatedTexture* m_pDeathAnimation;
 
 	float mCurrentSpeed;
@@ -57,11 +58,11 @@ public:
 private:
 	void HandleMovement();
 	void HandleFire();
-	void HandleThrusters();
+	//void HandleThrusters();
 	void PlayerCheckBounds();
 	void ShipPhysics();
 
-	//void ShipThrusters();
+	void ShipThrusters();
 
 };
 
