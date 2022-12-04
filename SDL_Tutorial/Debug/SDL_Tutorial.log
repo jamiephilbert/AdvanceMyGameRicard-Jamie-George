@@ -1,6 +1,6 @@
 ﻿  Player.cpp
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(231,87): warning C4834: discarding return value of function with 'nodiscard' attribute
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(231,121): warning C4244: 'argument': conversion from 'SDLFramework::GameEntity::Space' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(235,87): warning C4834: discarding return value of function with 'nodiscard' attribute
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(235,121): warning C4244: 'argument': conversion from 'SDLFramework::GameEntity::Space' to 'float', possible loss of data
   SDL_Tutorial.vcxproj -> D:\School\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libjpeg-9.dll
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libmodplug-1.dll

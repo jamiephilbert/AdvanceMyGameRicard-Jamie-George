@@ -9,7 +9,7 @@ Player::Player()
 	mVisible = false;
 	mAnimating = false;
 	misMoving = false;
-	mShipThrusters = false;
+	//mShipThrusters = false;
 
 	mScore = 0;
 	mLives = 3;
@@ -19,26 +19,28 @@ Player::Player()
 	m_pShip->Position(0.0f, 0.0f);
 
 	//if (mShipThrusters == true) {
-	//	m_pShipThrusters = new Texture("ShipThrusters.png", 0, 0, 18, 17);
-	//	m_pShipThrusters->Parent(this);
-	//	m_pShipThrusters->Position(0.0f, 21.0f);
+	m_pShipThrusters = new Texture("ShipThrusters.png", 0, 0, 18, 17);
+	m_pShipThrusters->Parent(this);
+	m_pShipThrusters->Position(0.0f, 21.0f);
 	//}
 	//if (mShipThrusters == false) {
 	//	m_pShipThrusters = new Texture("ShipThrusters.png", 0, 0, 0, 0);
 	//	m_pShipThrusters->Parent(this);
 	//	m_pShipThrusters->Position(0.0f, 21.0f);
 	//}
-	
 
 	mCurrentSpeed = 0.0f;
 	mMoveSpeed = 0.0f;
 	mMaxSpeed = 300.0f;
 	mMoveBounds = Vector2(0.0f, 800.0f);
 
-	m_pDeathAnimation = new AnimatedTexture("PlayerExplosion.png", 0, 0, 150, 34, 3, 1.0f, AnimatedTexture::Horizontal);
-	m_pDeathAnimation->Parent(this);
-	m_pDeathAnimation->Position(Vec2_Zero);
-	m_pDeathAnimation->SetWrapMode(AnimatedTexture::Once);
+	if (m_pInput->KeyPressed(SDL_SCANCODE_X)) {
+		m_pDeathAnimation = new AnimatedTexture("PlayerExplosion.png", 0, 0, 150, 34, 3, 1.0f, AnimatedTexture::Horizontal);
+		m_pDeathAnimation->Parent(this);
+		m_pDeathAnimation->Position(Vec2_Zero);
+		m_pDeathAnimation->SetWrapMode(AnimatedTexture::Once);
+	}
+	
 
 	for (int i = 0; i < MAX_BULLETS; i++) {
 		m_pBullets[i] = new Bullet();
@@ -106,9 +108,11 @@ void Player::Update()
 {
 	m_pShip->Update();
 	//m_pShipThrusters->Update();
-	ShipThrusters();
+	//ShipThrusters();
 	HandleMovement();
 	ShipPhysics();
+
+	m_pShipThrusters->Update();
 
 	//if (misMoving == false) {
 	//	mCurrentSpeed -= 20.0f * m_pTimer->DeltaTime();
@@ -140,10 +144,10 @@ void Player::Update()
 void Player::Render()
 {
 	m_pShip->Render();
-	ShipThrusters();
+	//ShipThrusters();
 	HandleMovement();
 	//HandleThrusters();
-	//m_pShipThrusters->Render();
+	m_pShipThrusters->Render();
 
 	if (mVisible) {
 		if (mAnimating) {
@@ -169,11 +173,11 @@ void Player::HandleMovement()
 	}
 	if (m_pInput->KeyDown(SDL_SCANCODE_W)) {
 		misMoving = true;
-		mShipThrusters = true;
+		//mShipThrusters = true;
 	}
 	if (m_pInput->KeyReleased(SDL_SCANCODE_W)) {
 		misMoving = false;
-		mShipThrusters = false;
+		//mShipThrusters = false;
 	}
 
 	PlayerCheckBounds();
@@ -245,16 +249,16 @@ void Player::ShipPhysics()
 	}
 }
 
-void Player::ShipThrusters()
-{
-	if (mShipThrusters == true) {
-		m_pShipThrusters = new Texture("ShipThrusters.png", 0, 0, 18, 17);
-		m_pShipThrusters->Parent(this);
-		m_pShipThrusters->Position(0.0f, 21.0f);
-	}
-	if (mShipThrusters == false) {
-		m_pShipThrusters = new Texture("ShipThrusters.png", 0, 0, 0, 0);
-		m_pShipThrusters->Parent(this);
-		m_pShipThrusters->Position(0.0f, 21.0f);
-	}
-}
+//void Player::ShipThrusters()
+//{
+//	if (mShipThrusters == true) {
+//		m_pShipThrusters = new Texture("ShipThrusters.png", 0, 0, 18, 17);
+//		m_pShipThrusters->Parent(this);
+//		m_pShipThrusters->Position(0.0f, 21.0f);
+//	}
+//	if (mShipThrusters == false) {
+//		m_pShipThrusters = new Texture("ShipThrusters.png", 0, 0, 0, 0);
+//		m_pShipThrusters->Parent(this);
+//		m_pShipThrusters->Position(0.0f, 21.0f);
+//	}
+//}

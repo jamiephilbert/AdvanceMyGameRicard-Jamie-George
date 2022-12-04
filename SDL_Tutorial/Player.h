@@ -23,7 +23,7 @@ private:
 	bool mVisible;
 	bool mAnimating;
 	bool misMoving;
-	bool mShipThrusters;
+	//bool mShipThrusters;
 
 	int mScore;
 	int mLives;
@@ -62,7 +62,7 @@ private:
 	void PlayerCheckBounds();
 	void ShipPhysics();
 
-	void ShipThrusters();
+	//void ShipThrusters();
 
 };
 
