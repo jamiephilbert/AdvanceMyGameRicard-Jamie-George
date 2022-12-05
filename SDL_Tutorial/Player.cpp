@@ -27,6 +27,9 @@ Player::Player()
 	for (int i = 0; i < MAX_BULLETS; i++) {
 		m_pBullets[i] = new Bullet();
 	}
+
+
+	AddCollider(new BoxCollider(Vector2(20.0f, 30.0f)), Vector2(-10.0f, -13.0f));
 }
 
 Player::~Player()
@@ -72,8 +75,11 @@ void Player::AddScore(int change)
 	mScore += change;
 }
 
-void Player::WasHit()
+void Player::Hit(PhysEntity* other)
 {
+	if (Position().y > other->Position().y) {
+
+	}
 	mLives -= 1;
 	mAnimating = true;
 	m_pDeathAnimation->ResetAnimation();
@@ -84,6 +90,7 @@ void Player::Update()
 {
 	m_pShip->Update();
 	HandleMovement();
+	
 
 	if (mAnimating) {
 		m_pDeathAnimation->Update();
@@ -105,6 +112,7 @@ void Player::Render()
 {
 	m_pShip->Render();
 	HandleMovement();
+	
 
 	if (mVisible) {
 		if (mAnimating) {
@@ -118,6 +126,9 @@ void Player::Render()
 	for (int i = 0; i < MAX_BULLETS; i++) {
 		m_pBullets[i]->Render();
 	}
+
+
+	PhysEntity::Render();
 }
 
 void Player::HandleMovement()

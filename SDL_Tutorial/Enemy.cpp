@@ -73,7 +73,7 @@ Enemy::Enemy() : Texture("UFOSprite1.png", 0, 0, 42, 32)
 //{
 //}
 void Enemy::CheckScreenBounds()
-{
+{	
 	if (Position().x < -11) {
 		Position(Graphics::SCREEN_WIDTH + 10, Position().y);
 	}

@@ -25,17 +25,17 @@ PlayGameBar::PlayGameBar()
 
 	m_pShips = new GameEntity();
 	m_pShips->Parent(m_pLivesLabel);
-	m_pShips->Position(0.0f, -0.5f);
+	m_pShips->Position(-30.0f, 30.0f);
 
 	for (int i = 0; i < MAX_SHIP_TEXTURES; i++) {
 		m_pShipTextures[i] = new Texture("RedShip.png", 0, 0, 22, 30);
 		m_pShipTextures[i]->Parent(m_pShips);
-		m_pShipTextures[i]->Position(62.0f * (i % 3), 70.0f * (i / 3));
+		m_pShipTextures[i]->Position(31.0f * (i % 3), 35.0f * (i / 3));
 	}
 
 	m_pTotalShipsLabel = new Scoreboard();
 	m_pTotalShipsLabel->Parent(this);
-	m_pTotalShipsLabel->Position(140.0f, 80.0f);
+	m_pTotalShipsLabel->Position(140.0f, 30.0f);
 
 	
 	

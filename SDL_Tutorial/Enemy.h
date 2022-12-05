@@ -2,6 +2,9 @@
 #define _ENEMY_H
 #include "AnimatedTexture.h"
 #include "Random.h"
+#include "PhysEntity.h"
+#include "Player.h"
+#include "PhysicsManager.h"
 
 using namespace SDLFramework;
 

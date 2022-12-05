@@ -6,10 +6,14 @@
 #include "Bullet.h"
 #include "Timer.h"
 #include "PlayGameBar.h"
-
+#include "PhysEntity.h" 
+#include "BoxCollider.h"
+#include "CircleCollider.h"
+#include "PhysicsManager.h"
+ 
 using namespace SDLFramework;
 
-class Player : public GameEntity
+class Player : public PhysEntity
 {
 private:
 	static const int MAX_BULLETS = 4;
@@ -44,7 +48,7 @@ public:
 
 	void AddScore(int change);
 
-	void WasHit();
+	void Hit(PhysEntity* other) override;
 
 	void Update() override;
 	void Render() override;
