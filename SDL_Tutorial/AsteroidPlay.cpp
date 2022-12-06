@@ -62,6 +62,7 @@ AsteroidPlay::AsteroidPlay(int asteroid, int count)
 	AddCollider(new CircleCollider(40, false));
 	m_pColliders[0]->Parent(this);
 	m_pColliders[0]->Position(-15.0f, -20.0f);
+	mId = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Hostile);
 }
 
 AsteroidPlay::~AsteroidPlay()
@@ -79,6 +80,7 @@ bool AsteroidPlay::IgnoreCollisions()
 
 void AsteroidPlay::Hit(PhysEntity* other)
 {
+
 }
 
 

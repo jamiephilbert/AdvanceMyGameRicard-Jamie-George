@@ -37,6 +37,9 @@ private:
 	float mAsteroidTimer;
 	float mAsteroidDelay;
 
+	float mUFOTimer;
+	float mUFODelay;
+
 	Player* m_pPlayer;
 
 	Texture* m_pStartLabel;

@@ -42,9 +42,9 @@ protected:
 	virtual void RenderSpawnState();
 	virtual void RenderDeadState();
 
-	
-
 	void RenderStates();*/
+	float mUFODirectionTimer;
+	float mUFODirectionDelay;
 	void CheckScreenBounds();
 public:
 	Enemy();

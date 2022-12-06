@@ -5,14 +5,12 @@ C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.
 C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(31,30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
 C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(33,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
 C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(34,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(138,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(138,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  GameManager.cpp
-  HighScoreScreen.cpp
-  Main.cpp
-  PlayScreen.cpp
-  ScreenManager.cpp
-  Generating Code...
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(149,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(149,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(154,33): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(155,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(159,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(160,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
   SDL_Tutorial.vcxproj -> C:\Users\Jamie\Source\Repos\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libjpeg-9.dll
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libmodplug-1.dll
