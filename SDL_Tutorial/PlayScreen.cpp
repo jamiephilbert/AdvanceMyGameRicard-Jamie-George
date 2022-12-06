@@ -24,6 +24,7 @@ PlayScreen::PlayScreen()
 
 	m_pGame = nullptr;
 	mGameStarted = false;
+	StartNewGame();
 }
 
 PlayScreen::~PlayScreen()
@@ -63,7 +64,7 @@ PlayScreen::~PlayScreen()
 void PlayScreen::StartNewGame()
 {
 	mGameStarted = true;
-	mAsteroidDelay = 1.0f;
+	mAsteroidDelay = 8.0f;
 	mAsteroidTimer = 0.0f;
 	delete m_pPlayer;
 	m_pPlayer = new Player();
@@ -76,7 +77,9 @@ void PlayScreen::StartNewGame()
 	m_pPlayGameBar->SetPlayerScore(m_pPlayer->Score());
 
 	mGameStartTimer = 0.0f;
-
+	m_pBigAsteroid.push_back(new AsteroidPlay(0, mAsteroidCount++));
+	m_pBigAsteroid.push_back(new AsteroidPlay(0, mAsteroidCount++));
+	m_pBigAsteroid.push_back(new AsteroidPlay(0, mAsteroidCount++));
 	
 
 }
@@ -88,6 +91,12 @@ bool PlayScreen::GameOver()
 
 void PlayScreen::Update()
 {
+	mAsteroidTimer += m_pTimer->DeltaTime();
+	/*std::cout << mAsteroidTimer << std::endl;*/
+	if (mAsteroidTimer >= mAsteroidDelay && mAsteroidCount <= MAX_ASTEROIDS) {
+		GenNewAsteroid();
+		mAsteroidTimer = 0.0f;
+	}
 	m_pPlayGameBar->Update();
 	m_pPlayer->Update();
 
@@ -101,9 +110,6 @@ void PlayScreen::Update()
 	for (auto g : m_pEnemy) {
 		g->Update();
 	}
-
-	StartNewGame();
-	GenNewAsteroid();
 	GenNewUFO();
 	WasDestroyed();
 }
@@ -133,10 +139,7 @@ void PlayScreen::Render()
 
 void PlayScreen::GenNewAsteroid()
 {
-	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_P) && mAsteroidCount < MAX_ASTEROIDS) {
-		m_pBigAsteroid.push_back(new AsteroidPlay(0, mAsteroidCount++));
-	}
-	
+	m_pBigAsteroid.push_back(new AsteroidPlay(0, mAsteroidCount++));
 }
 
 void PlayScreen::GenNewUFO()
@@ -159,7 +162,6 @@ void PlayScreen::WasDestroyed()
 	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_O) && mAsteroidCount > 0) {
 		for (auto e : m_pBigAsteroid) {
 			m_pBigAsteroid.pop_back();
-			m_pPlayer->AddScore(500);
 			mAsteroidCount = 0;
 			if (mSmallAsteroidCount < MAX_SMALLASTEROIDS) {
 				m_pSmallAsteroid.push_back(new SmallAsteroidRock("SmallAsteroidRock3.png"));

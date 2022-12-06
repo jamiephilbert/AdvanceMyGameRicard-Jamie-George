@@ -1,33 +1,19 @@
-﻿  BoxCollider.cpp
-  CircleCollider.cpp
-  Collider.cpp
-  Enemy.cpp
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(20,30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(22,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(23,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(32,30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+﻿  Enemy.cpp
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(22,30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(24,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(25,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(31,30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(33,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
 C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(34,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(35,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(150,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(150,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Game.cpp
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(138,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(138,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   GameManager.cpp
   HighScoreScreen.cpp
   Main.cpp
-  PhysEntity.cpp
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\PhysEntity.cpp(14,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\PhysEntity.cpp(69,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\PhysEntity.cpp(70,22): warning C4018: '<': signed/unsigned mismatch
-  PhysicsManager.cpp
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\PhysicsManager.cpp(32,21): warning C4018: '<': signed/unsigned mismatch
   PlayScreen.cpp
-  Player.cpp
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(143,34): warning C4834: discarding return value of function with 'nodiscard' attribute
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(143,68): warning C4244: 'argument': conversion from 'SDLFramework::GameEntity::Space' to 'float', possible loss of data
   ScreenManager.cpp
-  ShipThrusters.cpp
   Generating Code...
-  SDL_Tutorial.vcxproj -> C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
+  SDL_Tutorial.vcxproj -> C:\Users\Jamie\Source\Repos\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libjpeg-9.dll
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libmodplug-1.dll
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libogg-0.dll
@@ -50,6 +36,7 @@ C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\AsteroidsSpriteSheet.png
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\AtariClassic.ttf
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\BoxCollider.png
+  C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\BroadPhaseCollider.png
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\CircleCollider.png
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Cursor.png
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\emulogic.ttf
@@ -104,4 +91,4 @@ C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-PS\Starzone.otf
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-TT\Starzone-SVG.ttf
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-TT\Starzone.ttf
-  62 File(s) copied
+  63 File(s) copied

@@ -16,7 +16,7 @@ protected:
 	void AddCollider(Collider* collider, Vector2 localPos = Vec2_Zero);
 
 	virtual bool IgnoreCollisions();
-
+	
 	bool narrowPhaseCheck = false;
 
 public:

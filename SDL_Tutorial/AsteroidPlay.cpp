@@ -16,8 +16,10 @@ void AsteroidPlay::CheckScreenBounds()
 	}
 }
 
-AsteroidPlay::AsteroidPlay(int asteroid, int count) :Texture("Asteroid.png", 0, 0, 80, 70)
+AsteroidPlay::AsteroidPlay(int asteroid, int count)
 {
+	m_pTexture = new Texture("Asteroid.png", 0, 0, 80, 70);
+	m_pTexture->Parent(this);
 	XPos = 0;
 	YPos = 0;
 	m_pRandom2 = Random::Instance();
@@ -57,11 +59,26 @@ AsteroidPlay::AsteroidPlay(int asteroid, int count) :Texture("Asteroid.png", 0, 
 	default:
 		break;
 	}
+	AddCollider(new CircleCollider(40, false));
+	m_pColliders[0]->Parent(this);
+	m_pColliders[0]->Position(-15.0f, -20.0f);
 }
 
 AsteroidPlay::~AsteroidPlay()
 {
+	delete m_pTexture;
+	m_pTexture = nullptr;
+
 	m_pRandom2 = nullptr;
+}
+
+bool AsteroidPlay::IgnoreCollisions()
+{
+	return false;
+}
+
+void AsteroidPlay::Hit(PhysEntity* other)
+{
 }
 
 
@@ -74,5 +91,6 @@ void AsteroidPlay::Update()
 
 void AsteroidPlay::Render()
 {
-	Texture::Render();
+	m_pTexture->Render();
+	PhysEntity::Render();
 }

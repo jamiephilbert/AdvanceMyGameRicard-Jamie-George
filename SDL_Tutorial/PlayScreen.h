@@ -8,11 +8,12 @@
 #include "Timer.h"
 #include "InputManager.h"
 #include "Enemy.h"
+#include "PhysicsManager.h"
 #include <vector>
 
 using namespace SDLFramework;
 
-class PlayScreen : public GameEntity
+class PlayScreen : public PhysEntity
 {
 public:
 

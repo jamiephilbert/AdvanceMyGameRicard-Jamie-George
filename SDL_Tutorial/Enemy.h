@@ -8,10 +8,10 @@
 
 using namespace SDLFramework;
 
-class Enemy : public Texture
+class Enemy : public PhysEntity
 {
 public:
-	enum States{Spawn, PathTaken,  Dead};
+	enum States{Spawn, Dead};
 
 	static const int MAX_BULLETS = 4;
 	Bullet* m_pBullets[MAX_BULLETS];
@@ -35,13 +35,11 @@ private:
 
 protected:
 	/*virtual void HandleSpawnState();
-	virtual void HandlePathTakenState();
 	virtual void HandleDeadState();
 
 	void HandleStates();
 
 	virtual void RenderSpawnState();
-	virtual void RenderPathTakenState();
 	virtual void RenderDeadState();
 
 	

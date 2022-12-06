@@ -1,18 +1,20 @@
 #include "Enemy.h"
 
 
-Enemy::Enemy() : Texture("UFOSprite1.png", 0, 0, 42, 32)
+Enemy::Enemy()
 {
 	/*mPathChangeTimer = 0.0f;
 	mPathCount = 1.0f;
 	m_pTimer->DeltaTime();*/
+	m_pUFO = new Texture("UFOSprite1.png", 0, 0, 42, 32);
+	m_pUFO->Parent(this);
 
 	m_pRandom = Random::Instance();
 	m_pTimer = Timer::Instance();
 	UFOX = 0;
 	UFOY = 0;
 	mCoinFlipped = 0;
-
+	
 
 	mCoinFlipped = m_pRandom->RandomRange(0, 10);
 	if (mCoinFlipped < 5) {
@@ -21,9 +23,6 @@ Enemy::Enemy() : Texture("UFOSprite1.png", 0, 0, 42, 32)
 		m_pUFO->Position(ux, uy);
 		UFOX = m_pRandom->RandomRange(1.0f, 5.0f);
 		UFOY = m_pRandom->RandomRange(-5.0f, 5.0f);
-
-		mPathChangeTimer += m_pTimer->DeltaTime();
-	
 
 	}
 	else
@@ -35,6 +34,7 @@ Enemy::Enemy() : Texture("UFOSprite1.png", 0, 0, 42, 32)
 		UFOY = m_pRandom->RandomRange(-5.0f, 5.0f);
 	}
 
+	AddCollider(new CircleCollider(21, false));
 	
 	/*mCurrentState = Spawn;*/
 	
@@ -48,10 +48,6 @@ Enemy::Enemy() : Texture("UFOSprite1.png", 0, 0, 42, 32)
 //{
 //}
 //
-//void Enemy::HandlePathTakenState()
-//{ 
-//}
-//
 //void Enemy::HandleDeadState()
 //{
 //}
@@ -61,10 +57,6 @@ Enemy::Enemy() : Texture("UFOSprite1.png", 0, 0, 42, 32)
 //	switch (mCurrentState) {
 //	case Spawn:
 //		HandleSpawnState();
-//		break;
-//
-//	case PathTaken:
-//		HandlePathTakenState();
 //		break;
 //	case Dead:
 //		HandleDeadState();
@@ -102,10 +94,6 @@ void Enemy::CheckScreenBounds()
 	/*switch (mCurrentState) {
 	case Spawn:
 		RenderSpawnState();
-		break;
-
-	case PathTaken:
-		RenderPathTakenState();
 		break;
 	case Dead:
 		RenderDeadState();
@@ -153,5 +141,5 @@ void Enemy::Update()
 
 void Enemy::Render()
 {
-	Texture::Render();
+	PhysEntity::Render();
 }
