@@ -21,7 +21,7 @@ Collider::ColliderType Collider::GetType() {
 }
 
 void Collider::Render() {
-	/*if (DEBUG_COLLIDERS) {
+	if (DEBUG_COLLIDERS) {
 		m_pDebugTexture->Render();
-	}*/
+	}
 }

@@ -5,17 +5,16 @@ void BoxCollider::AddVert(int index, Vector2 pos) {
 	m_pVerts[index]->Parent(this);
 }
 
-BoxCollider::BoxCollider(Vector2 size)
-	: Collider(ColliderType::Box) {
+BoxCollider::BoxCollider(Vector2 size) : Collider(ColliderType::Box) {
 	AddVert(0, Vector2(-0.5f*size.x,-0.5f*size.y));
 	AddVert(1, Vector2( 0.5f*size.x,-0.5f*size.y));
 	AddVert(2, Vector2(-0.5f*size.x, 0.5f*size.y));
 	AddVert(3, Vector2( 0.5f*size.x, 0.5f*size.y));
 
-	/*if (DEBUG_COLLIDERS) {
-		SetDebugTexture(new Texture("BoxCollider.png"));
+	if (DEBUG_COLLIDERS) {
+		SetDebugTexture(new Texture("BoxCollider.png", false));
 		m_pDebugTexture->Scale(size);
-	}*/
+	}
 }
 
 BoxCollider::~BoxCollider() {

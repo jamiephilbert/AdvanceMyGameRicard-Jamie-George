@@ -3,16 +3,16 @@
 CircleCollider::CircleCollider(float radius, bool broadPhase) : Collider(ColliderType::Circle) {
 	mRadius = radius;
 
-	//if (DEBUG_COLLIDERS) {
-	//	if (broadPhase) {
-	//		SetDebugTexture(new Texture("BroadPhaseCollider.png"));
-	//	}
-	//	else {
-	//		SetDebugTexture(new Texture("CircleCollider.png"));
-	//	}
-	//	// circle collider file size is 50px
-	//	m_pDebugTexture->Scale(Vec2_One * (radius * 2 / 50.0f));
-	//}
+	if (DEBUG_COLLIDERS) {
+		if (broadPhase) {
+			SetDebugTexture(new Texture("BroadPhaseCollider.png", false));
+		}
+		else {
+			SetDebugTexture(new Texture("CircleCollider.png", false));
+		}
+		// circle collider file size is 50px
+		m_pDebugTexture->Scale(Vec2_One * (radius * 2 / 50.0f));
+	}
 }
 
 CircleCollider::~CircleCollider() {

@@ -12,7 +12,11 @@ class Enemy : public Texture
 {
 public:
 	enum States{Spawn, PathTaken,  Dead};
+
+	static const int MAX_BULLETS = 4;
+	Bullet* m_pBullets[MAX_BULLETS];
 private:
+
 	Timer* m_pTimer;
 	Texture* m_pUFO;
 	States mCurrentState;
@@ -24,6 +28,8 @@ private:
 	int UFOY;
 	float ux;
 	float uy;
+	float mPathChangeTimer;
+	float mPathCount;
 
 	float mSpeed;
 
@@ -44,6 +50,7 @@ protected:
 	void CheckScreenBounds();
 public:
 	Enemy();
+
 	~Enemy();
 	void Visible(bool visible);
 	void WasHit();

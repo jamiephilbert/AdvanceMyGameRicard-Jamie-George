@@ -1,5 +1,5 @@
-#ifndef _BOXCOLLIDER_H
-#define _BOXCOLLIDER_H
+#ifndef __BOXCOLLIDER_H
+#define __BOXCOLLIDER_H
 #include "Collider.h"
 
 class BoxCollider : public Collider {
