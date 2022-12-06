@@ -55,6 +55,9 @@ public:
 
 	void WasHit();
 
+	bool IgnoreCollisions() override;
+	void Hit(PhysEntity* other) override;
+
 	void Update() override;
 	void Render() override;
 

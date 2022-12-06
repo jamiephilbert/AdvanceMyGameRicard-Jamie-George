@@ -42,6 +42,7 @@ namespace SDLFramework {
 
 	void GameManager::LateUpdate() {
 		m_pInputManager->UpdatePrevInput();
+		m_pPhysicsManager->Update();
 	}
 
 	void GameManager::Render() {
@@ -61,6 +62,25 @@ namespace SDLFramework {
 		m_pInputManager = InputManager::Instance();
 		m_pAudioManager = AudioManager::Instance();
 		m_pScreenManager = ScreenManager::Instance();
+		m_pPhysicsManager = PhysicsManager::Instance();
+
+		m_pPhysicsManager->SetLayerCollisionMask(
+			PhysicsManager::CollisionLayers::Friendly,
+			PhysicsManager::CollisionFlags::Hostile |
+			PhysicsManager::CollisionFlags::HostileProjectiles);
+
+		m_pPhysicsManager->SetLayerCollisionMask(
+			PhysicsManager::CollisionLayers::FriendlyProjectiles,
+			PhysicsManager::CollisionFlags::Hostile);
+
+		m_pPhysicsManager->SetLayerCollisionMask(
+			PhysicsManager::CollisionLayers::Hostile,
+			PhysicsManager::CollisionFlags::Friendly |
+			PhysicsManager::CollisionFlags::FriendlyProjectiles);
+
+		m_pPhysicsManager->SetLayerCollisionMask(
+			PhysicsManager::CollisionLayers::HostileProjectiles,
+			PhysicsManager::CollisionFlags::Friendly);
 	}
 
 	GameManager::~GameManager() {
@@ -80,6 +100,9 @@ namespace SDLFramework {
 
 		ScreenManager::Release();
 		m_pScreenManager = nullptr;
+
+		PhysicsManager::Release();
+		m_pPhysicsManager = nullptr;
 
 		SDL_Quit();
 	}
