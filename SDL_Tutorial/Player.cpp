@@ -45,6 +45,8 @@ Player::Player()
 	for (int i = 0; i < MAX_BULLETS; i++) {
 		m_pBullets[i] = new Bullet();
 	}
+
+	AddCollider(new BoxCollider(Vector2(20.0f, 30.0f)), Vector2(-10.0f, -13.0f));
 }
 
 Player::~Player()

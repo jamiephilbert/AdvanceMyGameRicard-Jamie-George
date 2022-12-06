@@ -4,6 +4,8 @@ namespace SDLFramework {
 	GameEntity::GameEntity(float x, float y) :
 		mPosition(x,y), mRotation(0.0f), mScale(Vec2_One), mActive(true), mParent(nullptr) {}
 
+	GameEntity::GameEntity(const Vector2& pos) : mPosition(pos), mRotation(0.0f), mScale(Vec2_One), mActive(true), mParent(nullptr) {}
+
 	GameEntity::~GameEntity() {
 		mParent = nullptr;
 	}

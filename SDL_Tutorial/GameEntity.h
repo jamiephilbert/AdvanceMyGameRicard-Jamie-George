@@ -18,6 +18,7 @@ namespace SDLFramework {
 
 	public:
 		GameEntity(float x = 0.0f, float y = 0.0f);
+		GameEntity(const Vector2& pos);
 		~GameEntity();
 
 		void Position(float x, float y);
