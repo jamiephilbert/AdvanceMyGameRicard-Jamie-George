@@ -166,7 +166,7 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
     <ClCompile Include="Random.cpp" />
     <ClCompile Include="Scoreboard.cpp" />
     <ClCompile Include="ScreenManager.cpp" />
-    <ClCompile Include="ShipThrusters.cpp" />
+    <ClCompile Include="SmallAsteroidPlay.cpp" />
     <ClCompile Include="SmallAsteroidRock.cpp" />
     <ClCompile Include="StartMenu.cpp" />
     <ClCompile Include="Texture.cpp" />
@@ -199,7 +199,7 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
     <ClInclude Include="Random.h" />
     <ClInclude Include="Scoreboard.h" />
     <ClInclude Include="ScreenManager.h" />
-    <ClInclude Include="ShipThrusters.h" />
+    <ClInclude Include="SmallAsteroidPlay.h" />
     <ClInclude Include="SmallAsteroidRock.h" />
     <ClInclude Include="StartMenu.h" />
     <ClInclude Include="Texture.h" />

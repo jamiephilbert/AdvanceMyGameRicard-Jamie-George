@@ -100,7 +100,7 @@ void PlayScreen::Update()
 		GenNewAsteroid();
 		mAsteroidTimer = 0.0f;
 	}
-	if (mUFOTimer >= mAsteroidDelay && mUFOCount <= MAX_UFO) {
+	if (mUFOTimer >= mAsteroidDelay && mUFOCount < MAX_UFO) {
 		GenNewUFO();
 		mUFOTimer = 0.0f;
 	}
@@ -148,6 +148,7 @@ void PlayScreen::Render()
 void PlayScreen::GenNewAsteroid()
 {
 	m_pBigAsteroid.push_back(new AsteroidPlay(0, mAsteroidCount++));
+	
 }
 
 void PlayScreen::GenNewUFO()
@@ -164,8 +165,8 @@ void PlayScreen::WasDestroyed()
 			m_pBigAsteroid.pop_back();
 			mAsteroidCount = 0;
 			if (mSmallAsteroidCount < MAX_SMALLASTEROIDS) {
-				m_pSmallAsteroid.push_back(new SmallAsteroidRock("SmallAsteroidRock3.png"));
-				m_pSmallAsteroid.push_back(new SmallAsteroidRock("SmallAsteroidRock1.png"));
+				m_pSmallAsteroid.push_back(new SmallAsteroidPlay());
+				m_pSmallAsteroid.push_back(new SmallAsteroidPlay());
 				mSmallAsteroidCount += 2;
 			}
 		}

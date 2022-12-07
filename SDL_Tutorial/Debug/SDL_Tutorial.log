@@ -1,17 +1,21 @@
-﻿  Enemy.cpp
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(22,30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(24,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(25,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(31,30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(33,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(34,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(149,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(149,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(154,33): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(155,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(159,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(160,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-  SDL_Tutorial.vcxproj -> C:\Users\Jamie\Source\Repos\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
+﻿  GameManager.cpp
+  HighScoreScreen.cpp
+  Main.cpp
+  PlayScreen.cpp
+  ScreenManager.cpp
+  SmallAsteroidPlay.cpp
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidPlay.cpp(32,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidPlay.cpp(33,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidPlay.cpp(36,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidPlay.cpp(37,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidPlay.cpp(40,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidPlay.cpp(41,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidPlay.cpp(44,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidPlay.cpp(45,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidPlay.cpp(75,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\SmallAsteroidPlay.cpp(75,20): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
+  SDL_Tutorial.vcxproj -> C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libjpeg-9.dll
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libmodplug-1.dll
   C:\Users\Jamie\source\repos\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libogg-0.dll

@@ -1,7 +1,6 @@
 #ifndef _PLAYSCREEN_H
 #define _PLAYSCREEN_H
 #include "AsteroidPlay.h"
-#include "SmallAsteroidRock.h"
 #include "PlayGameBar.h"
 #include "Game.h"
 #include "Player.h"
@@ -10,6 +9,7 @@
 #include "Enemy.h"
 #include "PhysicsManager.h"
 #include <vector>
+#include "SmallAsteroidPlay.h"
 
 using namespace SDLFramework;
 
@@ -28,7 +28,7 @@ private:
 	InputManager* m_pInputManager;
 	PlayGameBar* m_pPlayGameBar;
 	std::vector<AsteroidPlay*> m_pBigAsteroid;
-	std::vector<SmallAsteroidRock*> m_pSmallAsteroid;
+	std::vector<SmallAsteroidPlay*> m_pSmallAsteroid;
 	std::vector<Enemy*> m_pEnemy;
 	int mAsteroidCount;
 	int mSmallAsteroidCount;
