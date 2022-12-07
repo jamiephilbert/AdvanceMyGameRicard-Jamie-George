@@ -12,7 +12,7 @@ Player::Player()
 
 	mScore = 0;
 	mLives = 3;
-	 
+	
 	m_pShip = new Texture("RedShip.png", 0, 0, 22, 30);
 	m_pShip->Parent(this);
 	m_pShip->Position(0.0f, 0.0f);

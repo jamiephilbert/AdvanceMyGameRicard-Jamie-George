@@ -74,7 +74,7 @@ void PlayScreen::StartNewGame()
 	m_pPlayer->Position(Graphics::SCREEN_WIDTH * 0.5f, Graphics::SCREEN_HEIGHT * 0.5f);
 	m_pPlayer->Active(false);
 
-	m_pPlayGameBar->SetHighScore(197672);
+	m_pPlayGameBar->SetHighScore(19721979);
 	m_pPlayGameBar->SetShips(m_pPlayer->Lives());
 	m_pPlayGameBar->SetPlayerScore(m_pPlayer->Score());
 

@@ -1,4 +1,26 @@
-﻿  Bullet.cpp
+﻿  AsteroidPlay.cpp
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(34,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(34,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(35,33): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(36,33): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(41,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(41,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(42,33): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(43,33): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(48,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(48,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(49,33): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(50,33): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(55,16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(55,12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(56,33): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(57,33): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(90,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\AsteroidPlay.cpp(90,20): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  BoxCollider.cpp
+  Bullet.cpp
+  CircleCollider.cpp
+  Collider.cpp
   Enemy.cpp
 D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(22,30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
 D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(24,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
@@ -13,9 +35,17 @@ D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(155,32): warni
 D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(159,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
 D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(160,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
   Game.cpp
+  GameEntity.cpp
   GameManager.cpp
   HighScoreScreen.cpp
   Main.cpp
+  PhysEntity.cpp
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\PhysEntity.cpp(14,21): warning C4018: '<': signed/unsigned mismatch
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\PhysEntity.cpp(69,21): warning C4018: '<': signed/unsigned mismatch
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\PhysEntity.cpp(70,22): warning C4018: '<': signed/unsigned mismatch
+  PhysicsManager.cpp
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\PhysicsManager.cpp(32,21): warning C4018: '<': signed/unsigned mismatch
+  PlayGameBar.cpp
   PlayScreen.cpp
   Player.cpp
 D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(208,87): warning C4834: discarding return value of function with 'nodiscard' attribute
@@ -91,8 +121,13 @@ D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(208,121): war
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone.ttf
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\UFOSprite1.png
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\yellowcursor.jpg
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MUS\beat1.wav
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MUS\fire.wav
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MUS\GameStart.wav
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SFX\Another1.mp4
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SFX\beat1.wav
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SFX\coin_credit.wav
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SFX\fire.wav
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-PS\Starzone-SVG.otf
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-PS\Starzone.otf
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-TT\Starzone-SVG.ttf
@@ -101,4 +136,4 @@ D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(208,121): war
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-PS\Starzone.otf
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-TT\Starzone-SVG.ttf
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-TT\Starzone.ttf
-  63 File(s) copied
+  68 File(s) copied
