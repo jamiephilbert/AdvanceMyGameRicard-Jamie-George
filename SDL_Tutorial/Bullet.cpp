@@ -1,4 +1,5 @@
 #include "Bullet.h"
+//#include "PhysicsManager.h"
 
 Bullet::Bullet()
 {
@@ -9,6 +10,13 @@ Bullet::Bullet()
 	m_pTexture->Position(Vec2_Zero);
 
 	mBulletSpeed = 1500;
+
+	//AddCollider(new BoxCollider(Vector2(20.0f, 30.0f)), Vector2(-10.0f, -13.0f));
+	//m_pColliders[0]->Parent(this);
+	//m_pColliders[0]->Position(5.0f, 0.0f);
+
+
+	//mId = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Friendly);
 
 	Reload();
 }
@@ -60,4 +68,6 @@ void Bullet::Render()
 	if (Active()) {
 		m_pTexture->Render();
 	}
+
+	//PhysEntity::Render();
 }
