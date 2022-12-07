@@ -26,14 +26,18 @@ private:
 
 	bool mVisible;
 	bool mAnimating;
+	bool misMoving;
 
 	int mScore;
 	int mLives;
 
 	Texture* m_pShip;
+	Texture* m_pShipThrusters;
 	AnimatedTexture* m_pDeathAnimation;
 
+	float mCurrentSpeed;
 	float mMoveSpeed;
+	float mMaxSpeed;
 	Vector2 mMoveBounds;
 
 public:
@@ -48,6 +52,10 @@ public:
 
 	void AddScore(int change);
 
+	void WasHit();
+
+	bool IgnoreCollisions() override;
+
 	void Hit(PhysEntity* other) override;
 
 	void Update() override;
@@ -56,7 +64,10 @@ public:
 private:
 	void HandleMovement();
 	void HandleFire();
-	void PlayerPosition();
+	void PlayerCheckBounds();
+	void ShipPhysics();
+
+	//void PlayerPosition();
 
 };
 
