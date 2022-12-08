@@ -141,11 +141,6 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\BoxCollider.cpp" />
-    <ClCompile Include="..\..\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\CircleCollider.cpp" />
-    <ClCompile Include="..\..\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\Collider.cpp" />
-    <ClCompile Include="..\..\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\PhysEntity.cpp" />
-    <ClCompile Include="..\..\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\PhysicsManager.cpp" />
     <ClCompile Include="AnimatedTexture.cpp" />
     <ClCompile Include="AssetManager.cpp" />
     <ClCompile Include="AsteroidPlay.cpp" />
@@ -173,12 +168,6 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
     <ClCompile Include="Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\BoxCollider.h" />
-    <ClInclude Include="..\..\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\CircleCollider.h" />
-    <ClInclude Include="..\..\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\Collider.h" />
-    <ClInclude Include="..\..\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\PhysEntity.h" />
-    <ClInclude Include="..\..\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\PhysicsHelper.h" />
-    <ClInclude Include="..\..\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\PhysicsManager.h" />
     <ClInclude Include="AnimatedTexture.h" />
     <ClInclude Include="AssetManager.h" />
     <ClInclude Include="AsteroidPlay.h" />

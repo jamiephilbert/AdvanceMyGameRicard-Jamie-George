@@ -2,12 +2,10 @@
 #define _BULLET_H
 #include "Texture.h"
 #include "Timer.h"
-#include "CircleCollider.h"
-#include "PhysicsManager.h"
 
 using namespace SDLFramework;
 
-class Bullet : public PhysEntity
+class Bullet : public GameEntity
 {
 private:
 	static const int OFFSCREEN_BUFFER = 10;

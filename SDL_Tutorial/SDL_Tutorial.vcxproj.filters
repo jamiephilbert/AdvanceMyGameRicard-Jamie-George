@@ -31,12 +31,6 @@
     <Filter Include="Source Files\Screens">
       <UniqueIdentifier>{c13c71e6-27ed-4b4f-bdbc-ac33fd0feeac}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Physics">
-      <UniqueIdentifier>{e12057eb-2cba-483c-9522-ed735c14e437}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Physics">
-      <UniqueIdentifier>{2d4cb45b-729e-4086-a65a-4925bdb88a91}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -114,21 +108,6 @@
     <ClCompile Include="ShipThrusters.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\BoxCollider.cpp">
-      <Filter>Source Files\Physics</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\CircleCollider.cpp">
-      <Filter>Source Files\Physics</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\Collider.cpp">
-      <Filter>Source Files\Physics</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\PhysEntity.cpp">
-      <Filter>Source Files\Physics</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\PhysicsManager.cpp">
-      <Filter>Source Files\Physics</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graphics.h">
@@ -205,24 +184,6 @@
     </ClInclude>
     <ClInclude Include="ShipThrusters.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\BoxCollider.h">
-      <Filter>Header Files\Physics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\CircleCollider.h">
-      <Filter>Header Files\Physics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\Collider.h">
-      <Filter>Header Files\Physics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\PhysEntity.h">
-      <Filter>Header Files\Physics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\PhysicsHelper.h">
-      <Filter>Header Files\Physics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\PhysicsManager.h">
-      <Filter>Header Files\Physics</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

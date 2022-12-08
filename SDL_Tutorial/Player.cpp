@@ -48,7 +48,6 @@ Player::Player()
 	}
 
 	//AddCollider(new BoxCollider(Vector2(20.0f, 30.0f)), Vector2(-10.0f, -13.0f));
-	AddCollider(new CircleCollider(10.0f));
 
 	//mId = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Friendly);
 }
@@ -208,16 +207,6 @@ void Player::HandleFire()
 			}
 		}
 	}
-}
-
-bool Player::IgnoreCollisions() 
-{
-	return !mVisible || mAnimating;
-}
-
-void Player::Hit(PhysEntity* other) 
-{
-
 }
 
 //void Player::HandleThrusters()
