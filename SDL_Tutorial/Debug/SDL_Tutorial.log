@@ -1,31 +1,4 @@
-﻿  Player.cpp
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(242,87): warning C4834: discarding return value of function with 'nodiscard' attribute
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(242,121): warning C4244: 'argument': conversion from 'SDLFramework::GameEntity::Space' to 'float', possible loss of data
-  Enemy.cpp
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(14,30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(16,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(17,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(22,30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(24,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(25,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(142,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(142,20): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  ShipThrusters.cpp
-  Generating Code...
-  LINK : D:\School\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe not found or not built by the last incremental link; performing full link
-Timer.obj : warning LNK4099: PDB '' was not found with 'Timer.obj' or at ''; linking object as if no debug info
-Texture.obj : warning LNK4099: PDB '' was not found with 'Texture.obj' or at ''; linking object as if no debug info
-StartMenu.obj : warning LNK4099: PDB '' was not found with 'StartMenu.obj' or at ''; linking object as if no debug info
-SmallAsteroidRock.obj : warning LNK4099: PDB '' was not found with 'SmallAsteroidRock.obj' or at ''; linking object as if no debug info
-Scoreboard.obj : warning LNK4099: PDB '' was not found with 'Scoreboard.obj' or at ''; linking object as if no debug info
-Random.obj : warning LNK4099: PDB '' was not found with 'Random.obj' or at ''; linking object as if no debug info
-InputManager.obj : warning LNK4099: PDB '' was not found with 'InputManager.obj' or at ''; linking object as if no debug info
-Graphics.obj : warning LNK4099: PDB '' was not found with 'Graphics.obj' or at ''; linking object as if no debug info
-AudioManager.obj : warning LNK4099: PDB '' was not found with 'AudioManager.obj' or at ''; linking object as if no debug info
-AsteroidRock.obj : warning LNK4099: PDB '' was not found with 'AsteroidRock.obj' or at ''; linking object as if no debug info
-AssetManager.obj : warning LNK4099: PDB '' was not found with 'AssetManager.obj' or at ''; linking object as if no debug info
-AnimatedTexture.obj : warning LNK4099: PDB '' was not found with 'AnimatedTexture.obj' or at ''; linking object as if no debug info
-  SDL_Tutorial.vcxproj -> D:\School\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
+﻿  SDL_Tutorial.vcxproj -> D:\School\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libjpeg-9.dll
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libmodplug-1.dll
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libogg-0.dll
