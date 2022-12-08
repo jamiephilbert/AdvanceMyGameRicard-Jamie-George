@@ -2,14 +2,21 @@
 #define _ENEMY_H
 #include "AnimatedTexture.h"
 #include "Random.h"
+#include "PhysEntity.h"
+#include "Player.h"
+#include "PhysicsManager.h"
 
 using namespace SDLFramework;
 
-class Enemy : public Texture
+class Enemy : public PhysEntity
 {
 public:
-	enum States{Spawn, PathTaken,  Dead};
+	enum States{Spawn, Dead};
+
+	static const int MAX_BULLETS = 4;
+	Bullet* m_pBullets[MAX_BULLETS];
 private:
+
 	Timer* m_pTimer;
 	Texture* m_pUFO;
 	States mCurrentState;
@@ -21,26 +28,27 @@ private:
 	int UFOY;
 	float ux;
 	float uy;
+	float mPathChangeTimer;
+	float mPathCount;
 
 	float mSpeed;
 
 protected:
 	/*virtual void HandleSpawnState();
-	virtual void HandlePathTakenState();
 	virtual void HandleDeadState();
 
 	void HandleStates();
 
 	virtual void RenderSpawnState();
-	virtual void RenderPathTakenState();
 	virtual void RenderDeadState();
 
-	
-
 	void RenderStates();*/
+	float mUFODirectionTimer;
+	float mUFODirectionDelay;
 	void CheckScreenBounds();
 public:
 	Enemy();
+
 	~Enemy();
 	void Visible(bool visible);
 	void WasHit();

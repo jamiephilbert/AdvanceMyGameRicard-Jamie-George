@@ -1,15 +1,17 @@
 #ifndef _SMALLASTEROIDROCK_H
 #define _SMALLASTEROIDROCK_H
-#include "AsteroidRock.h"
+#include "AsteroidPlay.h"
+#include "PhysicsManager.h"
 #include <string>
 
 using namespace SDLFramework;
 
-class SmallAsteroidRock : public Texture
+class SmallAsteroidRock : public PhysEntity
 {
 private:
 	Random* m_pRandom;
-
+	Texture* m_pTexture;
+	
 	int randVelocityX;
 	int randVelocityY;
 
@@ -18,7 +20,7 @@ private:
 	std::string filename;
 
 public:
-	SmallAsteroidRock(std::string filename);
+	SmallAsteroidRock();
 	~SmallAsteroidRock();
 
 	void Update() override;
