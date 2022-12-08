@@ -97,7 +97,7 @@ void Game::HandleStartLabels() {
 void Game::HandleCollisions() {
 	if (!Game::mPlayerHit) {
 		if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_X)) {
-			m_pPlayer->WasHit();
+			
 			//m_pGameBar->SetShips(m_pPlayer->Lives());
 
 			mPlayerHit = true;

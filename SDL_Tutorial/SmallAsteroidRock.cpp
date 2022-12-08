@@ -16,12 +16,13 @@ void SmallAsteroidRock::CheckScreenBounds()
 	}
 }
 
-SmallAsteroidRock::SmallAsteroidRock(std::string filename) :Texture("SmallAsteroidRock1.png", 0, 0, 26, 28)
+SmallAsteroidRock::SmallAsteroidRock()
 {
-	m_pTex = AssetManager::Instance()->GetTexture(filename);
-
+	m_pTexture = new Texture("SmallAsteroidRock2.png", 0, 0, 26, 28);
+	m_pTexture->Parent(this);
 	m_pRandom = Random::Instance();
 	int randomStartPosition = m_pRandom->RandomRange(0, 3);
+	
 	//int randomStartPosition = 3;
 	int rx = 0;
 	int ry = 0;
@@ -58,6 +59,11 @@ SmallAsteroidRock::SmallAsteroidRock(std::string filename) :Texture("SmallAstero
 	default:
 		break;
 	}
+
+	AddCollider(new CircleCollider(13, false));
+	m_pColliders[0]->Parent(this);
+	m_pColliders[0]->Position(10.0f, 15.0f);
+	mId = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Hostile);
 }
 
 SmallAsteroidRock::~SmallAsteroidRock()
@@ -73,5 +79,6 @@ void SmallAsteroidRock::Update()
 
 void SmallAsteroidRock::Render()
 {
-	Texture::Render();
+	m_pTexture->Render();
+	PhysEntity::Render();
 }

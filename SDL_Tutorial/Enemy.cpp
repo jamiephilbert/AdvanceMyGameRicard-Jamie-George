@@ -1,32 +1,47 @@
 #include "Enemy.h"
 
 
-Enemy::Enemy() : Texture("UFOSprite1.png", 0, 0, 30, 22)
+Enemy::Enemy()
 {
+	/*mPathChangeTimer = 0.0f;
+	mPathCount = 1.0f;
+	m_pTimer->DeltaTime();*/
+	m_pUFO = new Texture("UFOSprite1.png", 0, 0, 42, 32);
+	m_pUFO->Parent(this);
+
+	m_pRandom = Random::Instance();
 	m_pTimer = Timer::Instance();
 	UFOX = 0;
 	UFOY = 0;
 	mCoinFlipped = 0;
+	
 
 	mCoinFlipped = m_pRandom->RandomRange(0, 10);
 	if (mCoinFlipped < 5) {
 		ux = -10;
 		uy = m_pRandom->RandomRange(0, Graphics::SCREEN_HEIGHT);
-		Position(ux, uy);
+		m_pUFO->Position(ux, uy);
 		UFOX = m_pRandom->RandomRange(1.0f, 5.0f);
 		UFOY = m_pRandom->RandomRange(-5.0f, 5.0f);
+
 	}
 	else
 	{
 		ux = Graphics::SCREEN_WIDTH + 10;
 		uy = m_pRandom->RandomRange(0, Graphics::SCREEN_HEIGHT);
-		Position(ux, uy);
+		m_pUFO->Position(ux, uy);
 		UFOX = m_pRandom->RandomRange(-5.0f, -1.0f);
 		UFOY = m_pRandom->RandomRange(-5.0f, 5.0f);
 	}
 
+	AddCollider(new CircleCollider(23, false));
+	m_pColliders[0]->Parent(m_pUFO);
+	m_pColliders[0]->Position(0.0f, 0.0f);
+	mId = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Hostile);
 	
-	
+
+	mUFODirectionDelay = 2.0f;
+	mUFODirectionTimer = 0.0f;
 	/*mCurrentState = Spawn;*/
 	
 	/*mMoveUFO = false;
@@ -39,10 +54,6 @@ Enemy::Enemy() : Texture("UFOSprite1.png", 0, 0, 30, 22)
 //{
 //}
 //
-//void Enemy::HandlePathTakenState()
-//{ 
-//}
-//
 //void Enemy::HandleDeadState()
 //{
 //}
@@ -52,10 +63,6 @@ Enemy::Enemy() : Texture("UFOSprite1.png", 0, 0, 30, 22)
 //	switch (mCurrentState) {
 //	case Spawn:
 //		HandleSpawnState();
-//		break;
-//
-//	case PathTaken:
-//		HandlePathTakenState();
 //		break;
 //	case Dead:
 //		HandleDeadState();
@@ -72,19 +79,19 @@ Enemy::Enemy() : Texture("UFOSprite1.png", 0, 0, 30, 22)
 //{
 //}
 void Enemy::CheckScreenBounds()
-{
-	if (Position().x < -11) {
-		Position(Graphics::SCREEN_WIDTH + 10, Position().y);
+{	
+	if (m_pUFO->Position().x < -11) {
+		m_pUFO->Position(Graphics::SCREEN_WIDTH + 10, m_pUFO->Position().y);
 	}
-	if (Position().x > Graphics::SCREEN_WIDTH + 11) {
+	if (m_pUFO->Position().x > Graphics::SCREEN_WIDTH + 11) {
+		m_pUFO->Position(-10, m_pUFO->Position().y);
 		
-		Position(-10, Position().y);
 	}
-	if (Position().y < -11) {
-		Position(Position().x, Graphics::SCREEN_HEIGHT + 10);
+	if (m_pUFO->Position().y < -11) {
+		m_pUFO->Position(m_pUFO->Position().x, Graphics::SCREEN_HEIGHT + 10);
 	}
-	if (Position().y > Graphics::SCREEN_HEIGHT + 11) {
-		Position(Position().x, -10);
+	if (m_pUFO->Position().y > Graphics::SCREEN_HEIGHT + 11) {
+		m_pUFO->Position(m_pUFO->Position().x, -10);
 	}
 }
 
@@ -94,10 +101,6 @@ void Enemy::CheckScreenBounds()
 	/*switch (mCurrentState) {
 	case Spawn:
 		RenderSpawnState();
-		break;
-
-	case PathTaken:
-		RenderPathTakenState();
 		break;
 	case Dead:
 		RenderDeadState();
@@ -111,6 +114,9 @@ void Enemy::CheckScreenBounds()
 
 Enemy::~Enemy()
 {
+	delete m_pUFO;
+	m_pUFO = nullptr;
+
 	m_pTimer = nullptr;
 
 	/*delete m_pUFO;
@@ -139,11 +145,25 @@ Enemy::~Enemy()
 
 void Enemy::Update()
 {
-	Translate(Vector2(UFOX, UFOY), GameEntity::World);
+	mUFODirectionTimer += m_pTimer->DeltaTime();
+	m_pUFO->Translate(Vector2(UFOX, UFOY), GameEntity::World);
 	CheckScreenBounds();
+	if (mUFODirectionTimer >= mUFODirectionDelay) {
+		mUFODirectionTimer = 0.0f;
+		if (mCoinFlipped < 5) {
+		UFOX =  m_pRandom->RandomRange(1.0f, 5.0f);
+		UFOY = m_pRandom->RandomRange(-5.0f, 5.0f);
+		}
+		else
+		{
+		UFOX = m_pRandom->RandomRange(-5.0f, -1.0f);
+		UFOY = m_pRandom->RandomRange(-5.0f, 5.0f);
+		}
+	}
 }
 
 void Enemy::Render()
 {
-	Texture::Render();
+	m_pUFO->Render();
+	PhysEntity::Render();
 }
