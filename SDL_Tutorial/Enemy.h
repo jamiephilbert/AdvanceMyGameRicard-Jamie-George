@@ -13,7 +13,7 @@ class Enemy : public PhysEntity
 public:
 	enum States{Spawn, Dead};
 
-	static const int MAX_BULLETS = 4;
+	static const int MAX_BULLETS = 2;
 	Bullet* m_pBullets[MAX_BULLETS];
 private:
 
@@ -51,9 +51,10 @@ public:
 
 	~Enemy();
 	void Visible(bool visible);
-	void WasHit();
 	bool IsAnimated();
-	
+	bool IgnoreCollisions() override;
+	void Hit(PhysEntity* other) override;
+
 	States CurrentState();
 
 	void Update();

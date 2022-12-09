@@ -39,6 +39,9 @@ Enemy::Enemy()
 	m_pColliders[0]->Position(0.0f, 0.0f);
 	mId = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Hostile);
 	
+	for (int i = 0; i < MAX_BULLETS; i++) {
+		m_pBullets[i] = new Bullet();
+	}
 
 	mUFODirectionDelay = 2.0f;
 	mUFODirectionTimer = 0.0f;
@@ -119,32 +122,50 @@ Enemy::~Enemy()
 
 	m_pTimer = nullptr;
 
+	for (int i = 0; i < MAX_BULLETS; i++) {
+		delete m_pBullets[i];
+		m_pBullets[i] = nullptr;
+	}
+
 	/*delete m_pUFO;
 	m_pUFO = nullptr;*/
 
 }
 
 
-//void Enemy::Visible(bool visible)
-//{
-//}
+void Enemy::Visible(bool visible)
+{
+	visible = true;
+}
 
-//void Enemy::WasHit()
-//{
-//}
-//
-//bool Enemy::IsAnimated()
-//{
-//	return false;
-//}
 
-//Enemy::States Enemy::CurrentState()
-//{
-//	return mCurrentState;
-//}
+bool Enemy::IsAnimated()
+{
+	return false;
+}
+
+bool Enemy::IgnoreCollisions()
+{
+	return true;
+}
+
+void Enemy::Hit(PhysEntity* other)
+{
+	Parent(nullptr);
+	IsAnimated();
+	IgnoreCollisions();
+
+
+}
+
+Enemy::States Enemy::CurrentState()
+{
+	return mCurrentState;
+}
 
 void Enemy::Update()
 {
+	
 	mUFODirectionTimer += m_pTimer->DeltaTime();
 	m_pUFO->Translate(Vector2(UFOX, UFOY), GameEntity::World);
 	CheckScreenBounds();
@@ -160,10 +181,18 @@ void Enemy::Update()
 		UFOY = m_pRandom->RandomRange(-5.0f, 5.0f);
 		}
 	}
+	for (int i = 0; i < MAX_BULLETS; i++) {
+		m_pBullets[i]->Update();
+	}
+
+
 }
 
 void Enemy::Render()
 {
 	m_pUFO->Render();
 	PhysEntity::Render();
+	for (int i = 0; i < MAX_BULLETS; i++) {
+		m_pBullets[i]->Render();
+	}
 }
