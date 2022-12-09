@@ -10,7 +10,7 @@ Player::Player()
 	mVisible = false;
 	mAnimating = false;
 	misMoving = false;
-	//mShipThrusters = false;
+	mWasHit = false;
 
 	mScore = 0;
 	mLives = 3;
@@ -107,6 +107,28 @@ void Player::WasHit()
 	mAnimating = true;
 	m_pDeathAnimation->ResetAnimation();
 	m_pAudio->PlaySFX("SFX/PlayerExplosion.wav", 0, -1);
+}
+
+void Player::WasHit(bool hit)
+{
+	mWasHit = hit;
+}
+
+bool Player::IgnoreCollisions()
+{
+	return !mVisible || mAnimating;
+}
+
+void Player::Hit(PhysEntity* other)
+{
+	if (Position().y > other->Position().y) {
+
+	}
+	mLives -= 1;
+	mAnimating = true;
+	m_pDeathAnimation->ResetAnimation();
+	m_pAudio->PlaySFX("SFX/PlayerExplosion.wav");
+	mWasHit = true;
 }
 
 void Player::Update()

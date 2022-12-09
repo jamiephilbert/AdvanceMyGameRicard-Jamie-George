@@ -5,11 +5,14 @@
 #include "AudioManager.h"
 #include "Bullet.h"
 #include "Timer.h"
-//#include "ShipThrusters.h"
+#include "PhysEntity.h" 
+#include "BoxCollider.h"
+#include "CircleCollider.h"
+#include "PhysicsManager.h"
 
 using namespace SDLFramework;
 
-class Player : public GameEntity
+class Player : public PhysEntity
 {
 private:
 	static const int MAX_BULLETS = 4;
@@ -23,6 +26,7 @@ private:
 	bool mVisible;
 	bool mAnimating;
 	bool misMoving;
+	bool mWasHit;
 	//bool mShipThrusters;
 
 	int mScore;
@@ -51,6 +55,10 @@ public:
 	void AddScore(int change);
 
 	void WasHit();
+	void WasHit(bool hit);
+
+	bool IgnoreCollisions() override;
+	void Hit(PhysEntity* other) override;
 
 	void Update() override;
 	void Render() override;
