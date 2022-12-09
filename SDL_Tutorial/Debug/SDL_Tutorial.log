@@ -1,13 +1,87 @@
-﻿  BoxCollider.cpp
-  CircleCollider.cpp
-  Collider.cpp
-  PhysEntity.cpp
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\PhysEntity.cpp(14,21): warning C4018: '<': signed/unsigned mismatch
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\PhysEntity.cpp(69,21): warning C4018: '<': signed/unsigned mismatch
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\PhysEntity.cpp(70,22): warning C4018: '<': signed/unsigned mismatch
-  PhysicsManager.cpp
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\PhysicsManager.cpp(32,21): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
-PlayScreen.obj : error LNK2019: unresolved external symbol "public: __thiscall SmallAsteroidPlay::SmallAsteroidPlay(void)" (??0SmallAsteroidPlay@@QAE@XZ) referenced in function "public: void __thiscall PlayScreen::WasDestroyed(void)" (?WasDestroyed@PlayScreen@@QAEXXZ)
-PlayScreen.obj : error LNK2019: unresolved external symbol "public: __thiscall SmallAsteroidPlay::~SmallAsteroidPlay(void)" (??1SmallAsteroidPlay@@QAE@XZ) referenced in function "public: void * __thiscall SmallAsteroidPlay::`scalar deleting destructor'(unsigned int)" (??_GSmallAsteroidPlay@@QAEPAXI@Z)
-D:\School\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe : fatal error LNK1120: 2 unresolved externals
+﻿  Player.cpp
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(243,87): warning C4834: discarding return value of function with 'nodiscard' attribute
+D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(243,121): warning C4244: 'argument': conversion from 'SDLFramework::GameEntity::Space' to 'float', possible loss of data
+  SDL_Tutorial.vcxproj -> D:\School\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libjpeg-9.dll
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libmodplug-1.dll
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libogg-0.dll
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libopus-0.dll
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libopusfile-0.dll
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libpng16-16.dll
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libtiff-5.dll
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libwebp-7.dll
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2.dll
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2_image.dll
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2_mixer.dll
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2_ttf.dll
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\zlib1.dll
+         13 file(s) copied.
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\ARCADE.TTF
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Arcadia.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Asteroid.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Asteroids.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\AsteroidsLogo.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\AsteroidsSpriteSheet.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\AtariClassic.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\BoxCollider.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\BroadPhaseCollider.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\CircleCollider.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Cursor.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\emulogic.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\GalagaSpriteSheet.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\GreatVibes-Regular.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\HighScore1.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\High_Score_logo.jpg
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MiniAsteroidRock1.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MiniAsteroidRock2.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MiniAsteroidRock3.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MiniAsteroidRock4.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\namco__.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\no.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\ostrich-regular.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Pacifico.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\PlayerBullet.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\PlayerExplosion.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Black.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-BlackItalic.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Bold.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-BoldItalic.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraBold.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraBoldItalic.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraLight.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraLightItalic.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Italic.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Light.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-LightItalic.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Medium.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-MediumItalic.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Regular.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-SemiBold.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-SemiBoldItalic.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Thin.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ThinItalic.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\RedShip.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\ShipThrusters.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SmallAsteroidRock1.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SmallAsteroidRock2.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SmallAsteroidRock3.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SmallAsteroidRock4.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\UFOSprite1.png
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\yellowcursor.jpg
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MUS\beat1.wav
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MUS\fire.wav
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MUS\GameStart.wav
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SFX\Another1.mp4
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SFX\beat1.wav
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SFX\coin_credit.wav
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SFX\fire.wav
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-PS\Starzone-SVG.otf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-PS\Starzone.otf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-TT\Starzone-SVG.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-TT\Starzone.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-PS\Starzone-SVG.otf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-PS\Starzone.otf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-TT\Starzone-SVG.ttf
+  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-TT\Starzone.ttf
+  68 File(s) copied

@@ -32,7 +32,7 @@ Player::Player()
 
 	mCurrentSpeed = 0.0f;
 	mMoveSpeed = 0.0f;
-	mMaxSpeed = 300.0f;
+	mMaxSpeed = 600.0f;
 	mMoveBounds = Vector2(0.0f, 800.0f);
 
 	if (m_pInput->KeyPressed(SDL_SCANCODE_X)) {
@@ -115,6 +115,7 @@ void Player::Update()
 	//m_pShipThrusters->Update();
 	//ShipThrusters();
 	HandleMovement();
+	HandleFire();
 	ShipPhysics();
 
 	m_pShipThrusters->Update();
@@ -150,7 +151,7 @@ void Player::Render()
 {
 	m_pShip->Render();
 	//ShipThrusters();
-	HandleMovement();
+	//HandleMovement();
 	//HandleThrusters();
 	m_pShipThrusters->Render();
 
@@ -173,10 +174,10 @@ void Player::Render()
 void Player::HandleMovement()
 {
 	if (m_pInput->KeyDown(SDL_SCANCODE_D)) {
-		Rotate(1.5f);
+		Rotate(3.5f);
 	}
 	if (m_pInput->KeyDown(SDL_SCANCODE_A)) {
-		Rotate(-1.5f);
+		Rotate(-3.5f);
 	}
 	if (m_pInput->KeyDown(SDL_SCANCODE_W)) {
 		misMoving = true;
@@ -241,14 +242,14 @@ void Player::ShipPhysics()
 {
 	Translate(-Vec2_Up * (mCurrentSpeed + mMoveSpeed) * m_pTimer->DeltaTime() * (std::cos(Rotation()), std::sin(Rotation()), World));
 	if (misMoving == true) {
-		mCurrentSpeed += 100.0f * m_pTimer->DeltaTime();
+		mCurrentSpeed += 200.0f * m_pTimer->DeltaTime();
 		if (mCurrentSpeed > mMaxSpeed) {
 			mCurrentSpeed = mMaxSpeed;
 		}
 	}
 
 	if (misMoving == false) {
-		mCurrentSpeed -= 100.0f * m_pTimer->DeltaTime();
+		mCurrentSpeed -= 200.0f * m_pTimer->DeltaTime();
 		if (mCurrentSpeed < 0.0f) {
 			mCurrentSpeed = 0.0f;
 			mMoveSpeed = 0.0f;
