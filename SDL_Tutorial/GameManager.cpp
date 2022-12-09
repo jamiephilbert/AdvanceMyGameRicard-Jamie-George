@@ -42,6 +42,7 @@ namespace SDLFramework {
 
 	void GameManager::LateUpdate() {
 		m_pInputManager->UpdatePrevInput();
+		//m_pPhysicsManager->Update();
 	}
 
 	void GameManager::Render() {
@@ -80,6 +81,9 @@ namespace SDLFramework {
 
 		ScreenManager::Release();
 		m_pScreenManager = nullptr;
+
+		//PhysicsManager::Release();
+		//m_pPhysicsManager = nullptr;
 
 		SDL_Quit();
 	}

@@ -19,6 +19,7 @@ namespace SDLFramework {
 		bool mQuit;
 		Graphics* m_pGraphics;
 		AssetManager* m_pAssetManager;
+
 		SDL_Event mEvent;
 		Timer* m_pTimer;
 		InputManager* m_pInputManager;
