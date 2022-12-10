@@ -35,21 +35,19 @@ Player::Player()
 	mMaxSpeed = 600.0f;
 	mMoveBounds = Vector2(0.0f, 800.0f);
 
-	if (m_pInput->KeyPressed(SDL_SCANCODE_X)) {
-		m_pDeathAnimation = new AnimatedTexture("PlayerExplosion.png", 0, 0, 150, 34, 3, 1.0f, AnimatedTexture::Horizontal);
-		m_pDeathAnimation->Parent(this);
-		m_pDeathAnimation->Position(Vec2_Zero);
-		m_pDeathAnimation->SetWrapMode(AnimatedTexture::Once);
-	}
-	
+	m_pDeathAnimation = new AnimatedTexture("PlayerExplosion.png", 0, 0, 150, 34, 3, 1.0f, AnimatedTexture::Horizontal);
+	m_pDeathAnimation->Parent(this);
+	m_pDeathAnimation->Position(Vec2_Zero);
+	m_pDeathAnimation->SetWrapMode(AnimatedTexture::Once);
 
 	for (int i = 0; i < MAX_BULLETS; i++) {
 		m_pBullets[i] = new Bullet();
 	}
 
-	AddCollider(new BoxCollider(Vector2(20.0f, 30.0f)), Vector2(-10.0f, -13.0f));
+	//AddCollider(new BoxCollider(Vector2(20.0f, 30.0f)), Vector2(-10.0f, -13.0f));
+	AddCollider(new CircleCollider(20));
 
-	mId = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Friendly);
+	mId = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::FriendlyProjectiles);
 }
 
 Player::~Player()
@@ -85,9 +83,6 @@ bool Player::IsAnimating()
 
 int Player::Lives()
 {
-	if (m_pInput->KeyPressed(SDL_SCANCODE_Q)) {
-		mLives -= 1;
-	}
 	return mLives;
 }
 
@@ -101,12 +96,9 @@ void Player::AddScore(int change)
 	mScore += change;
 }
 
-void Player::WasHit()
+bool Player::WasHit()
 {
-	mLives -= 1;
-	mAnimating = true;
-	m_pDeathAnimation->ResetAnimation();
-	m_pAudio->PlaySFX("SFX/PlayerExplosion.wav", 0, -1);
+	return mWasHit;
 }
 
 void Player::WasHit(bool hit)
@@ -121,9 +113,7 @@ bool Player::IgnoreCollisions()
 
 void Player::Hit(PhysEntity* other)
 {
-	if (Position().y > other->Position().y) {
-
-	}
+	std::cout << "PlayerHit" << std::endl;
 	mLives -= 1;
 	mAnimating = true;
 	m_pDeathAnimation->ResetAnimation();
