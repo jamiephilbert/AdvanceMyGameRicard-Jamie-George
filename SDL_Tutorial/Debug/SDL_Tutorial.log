@@ -1,26 +1,4 @@
-﻿  Enemy.cpp
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(22,30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(24,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(25,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(31,30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(33,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(34,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(149,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(149,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(154,33): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(155,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(159,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Enemy.cpp(160,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-  Game.cpp
-  GameManager.cpp
-  HighScoreScreen.cpp
-  Main.cpp
-  PlayScreen.cpp
-  Player.cpp
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(265,87): warning C4834: discarding return value of function with 'nodiscard' attribute
-D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Player.cpp(265,121): warning C4244: 'argument': conversion from 'SDLFramework::GameEntity::Space' to 'float', possible loss of data
-  ScreenManager.cpp
-  Generating Code...
+﻿  HighScoreScreen.cpp
   SDL_Tutorial.vcxproj -> D:\School\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libjpeg-9.dll
   D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libmodplug-1.dll

@@ -54,7 +54,7 @@ public:
 
 	void AddScore(int change);
 
-	void WasHit();
+	bool WasHit();
 	void WasHit(bool hit);
 
 	bool IgnoreCollisions() override;

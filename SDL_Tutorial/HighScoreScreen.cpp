@@ -25,17 +25,17 @@ HighScoreScreen::HighScoreScreen()
 	m_pThirdScore->Position(420.0f, 210.0f);
 	m_pThirdScore->Score(13220);
 
-	m_pTopScoreName = new Texture("BAD", "Starzone.ttf", 30, { 255,180,0 });
+	m_pTopScoreName = new Texture("BASTIAN", "Starzone.ttf", 30, { 255,180,0 });
 	m_pTopScoreName->Parent(m_pScoreBar);
-	m_pTopScoreName->Position(-45.0f, 10.0f);
+	m_pTopScoreName->Position(0.0f, 10.0f);
 
-	m_pSecondScoreName = new Texture("TOM", "Starzone.ttf", 30, { 255,180,0 });
+	m_pSecondScoreName = new Texture("PETER", "Starzone.ttf", 30, { 255,180,0 });
 	m_pSecondScoreName->Parent(m_pScoreBar);
-	m_pSecondScoreName->Position(-45.0f, 110.0f);
+	m_pSecondScoreName->Position(0.0f, 110.0f);
 
-	m_pThirdScoreName = new Texture("END", "Starzone.ttf", 30, { 255,180,0 });
+	m_pThirdScoreName = new Texture("TOMMY", "Starzone.ttf", 30, { 255,180,0 });
 	m_pThirdScoreName->Parent(m_pScoreBar);
-	m_pThirdScoreName->Position(-45.0f, 210.0f);
+	m_pThirdScoreName->Position(0.0f, 210.0f);
 
 	m_pTopScorePos = new Texture("TOP:", "Starzone.ttf", 30, { 255,180,0 });
 	m_pTopScorePos->Parent(m_pScoreBar);
