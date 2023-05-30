@@ -1,85 +1,62 @@
-﻿  HighScoreScreen.cpp
-  SDL_Tutorial.vcxproj -> D:\School\AdvanceMyGameRicard-Jamie-George\Debug\SDL_Tutorial.exe
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libjpeg-9.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libmodplug-1.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libogg-0.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libopus-0.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libopusfile-0.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libpng16-16.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libtiff-5.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\libwebp-7.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2_image.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2_mixer.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\SDL2_ttf.dll
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\dep\devel\x86\zlib1.dll
-         13 file(s) copied.
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\ARCADE.TTF
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Arcadia.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Asteroid.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Asteroids.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\AsteroidsLogo.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\AsteroidsSpriteSheet.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\AtariClassic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\BoxCollider.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\BroadPhaseCollider.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\CircleCollider.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Cursor.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\emulogic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\GalagaSpriteSheet.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\GreatVibes-Regular.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\HighScore1.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\High_Score_logo.jpg
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MiniAsteroidRock1.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MiniAsteroidRock2.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MiniAsteroidRock3.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MiniAsteroidRock4.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\namco__.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\no.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\ostrich-regular.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Pacifico.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\PlayerBullet.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\PlayerExplosion.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Black.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-BlackItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Bold.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-BoldItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraBold.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraBoldItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraLight.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ExtraLightItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Italic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Light.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-LightItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Medium.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-MediumItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Regular.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-SemiBold.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-SemiBoldItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-Thin.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Raleway-ThinItalic.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\RedShip.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\ShipThrusters.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SmallAsteroidRock1.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SmallAsteroidRock2.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SmallAsteroidRock3.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SmallAsteroidRock4.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\UFOSprite1.png
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\yellowcursor.jpg
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MUS\beat1.wav
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MUS\fire.wav
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\MUS\GameStart.wav
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SFX\Another1.mp4
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SFX\beat1.wav
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SFX\coin_credit.wav
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\SFX\fire.wav
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-PS\Starzone-SVG.otf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-PS\Starzone.otf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-TT\Starzone-SVG.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\OpenType-TT\Starzone.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-PS\Starzone-SVG.otf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-PS\Starzone.otf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-TT\Starzone-SVG.ttf
-  D:\School\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\..\Assets\Starzone Fonts\Web-TT\Starzone.ttf
-  68 File(s) copied
+﻿  AnimatedTexture.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  AssetManager.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  AsteroidPlay.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  AsteroidRock.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  AudioManager.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  BoxCollider.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Bullet.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  CircleCollider.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Collider.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Game.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  GameEntity.cpp
+  GameManager.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Graphics.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  HighScoreScreen.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  InputManager.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\InputManager.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Main.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  PhysEntity.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  PhysicsManager.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Player.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Enemy.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Generating Code...
+  Compiling...
+  PlayGameBar.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  PlayScreen.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Random.cpp
+  Scoreboard.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  ScreenManager.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\InputManager.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  ShipThrusters.cpp
+  SmallAsteroidPlay.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  SmallAsteroidRock.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  StartMenu.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\InputManager.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Texture.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Graphics.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Timer.cpp
+D:\School\C++\AdvanceMyGameRicard-Jamie-George\SDL_Tutorial\Timer.h(3,10): fatal  error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Generating Code...
